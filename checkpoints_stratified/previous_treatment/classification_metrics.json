@@ -1,0 +1,80 @@
+{
+  "6 months (PRIMARY - clinical benefit)": {
+    "threshold_months": 6.0,
+    "auroc": 0.7070018796992481,
+    "auprc": 0.4070784590244414,
+    "f1": 0.034482758620689655,
+    "f1_optimal": 0.46153846153846156,
+    "balanced_acc": 0.5087719298245614,
+    "balanced_acc_optimal": 0.6791588345864662,
+    "optimal_pred_threshold": 1.7841472625732422,
+    "optimal_sensitivity": 0.6842105263157895,
+    "optimal_specificity": 0.6741071428571428,
+    "n_positive": 57,
+    "n_negative": 224,
+    "confusion_matrix": {
+      "tn": 224,
+      "fp": 0,
+      "fn": 56,
+      "tp": 1
+    },
+    "confusion_matrix_optimal": {
+      "tn": 151,
+      "fp": 73,
+      "fn": 18,
+      "tp": 39
+    }
+  },
+  "3 months (early progression)": {
+    "threshold_months": 3.0,
+    "auroc": 0.6804981452040275,
+    "auprc": 0.5966543983054908,
+    "f1": 0.44565217391304346,
+    "f1_optimal": 0.5932203389830508,
+    "balanced_acc": 0.5905670376258612,
+    "balanced_acc_optimal": 0.6535506094329624,
+    "optimal_pred_threshold": 1.6096417903900146,
+    "optimal_sensitivity": 0.6306306306306306,
+    "optimal_specificity": 0.6764705882352942,
+    "n_positive": 111,
+    "n_negative": 170,
+    "confusion_matrix": {
+      "tn": 138,
+      "fp": 32,
+      "fn": 70,
+      "tp": 41
+    },
+    "confusion_matrix_optimal": {
+      "tn": 115,
+      "fp": 55,
+      "fn": 41,
+      "tp": 70
+    }
+  },
+  "Median (2.53 months)": {
+    "threshold_months": 2.1710526943206787,
+    "auroc": 0.6449848024316109,
+    "auprc": 0.6548601297771679,
+    "f1": 0.5188284518828452,
+    "f1_optimal": 0.6204379562043796,
+    "balanced_acc": 0.5912867274569402,
+    "balanced_acc_optimal": 0.6299898682877406,
+    "optimal_pred_threshold": 1.5637078285217285,
+    "optimal_sensitivity": 0.6028368794326241,
+    "optimal_specificity": 0.6571428571428571,
+    "n_positive": 141,
+    "n_negative": 140,
+    "confusion_matrix": {
+      "tn": 104,
+      "fp": 36,
+      "fn": 79,
+      "tp": 62
+    },
+    "confusion_matrix_optimal": {
+      "tn": 92,
+      "fp": 48,
+      "fn": 56,
+      "tp": 85
+    }
+  }
+}

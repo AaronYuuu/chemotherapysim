@@ -137,6 +137,10 @@ def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dic
             st.success("✅ Deep Learning model loaded (previous treatment)")
         except Exception as e:
             st.warning(f"⚠️ Could not load Deep Learning model: {str(e)}")
+    elif not HAS_DL_MODEL:
+        st.info(f"ℹ️ Deep Learning model import failed")
+    elif not CHECKPOINT_DIR_PREVIOUS.exists():
+        st.info(f"ℹ️ Deep Learning checkpoint not found at: {CHECKPOINT_DIR_PREVIOUS}")
     
     # Load XGBoost model for first treatment
     if HAS_XGBOOST and CHECKPOINT_DIR_FIRST_XGB.exists():
@@ -158,6 +162,10 @@ def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dic
             st.success("✅ XGBoost model loaded (first treatment)")
         except Exception as e:
             st.warning(f"⚠️ Could not load XGBoost model: {str(e)}")
+    elif not HAS_XGBOOST:
+        st.info(f"ℹ️ XGBoost not installed")
+    elif not CHECKPOINT_DIR_FIRST_XGB.exists():
+        st.info(f"ℹ️ XGBoost checkpoint not found at: {CHECKPOINT_DIR_FIRST_XGB}")
     
     return dl_model, xgb_model, dl_config, xgb_config
 

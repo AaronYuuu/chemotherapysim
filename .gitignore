@@ -1,6 +1,5 @@
 __pycache__/
 artifacts/
-checkpoints_stratified/
 data/raw/
 data/processed/*.csv
 !data/processed/drug_smiles_cache.json

@@ -1,0 +1,8 @@
+{
+  "6 months (PRIMARY - clinical benefit)": {
+    "auroc": 0.7034013605442176,
+    "n_positive": 49,
+    "n_negative": 75,
+    "threshold_months": 6.0
+  }
+}
