@@ -1,0 +1,115 @@
+{
+  "Alkylating Agents & DNA Crosslinkers": [
+    "Cyclophosphamide",
+    "Chlorambucil",
+    "Busulfan",
+    "Cisplatin",
+    "Carboplatin",
+    "Oxaliplatin",
+    "Lomustine",
+    "Mechlorethamine Hydrochloride",
+    "Procarbazine Hydrochloride",
+    "Bendamustine Hydrochloride"
+  ],
+  "Antimetabolites": [
+    "Fluorouracil",
+    "Capecitabine",
+    "Cytarabine",
+    "Gemcitabine Hydrochloride",
+    "Methotrexate",
+    "Pemetrexed Disodium",
+    "Decitabine",
+    "Fludarabine Phosphate",
+    "Dacarbazine"
+  ],
+  "Topoisomerase Inhibitors": [
+    "Etoposide",
+    "Etoposide Phosphate",
+    "Irinotecan Hydrochloride"
+  ],
+  "Antimicrotubule Agents": [
+    "Paclitaxel",
+    "Docetaxel",
+    "Vinblastine Sulfate",
+    "Vincristine Sulfate",
+    "Vinorelbine Tartrate"
+  ],
+  "Hormonal / Endocrine Therapies": [
+    "Tamoxifen Citrate",
+    "Anastrozole",
+    "Letrozole",
+    "Exemestane",
+    "Abiraterone Acetate",
+    "Bicalutamide",
+    "Megestrol Acetate",
+    "Leuprolide Acetate",
+    "Degarelix",
+    "Lanreotide Acetate"
+  ],
+  "Targeted Small-Molecule Inhibitors": {
+    "EGFR Inhibitors": [
+      "Afatinib",
+      "Erlotinib",
+      "Gefitinib",
+      "Osimertinib",
+      "Rociletinib",
+      "Icotinib"
+    ],
+    "ALK Inhibitors": [
+      "Alectinib",
+      "Brigatinib",
+      "Ceritinib",
+      "Crizotinib",
+      "Lorlatinib",
+      "Ensartinib",
+      "Entrectinib"
+    ],
+    "BRAF/MEK Pathway Inhibitors": [
+      "Dabrafenib",
+      "Vemurafenib",
+      "Cobimetinib",
+      "Trametinib"
+    ],
+    "mTOR Inhibitor": [
+      "Everolimus"
+    ],
+    "BTK Inhibitors": [
+      "Ibrutinib",
+      "Acalabrutinib"
+    ],
+    "JAK Inhibitor": [
+      "Ruxolitinib Phosphate"
+    ],
+    "Multi-Kinase Inhibitors": [
+      "Sorafenib Tosylate",
+      "Sunitinib Malate",
+      "Cabozantinib Smalate",
+      "Neratinib",
+      "Imatinib Mesylate",
+      "Palbociclib"
+    ]
+  },
+  "Antitumor Antibiotics": [
+    "Doxorubicin Hydrochloride",
+    "Epirubicin Hydrochloride",
+    "Mitomycin"
+  ],
+  "Proteasome Inhibitors": [
+    "Bortezomib",
+    "Carfilzomib"
+  ],
+  "PARP Inhibitor": [
+    "Olaparib"
+  ],
+  "Epigenetic Modifiers": [
+    "Decitabine"
+  ],
+  "Other / Novel Mechanisms": [
+    "Lurbinectedin",
+    "Navitoclax",
+    "Temozolomide",
+    "Hydroxyurea",
+    "Lenalidomide",
+    "Pomalidomide"
+  ]
+}

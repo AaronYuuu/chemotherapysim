@@ -1,0 +1,4033 @@
+Patient_ID,drug_raw,treatment_line,is_combination,monoclonal
+GENIE-DFCI-000013,Carboplatin,1,1,0
+GENIE-DFCI-000136,Carboplatin,1,1,0
+GENIE-DFCI-000142,Cisplatin,1,1,0
+GENIE-DFCI-000142,Investigational Drug,2,0,0
+GENIE-DFCI-000142,Carboplatin,3,1,0
+GENIE-DFCI-000142,Investigational Drug,4,0,0
+GENIE-DFCI-000142,Crizotinib,5,0,0
+GENIE-DFCI-000142,Docetaxel,6,0,0
+GENIE-DFCI-000215,Carboplatin,1,1,0
+GENIE-DFCI-000215,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-000260,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-000260,Pemetrexed Disodium,2,1,0
+GENIE-DFCI-000260,Docetaxel,3,0,0
+GENIE-DFCI-000260,Erlotinib Hydrochloride,4,0,0
+GENIE-DFCI-000260,Nivolumab,5,0,1
+GENIE-DFCI-000263,Cisplatin,1,1,0
+GENIE-DFCI-000300,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-000300,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-000300,Carboplatin,2,1,0
+GENIE-DFCI-000300,Carboplatin,2,1,0
+GENIE-DFCI-000300,Nivolumab,3,0,1
+GENIE-DFCI-000300,Nivolumab,3,0,1
+GENIE-DFCI-000371,Carboplatin,1,1,1
+GENIE-DFCI-000372,Carboplatin,1,1,0
+GENIE-DFCI-000375,Carboplatin,1,1,0
+GENIE-DFCI-000375,Pembrolizumab,2,0,1
+GENIE-DFCI-000381,Carboplatin,1,1,0
+GENIE-DFCI-000381,Nivolumab,2,0,1
+GENIE-DFCI-000410,Carboplatin,1,1,0
+GENIE-DFCI-000454,BCG Solution,1,0,0
+GENIE-DFCI-000489,Carboplatin,1,1,0
+GENIE-DFCI-000539,Carboplatin,1,1,0
+GENIE-DFCI-000583,Cisplatin,1,1,0
+GENIE-DFCI-000605,Cisplatin,1,1,0
+GENIE-DFCI-000605,Carboplatin,2,1,0
+GENIE-DFCI-000605,Nivolumab,3,0,1
+GENIE-DFCI-000608,Carboplatin,1,0,0
+GENIE-DFCI-000608,Vinorelbine Tartrate,2,0,0
+GENIE-DFCI-000608,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-000611,Crizotinib,1,0,0
+GENIE-DFCI-000611,Cisplatin,2,1,0
+GENIE-DFCI-000611,Crizotinib,3,0,0
+GENIE-DFCI-000675,Cisplatin,1,1,0
+GENIE-DFCI-000675,Carboplatin,2,1,0
+GENIE-DFCI-000675,Pembrolizumab,3,0,1
+GENIE-DFCI-000735,Cisplatin,1,1,0
+GENIE-DFCI-000750,Carboplatin,1,1,0
+GENIE-DFCI-000750,Carboplatin,2,1,0
+GENIE-DFCI-000750,Investigational Drug,3,0,0
+GENIE-DFCI-000800,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-000800,Osimertinib,2,0,0
+GENIE-DFCI-000815,Carboplatin,1,1,0
+GENIE-DFCI-000815,Pembrolizumab,2,0,1
+GENIE-DFCI-000815,Bevacizumab,3,0,1
+GENIE-DFCI-000847,Carboplatin,1,1,0
+GENIE-DFCI-000853,Carboplatin,1,1,0
+GENIE-DFCI-000853,Pembrolizumab,2,0,1
+GENIE-DFCI-000853,Investigational Drug,3,0,0
+GENIE-DFCI-000872,Tamoxifen Citrate,1,0,0
+GENIE-DFCI-000872,Letrozole,2,0,0
+GENIE-DFCI-000877,Cyclophosphamide,1,1,0
+GENIE-DFCI-000957,Bicalutamide,1,0,0
+GENIE-DFCI-000957,Leuprolide Acetate,2,0,0
+GENIE-DFCI-000957,Carboplatin,3,1,0
+GENIE-DFCI-000957,Bicalutamide,4,0,0
+GENIE-DFCI-000957,Abiraterone Acetate,5,0,0
+GENIE-DFCI-001060,Carboplatin,1,1,0
+GENIE-DFCI-001095,Etoposide,1,1,0
+GENIE-DFCI-001095,Carboplatin,2,1,0
+GENIE-DFCI-001095,Carboplatin,3,1,1
+GENIE-DFCI-001095,Pemetrexed Disodium,4,1,1
+GENIE-DFCI-001163,Carboplatin,1,1,0
+GENIE-DFCI-001163,Nivolumab,2,0,1
+GENIE-DFCI-001247,Vinorelbine Tartrate,1,1,0
+GENIE-DFCI-001250,Carboplatin,1,1,0
+GENIE-DFCI-001264,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-001264,Osimertinib,2,0,0
+GENIE-DFCI-001305,Tamoxifen Citrate,1,0,0
+GENIE-DFCI-001305,Cisplatin,2,1,0
+GENIE-DFCI-001305,Pembrolizumab,3,0,1
+GENIE-DFCI-001305,Carboplatin,4,1,0
+GENIE-DFCI-001305,Bevacizumab,5,0,1
+GENIE-DFCI-001305,Pemetrexed Disodium,6,0,0
+GENIE-DFCI-001319,Carboplatin,1,0,0
+GENIE-DFCI-001319,Cisplatin,2,1,0
+GENIE-DFCI-001319,Pembrolizumab,3,0,1
+GENIE-DFCI-001319,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-001394,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-001431,Cisplatin,1,1,0
+GENIE-DFCI-001431,Neratinib,2,0,0
+GENIE-DFCI-001431,Vinorelbine Tartrate,3,1,1
+GENIE-DFCI-001431,Pemetrexed Disodium,4,0,0
+GENIE-DFCI-001431,Afatinib Dimaleate,5,0,0
+GENIE-DFCI-001442,Methotrexate,1,1,0
+GENIE-DFCI-001442,Cytarabine,2,0,0
+GENIE-DFCI-001442,Temozolomide,3,1,0
+GENIE-DFCI-001442,Thiotepa,4,1,0
+GENIE-DFCI-001442,Carboplatin,5,1,0
+GENIE-DFCI-001485,Cisplatin,1,1,0
+GENIE-DFCI-001485,Cisplatin,2,1,0
+GENIE-DFCI-001485,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-001485,Carboplatin,4,1,0
+GENIE-DFCI-001485,Nivolumab,5,0,1
+GENIE-DFCI-001487,Vinorelbine Tartrate,1,0,0
+GENIE-DFCI-001487,Pembrolizumab,2,0,1
+GENIE-DFCI-001487,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-001514,Cisplatin,1,1,0
+GENIE-DFCI-001514,Carboplatin,2,1,0
+GENIE-DFCI-001514,Investigational Drug,3,0,0
+GENIE-DFCI-001552,Carboplatin,1,1,0
+GENIE-DFCI-001563,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-001563,Afatinib Dimaleate,2,0,0
+GENIE-DFCI-001563,Carboplatin,3,1,0
+GENIE-DFCI-001563,Osimertinib,4,1,0
+GENIE-DFCI-001563,Pembrolizumab,5,0,1
+GENIE-DFCI-001563,Osimertinib,6,1,1
+GENIE-DFCI-001583,Tamoxifen Citrate,1,0,0
+GENIE-DFCI-001583,Letrozole,2,0,0
+GENIE-DFCI-001610,Carboplatin,1,1,0
+GENIE-DFCI-001610,Afatinib Dimaleate,2,0,0
+GENIE-DFCI-001610,Atezolizumab,3,0,1
+GENIE-DFCI-001610,Investigational Drug,4,0,0
+GENIE-DFCI-001630,Carboplatin,1,1,0
+GENIE-DFCI-001630,Cisplatin,2,1,0
+GENIE-DFCI-001630,Pemetrexed Disodium,3,1,0
+GENIE-DFCI-001635,Carboplatin,1,1,0
+GENIE-DFCI-001635,Cisplatin,2,1,0
+GENIE-DFCI-001635,Carboplatin,3,1,0
+GENIE-DFCI-001635,Pemetrexed Disodium,4,0,0
+GENIE-DFCI-001635,Nivolumab,5,0,1
+GENIE-DFCI-001635,Pembrolizumab,6,1,1
+GENIE-DFCI-001636,Carboplatin,1,1,0
+GENIE-DFCI-001751,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-001751,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-001751,Osimertinib,3,0,0
+GENIE-DFCI-001751,Osimertinib,4,1,0
+GENIE-DFCI-001808,Crizotinib,1,0,0
+GENIE-DFCI-001808,Carboplatin,2,1,0
+GENIE-DFCI-001808,Investigational Drug,3,0,0
+GENIE-DFCI-001808,Carboplatin,4,1,0
+GENIE-DFCI-001808,Pembrolizumab,5,0,1
+GENIE-DFCI-001808,Docetaxel,6,0,0
+GENIE-DFCI-001825,Vinorelbine Tartrate,1,0,0
+GENIE-DFCI-001830,Carboplatin,1,1,0
+GENIE-DFCI-001830,Investigational Drug,2,1,0
+GENIE-DFCI-001852,Carboplatin,1,1,0
+GENIE-DFCI-001883,Gefitinib,1,1,0
+GENIE-DFCI-001908,BCG Solution,1,0,0
+GENIE-DFCI-002004,Carboplatin,1,1,1
+GENIE-DFCI-002004,Nivolumab,2,0,1
+GENIE-DFCI-002010,Carboplatin,1,1,0
+GENIE-DFCI-002010,Nivolumab,2,0,1
+GENIE-DFCI-002010,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-002017,Carboplatin,1,1,0
+GENIE-DFCI-002017,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-002017,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-002095,Carboplatin,1,1,1
+GENIE-DFCI-002121,Cisplatin,1,1,0
+GENIE-DFCI-002140,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-002140,Erlotinib Hydrochloride,2,1,0
+GENIE-DFCI-002140,Erlotinib Hydrochloride,3,1,0
+GENIE-DFCI-002140,Carboplatin,4,1,1
+GENIE-DFCI-002140,Investigational Drug,5,1,0
+GENIE-DFCI-002181,Carboplatin,1,1,0
+GENIE-DFCI-002209,Cisplatin,1,1,0
+GENIE-DFCI-002209,Cisplatin,2,1,0
+GENIE-DFCI-002209,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-002209,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-002209,Gemcitabine Hydrochloride,5,0,0
+GENIE-DFCI-002209,Nivolumab,6,0,1
+GENIE-DFCI-002209,Pembrolizumab,7,0,1
+GENIE-DFCI-002270,Carboplatin,1,1,0
+GENIE-DFCI-002270,Nivolumab,2,0,1
+GENIE-DFCI-002270,Gemcitabine Hydrochloride,3,0,0
+GENIE-DFCI-002270,Carboplatin,4,1,0
+GENIE-DFCI-002270,Ipilimumab,5,1,1
+GENIE-DFCI-002270,Irinotecan Hydrochloride,6,0,0
+GENIE-DFCI-002274,Cisplatin,1,1,0
+GENIE-DFCI-002274,Vinorelbine Tartrate,2,0,0
+GENIE-DFCI-002274,Carboplatin,3,1,0
+GENIE-DFCI-002274,Nivolumab,4,0,1
+GENIE-DFCI-002329,Carboplatin,1,1,0
+GENIE-DFCI-002433,Cisplatin,1,1,0
+GENIE-DFCI-002433,Carboplatin,2,1,1
+GENIE-DFCI-002433,Bevacizumab,3,0,1
+GENIE-DFCI-002445,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-002445,Pemetrexed Disodium,2,1,0
+GENIE-DFCI-002447,Carboplatin,1,1,0
+GENIE-DFCI-002447,Etoposide,2,1,0
+GENIE-DFCI-002447,Nivolumab,3,0,1
+GENIE-DFCI-002450,Carboplatin,1,1,0
+GENIE-DFCI-002450,Carboplatin,2,1,0
+GENIE-DFCI-002689,Carboplatin,1,1,0
+GENIE-DFCI-002689,Tretinoin,2,0,0
+GENIE-DFCI-002689,Arsenic Trioxide,3,0,0
+GENIE-DFCI-002744,Vinorelbine Tartrate,1,1,0
+GENIE-DFCI-002791,Carboplatin,1,1,0
+GENIE-DFCI-002791,Carboplatin,2,1,0
+GENIE-DFCI-002794,Cyclophosphamide,1,1,0
+GENIE-DFCI-002794,Tamoxifen Citrate,2,0,0
+GENIE-DFCI-002794,Anastrozole,3,0,0
+GENIE-DFCI-002794,Cisplatin,4,1,0
+GENIE-DFCI-002806,Carboplatin,1,1,0
+GENIE-DFCI-002806,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-002806,Carboplatin,3,1,0
+GENIE-DFCI-002806,Carboplatin,4,1,0
+GENIE-DFCI-002806,Docetaxel,5,0,0
+GENIE-DFCI-002806,Investigational Drug,6,1,1
+GENIE-DFCI-002869,Carboplatin,1,1,0
+GENIE-DFCI-002896,Fludarabine Phosphate,1,1,1
+GENIE-DFCI-003050,Cisplatin,1,1,0
+GENIE-DFCI-003050,Cisplatin,2,1,0
+GENIE-DFCI-003050,Carboplatin,3,1,0
+GENIE-DFCI-003113,Carboplatin,1,1,0
+GENIE-DFCI-003113,Carboplatin,2,1,0
+GENIE-DFCI-003113,Docetaxel,3,0,0
+GENIE-DFCI-003113,Nivolumab,4,0,1
+GENIE-DFCI-003133,Cisplatin,1,1,0
+GENIE-DFCI-003133,Carboplatin,2,1,0
+GENIE-DFCI-003188,Cisplatin,1,1,0
+GENIE-DFCI-003188,Capecitabine,2,0,0
+GENIE-DFCI-003188,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-003188,Bevacizumab,4,1,1
+GENIE-DFCI-003188,Vinorelbine Tartrate,5,0,0
+GENIE-DFCI-003188,Docetaxel,6,0,0
+GENIE-DFCI-003188,Cobimetinib,7,1,1
+GENIE-DFCI-003219,Carboplatin,1,1,0
+GENIE-DFCI-003221,Cisplatin,1,1,0
+GENIE-DFCI-003221,Cisplatin,2,1,0
+GENIE-DFCI-003244,Carboplatin,1,1,0
+GENIE-DFCI-003244,Carboplatin,2,1,0
+GENIE-DFCI-003307,Cisplatin,1,1,0
+GENIE-DFCI-003312,Carboplatin,1,1,1
+GENIE-DFCI-003312,Docetaxel,2,0,0
+GENIE-DFCI-003312,Dabrafenib,3,1,0
+GENIE-DFCI-003312,Nivolumab,4,0,1
+GENIE-DFCI-003392,Carboplatin,1,1,0
+GENIE-DFCI-003392,Carboplatin,2,1,0
+GENIE-DFCI-003392,Cisplatin,3,1,0
+GENIE-DFCI-003392,Cisplatin,4,1,0
+GENIE-DFCI-003392,Crizotinib,5,0,0
+GENIE-DFCI-003392,Alectinib,6,0,0
+GENIE-DFCI-003392,Bevacizumab,7,0,1
+GENIE-DFCI-003392,Investigational Drug,8,0,0
+GENIE-DFCI-003392,Lorlatinib,9,0,0
+GENIE-DFCI-003392,Brigatinib,10,0,0
+GENIE-DFCI-003399,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-003399,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-003408,Carboplatin,1,1,0
+GENIE-DFCI-003491,Pemetrexed Disodium,1,0,0
+GENIE-DFCI-003551,Carboplatin,1,1,1
+GENIE-DFCI-003551,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-003551,Nivolumab,3,0,1
+GENIE-DFCI-003551,Investigational Drug,4,1,0
+GENIE-DFCI-003551,Docetaxel,5,1,1
+GENIE-DFCI-003560,Carboplatin,1,1,0
+GENIE-DFCI-003560,Carboplatin,2,0,0
+GENIE-DFCI-003685,Carboplatin,1,1,0
+GENIE-DFCI-003689,Cisplatin,1,1,0
+GENIE-DFCI-003689,Carboplatin,2,1,0
+GENIE-DFCI-003689,Afatinib Dimaleate,3,0,0
+GENIE-DFCI-003691,Exemestane,1,0,0
+GENIE-DFCI-003730,Carboplatin,1,1,0
+GENIE-DFCI-003730,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-003730,Osimertinib,3,0,0
+GENIE-DFCI-003736,Other NOS,1,1,0
+GENIE-DFCI-003736,Doxorubicin Hydrochloride,2,1,0
+GENIE-DFCI-003736,Cisplatin,3,1,0
+GENIE-DFCI-003736,Cisplatin,4,1,0
+GENIE-DFCI-003755,Carboplatin,1,1,1
+GENIE-DFCI-003755,Investigational Drug,2,0,0
+GENIE-DFCI-003755,Lorlatinib,3,0,0
+GENIE-DFCI-003865,Carboplatin,1,1,0
+GENIE-DFCI-003865,Carboplatin,2,1,0
+GENIE-DFCI-003865,Pembrolizumab,3,0,1
+GENIE-DFCI-003908,Crizotinib,1,0,0
+GENIE-DFCI-003908,Alectinib,2,0,0
+GENIE-DFCI-004022,Carboplatin,1,1,0
+GENIE-DFCI-004022,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-004022,Erlotinib Hydrochloride,3,1,0
+GENIE-DFCI-004022,Erlotinib Hydrochloride,4,1,0
+GENIE-DFCI-004022,Erlotinib Hydrochloride,5,1,0
+GENIE-DFCI-004022,Alectinib,6,1,0
+GENIE-DFCI-004068,Carboplatin,1,1,1
+GENIE-DFCI-004068,Nivolumab,2,0,1
+GENIE-DFCI-004068,Investigational Drug,3,1,0
+GENIE-DFCI-004068,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-004109,Cisplatin,1,1,0
+GENIE-DFCI-004109,Carboplatin,2,1,0
+GENIE-DFCI-004109,Carboplatin,3,1,0
+GENIE-DFCI-004109,Pembrolizumab,4,0,1
+GENIE-DFCI-004141,Other NOS,1,0,0
+GENIE-DFCI-004233,Cisplatin,1,1,0
+GENIE-DFCI-004262,Carboplatin,1,1,0
+GENIE-DFCI-004262,Durvalumab,2,1,1
+GENIE-DFCI-004262,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-004262,Pemetrexed Disodium,4,0,0
+GENIE-DFCI-004262,Vinorelbine Tartrate,5,0,0
+GENIE-DFCI-004267,Carboplatin,1,1,0
+GENIE-DFCI-004267,Vinorelbine Tartrate,2,0,0
+GENIE-DFCI-004267,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-004267,Investigational Drug,4,1,0
+GENIE-DFCI-004267,Pembrolizumab,5,0,1
+GENIE-DFCI-004267,Investigational Drug,6,1,0
+GENIE-DFCI-004350,Cisplatin,1,1,0
+GENIE-DFCI-004350,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-004350,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-004350,Osimertinib,4,0,0
+GENIE-DFCI-004350,Pemetrexed Disodium,5,0,0
+GENIE-DFCI-004350,Pembrolizumab,6,0,1
+GENIE-DFCI-004350,Erlotinib Hydrochloride,7,0,0
+GENIE-DFCI-004410,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-004410,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-004410,Nivolumab,3,0,1
+GENIE-DFCI-004410,Crizotinib,4,1,0
+GENIE-DFCI-004527,Paclitaxel,1,1,1
+GENIE-DFCI-004527,Pemetrexed Disodium,2,1,0
+GENIE-DFCI-004527,Docetaxel,3,0,0
+GENIE-DFCI-004527,Gemcitabine Hydrochloride,4,0,0
+GENIE-DFCI-004527,Vinorelbine Tartrate,5,0,0
+GENIE-DFCI-004567,Cisplatin,1,1,0
+GENIE-DFCI-004567,Carboplatin,2,1,0
+GENIE-DFCI-004567,Pembrolizumab,3,0,1
+GENIE-DFCI-004791,Carboplatin,1,1,0
+GENIE-DFCI-004791,Vinorelbine Tartrate,2,0,0
+GENIE-DFCI-005417,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-005417,Investigational Drug,2,0,0
+GENIE-DFCI-005417,Docetaxel,3,0,0
+GENIE-DFCI-005417,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-005417,Investigational Drug,5,0,0
+GENIE-DFCI-005417,Investigational Drug,6,1,0
+GENIE-DFCI-005517,Carboplatin,1,1,0
+GENIE-DFCI-005621,Cisplatin,1,1,0
+GENIE-DFCI-005634,Carboplatin,1,1,0
+GENIE-DFCI-005634,Carboplatin,2,1,0
+GENIE-DFCI-005634,Nivolumab,3,0,1
+GENIE-DFCI-005634,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-005843,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-005843,Osimertinib,2,0,0
+GENIE-DFCI-005843,Investigational Drug,3,1,0
+GENIE-DFCI-005924,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-005924,Investigational Drug,2,0,0
+GENIE-DFCI-006088,Cisplatin,1,1,0
+GENIE-DFCI-006088,Carboplatin,2,1,0
+GENIE-DFCI-006088,Pembrolizumab,3,0,1
+GENIE-DFCI-006460,Carboplatin,1,1,1
+GENIE-DFCI-006638,Fluorouracil,1,1,0
+GENIE-DFCI-006728,Carboplatin,1,1,0
+GENIE-DFCI-006728,Investigational Drug,2,0,0
+GENIE-DFCI-006728,Pembrolizumab,3,0,1
+GENIE-DFCI-006728,Pembrolizumab,4,1,1
+GENIE-DFCI-006839,Carboplatin,1,1,0
+GENIE-DFCI-006839,Nivolumab,2,0,1
+GENIE-DFCI-006938,Carboplatin,1,1,0
+GENIE-DFCI-006938,Nivolumab,2,0,1
+GENIE-DFCI-007001,Chlorambucil,1,0,0
+GENIE-DFCI-007001,Ibrutinib,2,0,0
+GENIE-DFCI-007001,Ibrutinib,3,0,0
+GENIE-DFCI-007001,Acalabrutinib,4,0,0
+GENIE-DFCI-007020,Carboplatin,1,1,0
+GENIE-DFCI-007020,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-007020,Ipilimumab,3,1,1
+GENIE-DFCI-007030,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-007030,Investigational Drug,2,0,0
+GENIE-DFCI-007030,Carboplatin,3,1,0
+GENIE-DFCI-007048,Carboplatin,1,1,0
+GENIE-DFCI-007048,Pembrolizumab,2,0,1
+GENIE-DFCI-007054,Other hormone,1,0,0
+GENIE-DFCI-007054,Carboplatin,2,1,0
+GENIE-DFCI-007054,Docetaxel,3,1,0
+GENIE-DFCI-007054,Nivolumab,4,0,1
+GENIE-DFCI-007175,Tamoxifen Citrate,1,0,0
+GENIE-DFCI-007175,Exemestane,2,0,0
+GENIE-DFCI-007175,Carboplatin,3,1,0
+GENIE-DFCI-007175,Pembrolizumab,4,0,1
+GENIE-DFCI-007175,Investigational Drug,5,0,0
+GENIE-DFCI-007176,Pemetrexed Disodium,1,0,0
+GENIE-DFCI-007206,Cisplatin,1,1,0
+GENIE-DFCI-007206,Cisplatin,2,1,0
+GENIE-DFCI-007206,Nivolumab,3,0,1
+GENIE-DFCI-007206,Docetaxel,4,0,0
+GENIE-DFCI-007220,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-007288,Carboplatin,1,1,0
+GENIE-DFCI-007288,Carboplatin,2,1,0
+GENIE-DFCI-007288,Carboplatin,3,1,0
+GENIE-DFCI-007288,Nivolumab,4,0,1
+GENIE-DFCI-007294,Cisplatin,1,1,0
+GENIE-DFCI-007294,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-007313,Crizotinib,1,0,0
+GENIE-DFCI-007370,Carboplatin,1,1,0
+GENIE-DFCI-007493,Lomustine,1,0,0
+GENIE-DFCI-007493,Carboplatin,2,1,0
+GENIE-DFCI-007493,Nivolumab,3,0,1
+GENIE-DFCI-007505,Cisplatin,1,1,0
+GENIE-DFCI-007505,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-007505,Docetaxel,3,0,0
+GENIE-DFCI-007505,Nivolumab,4,0,1
+GENIE-DFCI-007588,Carboplatin,1,1,0
+GENIE-DFCI-007588,Vinorelbine Tartrate,2,0,0
+GENIE-DFCI-007588,Nivolumab,3,0,1
+GENIE-DFCI-007588,Nivolumab,4,0,1
+GENIE-DFCI-007616,Cisplatin,1,1,0
+GENIE-DFCI-007616,Crizotinib,2,0,0
+GENIE-DFCI-007616,Ceritinib,3,0,0
+GENIE-DFCI-007632,Carboplatin,1,1,0
+GENIE-DFCI-007635,Cisplatin,1,1,0
+GENIE-DFCI-007635,Cisplatin,2,1,0
+GENIE-DFCI-007703,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-007707,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-007707,Carboplatin,2,1,0
+GENIE-DFCI-007707,Osimertinib,3,0,0
+GENIE-DFCI-007707,Pembrolizumab,4,0,1
+GENIE-DFCI-007707,Docetaxel,5,0,0
+GENIE-DFCI-007707,Vinorelbine Tartrate,6,0,0
+GENIE-DFCI-007707,Osimertinib,7,0,0
+GENIE-DFCI-007707,Gemcitabine Hydrochloride,8,1,0
+GENIE-DFCI-007789,Carboplatin,1,1,0
+GENIE-DFCI-007797,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-007797,Nivolumab,2,0,1
+GENIE-DFCI-007812,Carboplatin,1,1,1
+GENIE-DFCI-007812,Nivolumab,2,0,1
+GENIE-DFCI-007846,Pemetrexed Disodium,1,0,0
+GENIE-DFCI-007846,Crizotinib,2,0,0
+GENIE-DFCI-007846,Alectinib,3,0,0
+GENIE-DFCI-007846,Ceritinib,4,0,0
+GENIE-DFCI-007846,Investigational Drug,5,0,0
+GENIE-DFCI-007858,Carboplatin,1,1,0
+GENIE-DFCI-007992,Cisplatin,1,1,0
+GENIE-DFCI-008030,Cisplatin,1,1,0
+GENIE-DFCI-008030,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-008031,Cisplatin,1,1,0
+GENIE-DFCI-008031,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-008031,Osimertinib,3,0,0
+GENIE-DFCI-008031,Carboplatin,4,1,0
+GENIE-DFCI-008031,Osimertinib,5,0,0
+GENIE-DFCI-008034,Cisplatin,1,1,0
+GENIE-DFCI-008075,Cisplatin,1,1,0
+GENIE-DFCI-008083,Cisplatin,1,1,0
+GENIE-DFCI-008083,Carboplatin,2,1,0
+GENIE-DFCI-008083,Alectinib,3,0,0
+GENIE-DFCI-008083,Alectinib,4,1,0
+GENIE-DFCI-008085,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-008085,Erlotinib Hydrochloride,2,1,0
+GENIE-DFCI-008085,Osimertinib,3,1,0
+GENIE-DFCI-008085,Carboplatin,4,1,0
+GENIE-DFCI-008085,Crizotinib,5,1,0
+GENIE-DFCI-008106,Carboplatin,1,1,1
+GENIE-DFCI-008106,Pemetrexed Disodium,2,1,1
+GENIE-DFCI-008106,Nivolumab,3,0,1
+GENIE-DFCI-008106,Docetaxel,4,0,0
+GENIE-DFCI-008106,Gemcitabine Hydrochloride,5,0,0
+GENIE-DFCI-008106,Vinorelbine Tartrate,6,0,0
+GENIE-DFCI-008185,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-008222,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-008222,Docetaxel,2,0,0
+GENIE-DFCI-008222,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-008260,Carboplatin,1,1,1
+GENIE-DFCI-008260,Nivolumab,2,0,1
+GENIE-DFCI-008260,Investigational Drug,3,1,0
+GENIE-DFCI-008260,Gemcitabine Hydrochloride,4,0,0
+GENIE-DFCI-008260,Carboplatin,5,1,0
+GENIE-DFCI-008290,Carboplatin,1,1,0
+GENIE-DFCI-008290,Pemetrexed Disodium,2,1,1
+GENIE-DFCI-008290,Afatinib Dimaleate,3,0,0
+GENIE-DFCI-008290,Nivolumab,4,0,1
+GENIE-DFCI-008292,Ipilimumab,1,1,1
+GENIE-DFCI-008292,Nivolumab,2,0,1
+GENIE-DFCI-008292,Carboplatin,3,1,0
+GENIE-DFCI-008320,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-008320,Osimertinib,2,0,0
+GENIE-DFCI-008320,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-008320,Osimertinib,4,0,0
+GENIE-DFCI-008353,Cisplatin,1,1,0
+GENIE-DFCI-008353,Carboplatin,2,1,0
+GENIE-DFCI-008358,Carboplatin,1,1,0
+GENIE-DFCI-008397,Cisplatin,1,1,0
+GENIE-DFCI-008417,Carboplatin,1,1,0
+GENIE-DFCI-008421,Crizotinib,1,0,0
+GENIE-DFCI-008438,Cisplatin,1,1,0
+GENIE-DFCI-008438,Carboplatin,2,1,0
+GENIE-DFCI-008438,Docetaxel,3,0,0
+GENIE-DFCI-008438,Nivolumab,4,0,1
+GENIE-DFCI-008438,Gemcitabine Hydrochloride,5,0,0
+GENIE-DFCI-008438,Pemetrexed Disodium,6,0,0
+GENIE-DFCI-008438,Vinorelbine Tartrate,7,0,0
+GENIE-DFCI-008486,Carboplatin,1,1,0
+GENIE-DFCI-008486,Trastuzumab,2,1,1
+GENIE-DFCI-008486,Nivolumab,3,0,1
+GENIE-DFCI-008486,Nivolumab,4,0,1
+GENIE-DFCI-008486,Nivolumab,5,0,1
+GENIE-DFCI-008526,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-008538,Cisplatin,1,1,0
+GENIE-DFCI-008556,Carboplatin,1,1,0
+GENIE-DFCI-008569,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-008569,Carboplatin,2,1,0
+GENIE-DFCI-008569,Afatinib Dimaleate,3,1,0
+GENIE-DFCI-008569,Osimertinib,4,0,0
+GENIE-DFCI-008570,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-008574,Cisplatin,1,1,0
+GENIE-DFCI-008614,Cisplatin,1,1,0
+GENIE-DFCI-008614,Gefitinib,2,0,0
+GENIE-DFCI-008627,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-008635,Carboplatin,1,1,0
+GENIE-DFCI-008635,Nivolumab,2,0,1
+GENIE-DFCI-008635,Docetaxel,3,0,0
+GENIE-DFCI-008692,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-008692,Osimertinib,2,0,0
+GENIE-DFCI-008692,Carboplatin,3,1,0
+GENIE-DFCI-008699,Carboplatin,1,1,0
+GENIE-DFCI-008699,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-008705,Doxorubicin Hydrochloride,1,1,0
+GENIE-DFCI-008705,Tamoxifen Citrate,2,0,0
+GENIE-DFCI-008705,Letrozole,3,0,0
+GENIE-DFCI-008726,Investigational Drug,1,0,0
+GENIE-DFCI-008726,Investigational Drug,2,0,0
+GENIE-DFCI-008726,Brigatinib,3,0,0
+GENIE-DFCI-008726,Investigational Drug,4,0,0
+GENIE-DFCI-008726,Carboplatin,5,1,0
+GENIE-DFCI-008796,Atezolizumab,1,0,1
+GENIE-DFCI-008803,Carboplatin,1,1,0
+GENIE-DFCI-008803,Leucovorin Calcium,2,1,0
+GENIE-DFCI-008878,BCG Vaccine,1,0,0
+GENIE-DFCI-008878,BCG Vaccine,2,0,0
+GENIE-DFCI-008911,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-008911,Cisplatin,2,1,0
+GENIE-DFCI-008911,Carboplatin,3,1,0
+GENIE-DFCI-008911,Afatinib Dimaleate,4,0,0
+GENIE-DFCI-008921,Carboplatin,1,1,0
+GENIE-DFCI-008955,Cisplatin,1,1,0
+GENIE-DFCI-008955,Cisplatin,2,1,0
+GENIE-DFCI-008955,Carboplatin,3,1,0
+GENIE-DFCI-008955,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-008968,Cisplatin,1,1,0
+GENIE-DFCI-008968,Carboplatin,2,1,0
+GENIE-DFCI-008990,Carboplatin,1,1,0
+GENIE-DFCI-008990,Nivolumab,2,0,1
+GENIE-DFCI-008990,Carboplatin,3,1,0
+GENIE-DFCI-009041,Carboplatin,1,1,0
+GENIE-DFCI-009051,Other antineoplastic,1,0,0
+GENIE-DFCI-009059,Cisplatin,1,1,0
+GENIE-DFCI-009059,Nivolumab,2,0,1
+GENIE-DFCI-009059,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-009073,Carboplatin,1,1,0
+GENIE-DFCI-009075,Carboplatin,1,1,0
+GENIE-DFCI-009075,Neratinib,2,0,0
+GENIE-DFCI-009075,Pembrolizumab,3,0,1
+GENIE-DFCI-009075,Trastuzumab,4,1,1
+GENIE-DFCI-009075,Nivolumab,5,1,1
+GENIE-DFCI-009075,Afatinib Dimaleate,6,0,0
+GENIE-DFCI-009139,Carboplatin,1,1,0
+GENIE-DFCI-009139,Dabrafenib,2,1,0
+GENIE-DFCI-009142,Cisplatin,1,1,0
+GENIE-DFCI-009142,Carboplatin,2,1,0
+GENIE-DFCI-009142,Docetaxel,3,0,0
+GENIE-DFCI-009142,Nivolumab,4,0,1
+GENIE-DFCI-009173,Carboplatin,1,1,0
+GENIE-DFCI-009173,Carboplatin,2,1,0
+GENIE-DFCI-009211,Cisplatin,1,1,0
+GENIE-DFCI-009220,Carboplatin,1,1,0
+GENIE-DFCI-009220,Nivolumab,2,0,1
+GENIE-DFCI-009243,Carboplatin,1,1,0
+GENIE-DFCI-009289,Carboplatin,1,1,1
+GENIE-DFCI-009289,Docetaxel,2,0,0
+GENIE-DFCI-009289,Gemcitabine Hydrochloride,3,0,0
+GENIE-DFCI-009296,Carboplatin,1,1,1
+GENIE-DFCI-009296,Carboplatin,2,1,0
+GENIE-DFCI-009296,Docetaxel,3,0,0
+GENIE-DFCI-009296,Gemcitabine Hydrochloride,4,0,0
+GENIE-DFCI-009296,Vinorelbine Tartrate,5,0,0
+GENIE-DFCI-009309,Afatinib Dimaleate,1,0,0
+GENIE-DFCI-009309,Afatinib Dimaleate,2,1,0
+GENIE-DFCI-009309,Docetaxel,3,0,0
+GENIE-DFCI-009309,Atezolizumab,4,0,1
+GENIE-DFCI-009309,Carboplatin,5,1,0
+GENIE-DFCI-009309,Erlotinib Hydrochloride,6,0,0
+GENIE-DFCI-009309,Osimertinib,7,0,0
+GENIE-DFCI-009309,Carboplatin,8,1,0
+GENIE-DFCI-009324,Carboplatin,1,1,0
+GENIE-DFCI-009324,Nivolumab,2,0,1
+GENIE-DFCI-009324,Docetaxel,3,0,0
+GENIE-DFCI-009324,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-009434,Tamoxifen Citrate,1,0,0
+GENIE-DFCI-009434,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-009434,Carboplatin,3,1,0
+GENIE-DFCI-009434,Nivolumab,4,0,1
+GENIE-DFCI-009439,Other antineoplastic,1,0,0
+GENIE-DFCI-009439,Other antineoplastic,2,0,0
+GENIE-DFCI-009439,Tamoxifen Citrate,3,0,0
+GENIE-DFCI-009463,Carboplatin,1,0,0
+GENIE-DFCI-009475,Carboplatin,1,1,0
+GENIE-DFCI-009475,Nivolumab,2,0,1
+GENIE-DFCI-009475,Trastuzumab,3,1,1
+GENIE-DFCI-009475,Afatinib Dimaleate,4,0,0
+GENIE-DFCI-009511,Carboplatin,1,1,0
+GENIE-DFCI-009605,Cisplatin,1,1,1
+GENIE-DFCI-009605,Afatinib Dimaleate,2,0,0
+GENIE-DFCI-009605,Osimertinib,3,0,0
+GENIE-DFCI-009605,Osimertinib,4,1,0
+GENIE-DFCI-009605,Pemetrexed Disodium,5,1,1
+GENIE-DFCI-009605,Osimertinib,6,0,0
+GENIE-DFCI-009620,Vincristine Sulfate,1,1,0
+GENIE-DFCI-009620,Fluorouracil,2,1,0
+GENIE-DFCI-009620,Capecitabine,3,0,0
+GENIE-DFCI-009620,Nivolumab,4,0,1
+GENIE-DFCI-009620,Crizotinib,5,0,0
+GENIE-DFCI-009620,Alectinib,6,0,0
+GENIE-DFCI-009620,Brigatinib,7,0,0
+GENIE-DFCI-009630,Carboplatin,1,1,0
+GENIE-DFCI-009630,Carboplatin,2,1,0
+GENIE-DFCI-009630,Carboplatin,3,1,0
+GENIE-DFCI-009630,Pembrolizumab,4,0,1
+GENIE-DFCI-009649,Cisplatin,1,1,0
+GENIE-DFCI-009649,Carboplatin,2,1,0
+GENIE-DFCI-009738,Carboplatin,1,1,0
+GENIE-DFCI-009738,Carboplatin,2,1,0
+GENIE-DFCI-009738,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-009850,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-009890,Docetaxel,1,1,0
+GENIE-DFCI-009890,Carboplatin,2,1,0
+GENIE-DFCI-009890,Nivolumab,3,0,1
+GENIE-DFCI-009923,Carboplatin,1,1,0
+GENIE-DFCI-009970,Carboplatin,1,1,0
+GENIE-DFCI-009970,Nivolumab,2,0,1
+GENIE-DFCI-009970,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-009975,Carboplatin,1,1,1
+GENIE-DFCI-009975,Nivolumab,2,0,1
+GENIE-DFCI-009975,Carboplatin,3,1,0
+GENIE-DFCI-010013,Carboplatin,1,1,0
+GENIE-DFCI-010049,Carboplatin,1,1,0
+GENIE-DFCI-010065,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-010065,Carboplatin,2,1,1
+GENIE-DFCI-010065,Pemetrexed Disodium,3,1,1
+GENIE-DFCI-010065,Afatinib Dimaleate,4,0,0
+GENIE-DFCI-010071,Cisplatin,1,1,0
+GENIE-DFCI-010089,Paclitaxel,1,1,0
+GENIE-DFCI-010163,Cisplatin,1,1,0
+GENIE-DFCI-010163,Carboplatin,2,1,0
+GENIE-DFCI-010163,Pembrolizumab,3,0,1
+GENIE-DFCI-010239,Carboplatin,1,1,0
+GENIE-DFCI-010239,Carboplatin,1,1,0
+GENIE-DFCI-010239,Pembrolizumab,2,0,1
+GENIE-DFCI-010239,Pembrolizumab,2,0,1
+GENIE-DFCI-010256,Carboplatin,1,1,0
+GENIE-DFCI-010296,Doxorubicin Hydrochloride,1,1,0
+GENIE-DFCI-010296,Tamoxifen Citrate,2,0,0
+GENIE-DFCI-010296,Anastrozole,3,0,0
+GENIE-DFCI-010296,Carboplatin,4,1,1
+GENIE-DFCI-010311,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-010311,Vinorelbine Tartrate,2,1,0
+GENIE-DFCI-010311,Pemetrexed Disodium,3,1,0
+GENIE-DFCI-010314,Carboplatin,1,1,0
+GENIE-DFCI-010314,Crizotinib,2,0,0
+GENIE-DFCI-010314,Alectinib,3,0,0
+GENIE-DFCI-010355,Carboplatin,1,1,0
+GENIE-DFCI-010355,Investigational Drug,2,0,0
+GENIE-DFCI-010355,Crizotinib,3,0,0
+GENIE-DFCI-010355,Pembrolizumab,4,0,1
+GENIE-DFCI-010365,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-010365,Carboplatin,2,1,0
+GENIE-DFCI-010365,Osimertinib,3,0,0
+GENIE-DFCI-010365,Carboplatin,4,1,0
+GENIE-DFCI-010366,Osimertinib,1,0,0
+GENIE-DFCI-010390,Carboplatin,1,1,0
+GENIE-DFCI-010444,Carboplatin,1,1,0
+GENIE-DFCI-010444,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-010444,Osimertinib,3,0,0
+GENIE-DFCI-010444,Pembrolizumab,4,1,1
+GENIE-DFCI-010460,Carboplatin,1,1,0
+GENIE-DFCI-010460,Pembrolizumab,2,0,1
+GENIE-DFCI-010460,Docetaxel,3,0,0
+GENIE-DFCI-010460,Investigational Drug,4,1,1
+GENIE-DFCI-010501,Cisplatin,1,1,0
+GENIE-DFCI-010501,Carboplatin,2,1,0
+GENIE-DFCI-010501,Carboplatin,3,1,0
+GENIE-DFCI-010501,Pembrolizumab,4,0,1
+GENIE-DFCI-010513,Cisplatin,1,1,0
+GENIE-DFCI-010513,Nivolumab,2,0,1
+GENIE-DFCI-010537,Carboplatin,1,1,0
+GENIE-DFCI-010537,Cisplatin,2,1,0
+GENIE-DFCI-010537,Nivolumab,3,0,1
+GENIE-DFCI-010564,Cyclophosphamide,1,1,0
+GENIE-DFCI-010564,Anastrozole,2,0,0
+GENIE-DFCI-010564,Carboplatin,3,1,1
+GENIE-DFCI-010600,Letrozole,1,0,0
+GENIE-DFCI-010656,Cisplatin,1,1,0
+GENIE-DFCI-010667,Cisplatin,1,1,0
+GENIE-DFCI-010714,Carboplatin,1,1,0
+GENIE-DFCI-010744,Carboplatin,1,1,0
+GENIE-DFCI-010780,Gemcitabine Hydrochloride,1,1,0
+GENIE-DFCI-010780,Docetaxel,2,0,0
+GENIE-DFCI-010780,Docetaxel,3,0,0
+GENIE-DFCI-010780,Temozolomide,4,0,0
+GENIE-DFCI-010780,Cisplatin,5,0,0
+GENIE-DFCI-010780,Doxorubicin Hydrochloride,6,0,0
+GENIE-DFCI-010780,Nivolumab,7,0,1
+GENIE-DFCI-010856,Cisplatin,1,1,0
+GENIE-DFCI-010856,Nivolumab,2,0,1
+GENIE-DFCI-010856,Docetaxel,3,0,0
+GENIE-DFCI-010856,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-010856,Gemcitabine Hydrochloride,5,0,0
+GENIE-DFCI-010894,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-010894,Osimertinib,2,0,0
+GENIE-DFCI-010914,Carboplatin,1,1,0
+GENIE-DFCI-010920,Carboplatin,1,1,1
+GENIE-DFCI-010920,Crizotinib,2,0,0
+GENIE-DFCI-010920,Investigational Drug,3,0,0
+GENIE-DFCI-010920,Pemetrexed Disodium,4,1,1
+GENIE-DFCI-010965,Carboplatin,1,1,0
+GENIE-DFCI-010965,Crizotinib,2,0,0
+GENIE-DFCI-010965,Alectinib,3,0,0
+GENIE-DFCI-010966,Cisplatin,1,1,0
+GENIE-DFCI-011007,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-011032,Carboplatin,1,1,0
+GENIE-DFCI-011032,Docetaxel,2,0,0
+GENIE-DFCI-011032,Nivolumab,3,0,1
+GENIE-DFCI-011042,Paclitaxel,1,0,0
+GENIE-DFCI-011042,Carboplatin,2,1,0
+GENIE-DFCI-011042,Nivolumab,3,0,1
+GENIE-DFCI-011042,Gemcitabine Hydrochloride,4,0,0
+GENIE-DFCI-011075,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-011075,Navitoclax,2,1,0
+GENIE-DFCI-011075,Osimertinib,3,1,1
+GENIE-DFCI-011107,Cisplatin,1,1,0
+GENIE-DFCI-011107,Cisplatin,2,1,0
+GENIE-DFCI-011107,Investigational Drug,3,1,1
+GENIE-DFCI-011107,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-011107,Investigational Drug,5,0,0
+GENIE-DFCI-011116,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-011116,Osimertinib,2,0,0
+GENIE-DFCI-011116,Carboplatin,3,1,0
+GENIE-DFCI-011141,Carboplatin,1,1,0
+GENIE-DFCI-011141,Pembrolizumab,2,0,1
+GENIE-DFCI-011149,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-011149,Osimertinib,2,0,0
+GENIE-DFCI-011152,Cisplatin,1,1,0
+GENIE-DFCI-011152,Carboplatin,2,1,0
+GENIE-DFCI-011152,Nivolumab,3,0,1
+GENIE-DFCI-011188,Cisplatin,1,1,0
+GENIE-DFCI-011188,Nivolumab,2,0,1
+GENIE-DFCI-011193,Cisplatin,1,0,0
+GENIE-DFCI-011193,Vinorelbine Tartrate,2,0,0
+GENIE-DFCI-011193,Pemetrexed Disodium,3,1,1
+GENIE-DFCI-011193,Pembrolizumab,4,0,1
+GENIE-DFCI-011195,Cisplatin,1,1,0
+GENIE-DFCI-011195,Atezolizumab,2,0,1
+GENIE-DFCI-011195,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-011253,Bleomycin,1,1,0
+GENIE-DFCI-011253,Etoposide,2,1,0
+GENIE-DFCI-011272,Carboplatin,1,1,0
+GENIE-DFCI-011273,Carboplatin,1,1,0
+GENIE-DFCI-011355,Osimertinib,1,0,0
+GENIE-DFCI-011371,Cisplatin,1,1,0
+GENIE-DFCI-011371,Carboplatin,2,1,0
+GENIE-DFCI-011375,Carboplatin,1,1,0
+GENIE-DFCI-011383,Carboplatin,1,1,0
+GENIE-DFCI-011434,Cisplatin,1,1,0
+GENIE-DFCI-011434,Nivolumab,2,0,1
+GENIE-DFCI-011446,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-011446,Osimertinib,2,0,0
+GENIE-DFCI-011446,Investigational Drug,3,0,0
+GENIE-DFCI-011446,Carboplatin,4,1,0
+GENIE-DFCI-011446,Pembrolizumab,5,1,1
+GENIE-DFCI-011446,Carboplatin,6,1,0
+GENIE-DFCI-011487,Carboplatin,1,1,0
+GENIE-DFCI-011511,Carboplatin,1,1,0
+GENIE-DFCI-011511,Nivolumab,2,0,1
+GENIE-DFCI-011511,Docetaxel,3,1,0
+GENIE-DFCI-011511,Docetaxel,4,1,0
+GENIE-DFCI-011579,Letrozole,1,0,0
+GENIE-DFCI-011589,Cisplatin,1,1,0
+GENIE-DFCI-011705,Cisplatin,1,1,0
+GENIE-DFCI-011705,Cisplatin,2,1,0
+GENIE-DFCI-012964,Gemcitabine Hydrochloride,1,1,0
+GENIE-DFCI-013119,Carboplatin,1,1,0
+GENIE-DFCI-013119,Pembrolizumab,2,0,1
+GENIE-DFCI-013119,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-013119,Pembrolizumab,4,0,1
+GENIE-DFCI-013119,Investigational Drug,5,0,0
+GENIE-DFCI-015198,Cisplatin,1,1,0
+GENIE-DFCI-021668,Cisplatin,1,1,0
+GENIE-DFCI-021668,Pembrolizumab,2,0,1
+GENIE-DFCI-021668,Investigational Drug,3,0,0
+GENIE-DFCI-021668,Investigational Drug,4,0,0
+GENIE-DFCI-021668,Investigational Drug,5,1,0
+GENIE-DFCI-022473,Cisplatin,1,1,0
+GENIE-DFCI-022473,Carboplatin,2,1,0
+GENIE-DFCI-023680,Nivolumab,1,1,1
+GENIE-DFCI-023680,Carboplatin,2,1,0
+GENIE-DFCI-023680,Atezolizumab,3,1,1
+GENIE-DFCI-023715,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-023715,Osimertinib,2,0,0
+GENIE-DFCI-023715,Osimertinib,3,1,0
+GENIE-DFCI-023753,Carboplatin,1,1,0
+GENIE-DFCI-023753,Pembrolizumab,2,0,1
+GENIE-DFCI-023754,Cisplatin,1,1,0
+GENIE-DFCI-023764,Carboplatin,1,1,0
+GENIE-DFCI-024068,Carboplatin,1,1,0
+GENIE-DFCI-024068,Nivolumab,2,0,1
+GENIE-DFCI-024181,Cisplatin,1,1,0
+GENIE-DFCI-024377,Carboplatin,1,1,0
+GENIE-DFCI-024377,Carboplatin,2,1,1
+GENIE-DFCI-024377,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-024693,Pemetrexed Disodium,1,0,0
+GENIE-DFCI-024693,Nivolumab,2,0,1
+GENIE-DFCI-024693,Docetaxel,3,0,0
+GENIE-DFCI-024693,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-024726,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-024726,Investigational Drug,2,0,0
+GENIE-DFCI-024726,Carboplatin,3,1,0
+GENIE-DFCI-024726,Erlotinib Hydrochloride,4,0,0
+GENIE-DFCI-024772,Anastrozole,1,0,0
+GENIE-DFCI-024937,Carboplatin,1,1,0
+GENIE-DFCI-025744,Docetaxel,1,1,0
+GENIE-DFCI-025744,Cisplatin,2,1,0
+GENIE-DFCI-025744,Carboplatin,3,1,0
+GENIE-DFCI-025744,Pembrolizumab,4,0,1
+GENIE-DFCI-025878,Cisplatin,1,1,0
+GENIE-DFCI-025878,Carboplatin,2,1,0
+GENIE-DFCI-025937,Cisplatin,1,1,0
+GENIE-DFCI-026075,Cisplatin,1,1,0
+GENIE-DFCI-026566,Carboplatin,1,1,0
+GENIE-DFCI-026566,Pembrolizumab,2,0,1
+GENIE-DFCI-026566,Docetaxel,3,1,0
+GENIE-DFCI-026566,Investigational Drug,4,0,0
+GENIE-DFCI-026750,Nivolumab,1,1,1
+GENIE-DFCI-026750,Carboplatin,2,1,0
+GENIE-DFCI-026839,Carboplatin,1,1,1
+GENIE-DFCI-026839,Carboplatin,2,1,1
+GENIE-DFCI-027034,Cisplatin,1,1,0
+GENIE-DFCI-027034,Bevacizumab,2,0,1
+GENIE-DFCI-027217,Cisplatin,1,1,0
+GENIE-DFCI-027217,Pembrolizumab,2,0,1
+GENIE-DFCI-027377,Carboplatin,1,1,0
+GENIE-DFCI-027491,BCG Vaccine,1,0,0
+GENIE-DFCI-027491,Mitomycin,2,0,0
+GENIE-DFCI-027491,Methotrexate,3,1,0
+GENIE-DFCI-027678,Cisplatin,1,1,0
+GENIE-DFCI-027678,Docetaxel,2,0,0
+GENIE-DFCI-027678,Trastuzumab,3,1,1
+GENIE-DFCI-027678,Afatinib Dimaleate,4,0,0
+GENIE-DFCI-027678,Nivolumab,5,0,1
+GENIE-DFCI-027993,Cisplatin,1,1,0
+GENIE-DFCI-027993,Carboplatin,2,1,0
+GENIE-DFCI-029716,Carboplatin,1,1,0
+GENIE-DFCI-029716,Cisplatin,2,1,0
+GENIE-DFCI-029716,Nivolumab,3,0,1
+GENIE-DFCI-029716,Carboplatin,4,1,0
+GENIE-DFCI-029716,Pembrolizumab,5,1,1
+GENIE-DFCI-031932,Cisplatin,1,1,0
+GENIE-DFCI-031932,Ipilimumab,2,1,1
+GENIE-DFCI-032017,Letrozole,1,0,0
+GENIE-DFCI-032021,Pemetrexed Disodium,1,0,0
+GENIE-DFCI-032037,Carboplatin,1,1,0
+GENIE-DFCI-032806,Cisplatin,1,1,0
+GENIE-DFCI-033743,Carboplatin,1,1,0
+GENIE-DFCI-033743,Atezolizumab,2,1,1
+GENIE-DFCI-033743,Docetaxel,3,0,0
+GENIE-DFCI-034156,Carboplatin,1,1,0
+GENIE-DFCI-034156,Nivolumab,2,0,1
+GENIE-DFCI-034156,Nivolumab,3,1,1
+GENIE-DFCI-034904,Carboplatin,1,1,0
+GENIE-DFCI-034904,Nivolumab,2,0,1
+GENIE-DFCI-034904,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-034904,Investigational Drug,4,1,0
+GENIE-DFCI-035274,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-035274,Carboplatin,2,1,0
+GENIE-DFCI-035274,Afatinib Dimaleate,3,0,0
+GENIE-DFCI-035504,Cisplatin,1,1,0
+GENIE-DFCI-035504,Nivolumab,2,0,1
+GENIE-DFCI-035504,Docetaxel,3,0,0
+GENIE-DFCI-035504,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-035851,Carboplatin,1,1,0
+GENIE-DFCI-035851,Nivolumab,2,0,1
+GENIE-DFCI-035851,Ipilimumab,3,1,1
+GENIE-DFCI-036418,Cisplatin,1,1,0
+GENIE-DFCI-036418,Pembrolizumab,2,0,1
+GENIE-DFCI-036418,Docetaxel,3,1,0
+GENIE-DFCI-036418,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-036430,Cisplatin,1,1,0
+GENIE-DFCI-036430,Carboplatin,2,1,1
+GENIE-DFCI-036430,Cisplatin,3,1,0
+GENIE-DFCI-036430,Carboplatin,4,1,0
+GENIE-DFCI-036430,Carboplatin,5,1,0
+GENIE-DFCI-036430,Nivolumab,6,0,1
+GENIE-DFCI-036430,Vinorelbine Tartrate,7,0,0
+GENIE-DFCI-036430,Docetaxel,8,0,0
+GENIE-DFCI-036430,Gemcitabine Hydrochloride,9,0,0
+GENIE-DFCI-036434,Carboplatin,1,1,0
+GENIE-DFCI-036434,Nivolumab,2,0,1
+GENIE-DFCI-036438,Carboplatin,1,1,0
+GENIE-DFCI-036438,Docetaxel,2,0,0
+GENIE-DFCI-036438,Nivolumab,3,0,1
+GENIE-DFCI-036452,Cisplatin,1,1,0
+GENIE-DFCI-036452,Carboplatin,2,1,0
+GENIE-DFCI-036465,Alectinib,1,0,0
+GENIE-DFCI-036465,Carboplatin,2,1,0
+GENIE-DFCI-036465,Pembrolizumab,3,0,1
+GENIE-DFCI-036465,Brigatinib,4,0,0
+GENIE-DFCI-036465,Carboplatin,5,1,1
+GENIE-DFCI-036499,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-036499,Nivolumab,2,0,1
+GENIE-DFCI-036511,Ipilimumab,1,1,1
+GENIE-DFCI-036511,Carboplatin,2,1,0
+GENIE-DFCI-036537,Carboplatin,1,1,0
+GENIE-DFCI-036537,Carboplatin,2,1,1
+GENIE-DFCI-036537,Nivolumab,3,0,1
+GENIE-DFCI-036537,Gemcitabine Hydrochloride,4,0,0
+GENIE-DFCI-036548,Carboplatin,1,1,0
+GENIE-DFCI-036548,Nivolumab,2,0,1
+GENIE-DFCI-036553,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-036619,Pembrolizumab,1,0,1
+GENIE-DFCI-036632,Cisplatin,1,1,0
+GENIE-DFCI-036632,Carboplatin,2,1,0
+GENIE-DFCI-036632,Durvalumab,3,0,1
+GENIE-DFCI-036659,Cisplatin,1,1,0
+GENIE-DFCI-036659,Cisplatin,2,1,0
+GENIE-DFCI-036802,Cisplatin,1,1,0
+GENIE-DFCI-036802,Cisplatin,2,1,0
+GENIE-DFCI-036802,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-036820,Carboplatin,1,1,0
+GENIE-DFCI-036820,Pembrolizumab,2,0,1
+GENIE-DFCI-036820,Docetaxel,3,0,0
+GENIE-DFCI-036820,Pemetrexed Disodium,4,1,0
+GENIE-DFCI-036829,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-036845,Pembrolizumab,1,0,1
+GENIE-DFCI-036845,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-036852,Carboplatin,1,1,0
+GENIE-DFCI-036852,Nivolumab,2,0,1
+GENIE-DFCI-036852,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-036927,Carboplatin,1,1,0
+GENIE-DFCI-036931,Pembrolizumab,1,0,1
+GENIE-DFCI-037043,Cisplatin,1,1,0
+GENIE-DFCI-037043,Nivolumab,2,0,1
+GENIE-DFCI-037051,Carboplatin,1,1,0
+GENIE-DFCI-037068,Pembrolizumab,1,0,1
+GENIE-DFCI-037068,Carboplatin,2,1,0
+GENIE-DFCI-037068,Investigational Drug,3,1,0
+GENIE-DFCI-037068,Docetaxel,4,0,0
+GENIE-DFCI-037068,Vinorelbine Tartrate,5,0,0
+GENIE-DFCI-037068,Gemcitabine Hydrochloride,6,0,0
+GENIE-DFCI-037068,Pembrolizumab,7,0,1
+GENIE-DFCI-037184,Tamoxifen Citrate,1,0,0
+GENIE-DFCI-037196,Carboplatin,1,1,0
+GENIE-DFCI-037245,Carboplatin,1,1,0
+GENIE-DFCI-037245,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-037245,Nivolumab,3,0,1
+GENIE-DFCI-037262,Carboplatin,1,1,0
+GENIE-DFCI-037262,Crizotinib,2,0,0
+GENIE-DFCI-037405,Carboplatin,1,1,0
+GENIE-DFCI-037501,Carboplatin,1,1,0
+GENIE-DFCI-037501,Nivolumab,2,0,1
+GENIE-DFCI-037602,Carboplatin,1,1,0
+GENIE-DFCI-037602,Docetaxel,2,0,0
+GENIE-DFCI-037602,Palbociclib,3,1,0
+GENIE-DFCI-037602,Olaparib,4,0,0
+GENIE-DFCI-037602,Atezolizumab,5,0,1
+GENIE-DFCI-037671,Cisplatin,1,1,0
+GENIE-DFCI-037675,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-037682,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-037708,Carboplatin,1,1,0
+GENIE-DFCI-037708,Nivolumab,2,1,1
+GENIE-DFCI-037755,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-037760,Cyclophosphamide,1,1,0
+GENIE-DFCI-037760,Anastrozole,2,0,0
+GENIE-DFCI-037800,Carboplatin,1,1,0
+GENIE-DFCI-037800,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-037800,Pembrolizumab,3,0,1
+GENIE-DFCI-037804,Carboplatin,1,1,0
+GENIE-DFCI-037817,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-037817,Osimertinib,2,0,0
+GENIE-DFCI-037817,Carboplatin,3,1,1
+GENIE-DFCI-037817,Osimertinib,4,1,0
+GENIE-DFCI-037817,Investigational Drug,5,0,0
+GENIE-DFCI-037817,Pembrolizumab,6,0,1
+GENIE-DFCI-037817,Osimertinib,7,0,0
+GENIE-DFCI-037921,Crizotinib,1,0,0
+GENIE-DFCI-037985,Cisplatin,1,1,0
+GENIE-DFCI-038021,Carboplatin,1,1,0
+GENIE-DFCI-038021,Pembrolizumab,2,0,1
+GENIE-DFCI-038028,Carboplatin,1,1,0
+GENIE-DFCI-038028,Investigational Drug,2,0,0
+GENIE-DFCI-038272,Carboplatin,1,1,1
+GENIE-DFCI-038272,Carboplatin,1,1,1
+GENIE-DFCI-038272,Letrozole,2,1,1
+GENIE-DFCI-038272,Carboplatin,3,1,0
+GENIE-DFCI-038272,Pegylated Liposomal Doxorubicin Hydrochloride,4,0,0
+GENIE-DFCI-038272,Pemetrexed Disodium,5,0,0
+GENIE-DFCI-038272,Pembrolizumab,6,0,1
+GENIE-DFCI-038728,Nivolumab,1,1,1
+GENIE-DFCI-038728,Nivolumab,2,0,1
+GENIE-DFCI-038728,Carboplatin,3,1,0
+GENIE-DFCI-038728,Investigational Drug,4,1,0
+GENIE-DFCI-038728,Nabpaclitaxel,5,0,0
+GENIE-DFCI-038728,Investigational Drug,6,0,0
+GENIE-DFCI-038728,Investigational Drug,7,0,0
+GENIE-DFCI-038938,Pembrolizumab,1,0,1
+GENIE-DFCI-038948,Crizotinib,1,0,0
+GENIE-DFCI-038948,Nivolumab,2,0,1
+GENIE-DFCI-039194,Doxorubicin Hydrochloride,1,1,0
+GENIE-DFCI-039194,Paclitaxel,2,0,0
+GENIE-DFCI-039194,Tamoxifen Citrate,3,0,0
+GENIE-DFCI-039194,Letrozole,4,0,0
+GENIE-DFCI-039194,Carboplatin,5,1,0
+GENIE-DFCI-039428,Paclitaxel,1,0,0
+GENIE-DFCI-039428,Doxorubicin Hydrochloride,2,1,0
+GENIE-DFCI-040919,Carboplatin,1,1,0
+GENIE-DFCI-040919,Cisplatin,2,1,0
+GENIE-DFCI-040919,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-041388,Carboplatin,1,1,0
+GENIE-DFCI-041565,Carboplatin,1,1,0
+GENIE-DFCI-041565,Carboplatin,2,1,0
+GENIE-DFCI-042509,Carboplatin,1,1,0
+GENIE-DFCI-043684,Letrozole,1,0,0
+GENIE-DFCI-043684,Letrozole,1,0,0
+GENIE-DFCI-046105,Cisplatin,1,1,0
+GENIE-DFCI-046105,Carboplatin,2,1,0
+GENIE-DFCI-046105,Investigational Drug,3,1,0
+GENIE-DFCI-046105,Investigational Drug,4,1,0
+GENIE-DFCI-046105,Nivolumab,5,0,1
+GENIE-DFCI-046105,Investigational Drug,6,0,0
+GENIE-DFCI-047949,Carboplatin,1,1,1
+GENIE-DFCI-047949,Vinorelbine Tartrate,2,0,0
+GENIE-DFCI-048905,Carboplatin,1,1,0
+GENIE-DFCI-049429,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-049429,Osimertinib,2,0,0
+GENIE-DFCI-049429,Carboplatin,3,1,0
+GENIE-DFCI-049429,Pemetrexed Disodium,4,1,0
+GENIE-DFCI-049429,Osimertinib,5,1,1
+GENIE-DFCI-049429,Nivolumab,6,0,1
+GENIE-DFCI-050714,Carboplatin,1,1,0
+GENIE-DFCI-050714,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-050714,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-050717,Carboplatin,1,1,0
+GENIE-DFCI-050717,Gemcitabine Hydrochloride,2,1,0
+GENIE-DFCI-050785,Pembrolizumab,1,0,1
+GENIE-DFCI-050785,Carboplatin,2,1,0
+GENIE-DFCI-050802,Cisplatin,1,1,0
+GENIE-DFCI-050802,Cisplatin,2,1,0
+GENIE-DFCI-050802,Carboplatin,3,1,0
+GENIE-DFCI-051008,Cisplatin,1,1,0
+GENIE-DFCI-051025,Pembrolizumab,1,0,1
+GENIE-DFCI-051025,Dabrafenib,2,1,0
+GENIE-DFCI-051025,Carboplatin,3,1,0
+GENIE-DFCI-051156,Cisplatin,1,1,0
+GENIE-DFCI-051156,Carboplatin,2,1,0
+GENIE-DFCI-051170,Osimertinib,1,1,0
+GENIE-DFCI-051173,Carboplatin,1,1,0
+GENIE-DFCI-051173,Atezolizumab,2,0,1
+GENIE-DFCI-051173,Pembrolizumab,3,0,1
+GENIE-DFCI-051178,Pembrolizumab,1,0,1
+GENIE-DFCI-051192,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-051192,Pemetrexed Disodium,2,1,0
+GENIE-DFCI-051199,Cisplatin,1,1,0
+GENIE-DFCI-051199,Other NOS,2,0,0
+GENIE-DFCI-051199,Carboplatin,3,1,0
+GENIE-DFCI-051223,Pembrolizumab,1,0,1
+GENIE-DFCI-051223,Cisplatin,2,1,0
+GENIE-DFCI-051223,Gemcitabine Hydrochloride,3,0,0
+GENIE-DFCI-051231,Carboplatin,1,1,0
+GENIE-DFCI-051231,Nivolumab,2,0,1
+GENIE-DFCI-051231,Docetaxel,3,0,0
+GENIE-DFCI-051231,Gemcitabine Hydrochloride,4,0,0
+GENIE-DFCI-051363,Anastrozole,1,0,0
+GENIE-DFCI-051363,Tamoxifen Citrate,2,0,0
+GENIE-DFCI-052146,Crizotinib,1,0,0
+GENIE-DFCI-052755,Cisplatin,1,1,0
+GENIE-DFCI-052781,Pembrolizumab,1,0,1
+GENIE-DFCI-053156,Gemcitabine Hydrochloride,1,1,0
+GENIE-DFCI-053165,Gemcitabine Hydrochloride,1,1,0
+GENIE-DFCI-053214,Investigational Drug,1,1,0
+GENIE-DFCI-053444,Cisplatin,1,1,0
+GENIE-DFCI-053444,Everolimus,2,0,0
+GENIE-DFCI-053444,Temozolomide,3,1,0
+GENIE-DFCI-053461,Cisplatin,1,1,0
+GENIE-DFCI-053461,Nivolumab,2,0,1
+GENIE-DFCI-053482,Carboplatin,1,1,1
+GENIE-DFCI-053482,Investigational Drug,2,1,0
+GENIE-DFCI-077267,Cisplatin,1,1,0
+GENIE-DFCI-077267,Cisplatin,2,1,0
+GENIE-DFCI-077966,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-077966,Osimertinib,2,0,0
+GENIE-DFCI-077966,Carboplatin,3,1,0
+GENIE-DFCI-077966,Pembrolizumab,4,0,1
+GENIE-DFCI-078051,Paclitaxel,1,0,0
+GENIE-DFCI-078051,Cisplatin,2,1,0
+GENIE-DFCI-078051,Investigational Drug,3,0,0
+GENIE-DFCI-078051,Crizotinib,4,0,0
+GENIE-DFCI-078051,Ceritinib,5,0,0
+GENIE-DFCI-078202,Pembrolizumab,1,0,1
+GENIE-DFCI-078202,Carboplatin,2,1,0
+GENIE-DFCI-078424,Imatinib Mesylate,1,0,0
+GENIE-DFCI-078645,Pembrolizumab,1,0,1
+GENIE-DFCI-078645,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-078645,Pemetrexed Disodium,3,0,0
+GENIE-DFCI-078645,Osimertinib,4,0,0
+GENIE-DFCI-078801,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-080759,Carboplatin,1,1,0
+GENIE-DFCI-081731,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-081731,Osimertinib,2,0,0
+GENIE-DFCI-081731,Investigational Drug,3,0,0
+GENIE-DFCI-081731,Osimertinib,4,0,0
+GENIE-DFCI-081731,Carboplatin,5,1,0
+GENIE-DFCI-084364,Lanreotide Acetate,1,0,0
+GENIE-DFCI-084697,Carboplatin,1,1,0
+GENIE-DFCI-084697,Pembrolizumab,2,0,1
+GENIE-DFCI-084697,Gemcitabine Hydrochloride,3,0,0
+GENIE-DFCI-084697,Docetaxel,4,0,0
+GENIE-DFCI-084807,Other NOS,1,0,0
+GENIE-DFCI-084807,Pembrolizumab,2,0,1
+GENIE-DFCI-086084,Carboplatin,1,1,0
+GENIE-DFCI-086084,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-086084,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-086084,Osimertinib,4,0,0
+GENIE-DFCI-087093,Carboplatin,1,1,0
+GENIE-DFCI-087093,Erlotinib Hydrochloride,2,0,0
+GENIE-DFCI-087093,Osimertinib,3,0,0
+GENIE-DFCI-087093,Carboplatin,4,1,0
+GENIE-DFCI-087093,Osimertinib,5,1,0
+GENIE-DFCI-087881,Carboplatin,1,1,0
+GENIE-DFCI-087881,Pembrolizumab,2,0,1
+GENIE-DFCI-088313,Cisplatin,1,1,0
+GENIE-DFCI-088313,Carboplatin,2,1,0
+GENIE-DFCI-088313,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-088313,Osimertinib,4,0,0
+GENIE-DFCI-088313,Vinorelbine Tartrate,5,1,0
+GENIE-DFCI-088558,Cisplatin,1,1,0
+GENIE-DFCI-088558,Nivolumab,2,1,1
+GENIE-DFCI-089149,Carboplatin,1,1,0
+GENIE-DFCI-089149,Pembrolizumab,2,0,1
+GENIE-DFCI-089149,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-089149,Nivolumab,4,0,1
+GENIE-DFCI-089200,Carboplatin,1,1,0
+GENIE-DFCI-089200,Investigational Drug,2,0,0
+GENIE-DFCI-089200,Crizotinib,3,0,0
+GENIE-DFCI-089200,Investigational Drug,4,0,0
+GENIE-DFCI-089256,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-089256,Osimertinib,2,1,0
+GENIE-DFCI-089256,Dabrafenib,3,1,0
+GENIE-DFCI-089256,Carboplatin,4,1,0
+GENIE-DFCI-089256,Osimertinib,5,0,0
+GENIE-DFCI-089430,Cisplatin,1,1,0
+GENIE-DFCI-089430,Cisplatin,2,1,0
+GENIE-DFCI-089507,Carboplatin,1,1,1
+GENIE-DFCI-089507,Pemetrexed Disodium,2,0,0
+GENIE-DFCI-089507,Gemcitabine Hydrochloride,3,0,0
+GENIE-DFCI-089507,Atezolizumab,4,0,1
+GENIE-DFCI-089523,Cisplatin,1,1,0
+GENIE-DFCI-089523,Pembrolizumab,2,0,1
+GENIE-DFCI-089713,Gemcitabine Hydrochloride,1,1,0
+GENIE-DFCI-089713,Nivolumab,2,0,1
+GENIE-DFCI-089713,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-089713,Osimertinib,4,1,1
+GENIE-DFCI-089765,BCG Solution,1,0,0
+GENIE-DFCI-089765,Carboplatin,2,1,0
+GENIE-DFCI-089765,Atezolizumab,3,0,1
+GENIE-DFCI-089878,Carboplatin,1,1,0
+GENIE-DFCI-089970,Carboplatin,1,1,0
+GENIE-DFCI-089970,Pembrolizumab,2,0,1
+GENIE-DFCI-089970,Vinorelbine Tartrate,3,0,0
+GENIE-DFCI-089970,Carboplatin,4,1,0
+GENIE-DFCI-090152,Etoposide,1,1,0
+GENIE-DFCI-090152,Pembrolizumab,2,0,1
+GENIE-DFCI-090152,Pemetrexed Disodium,3,1,0
+GENIE-DFCI-090152,Investigational Drug,4,0,0
+GENIE-DFCI-090156,Cisplatin,1,1,0
+GENIE-DFCI-090159,Carboplatin,1,1,0
+GENIE-DFCI-090170,Alectinib,1,0,0
+GENIE-DFCI-090179,Pembrolizumab,1,0,1
+GENIE-DFCI-090179,Carboplatin,2,1,0
+GENIE-DFCI-090238,Cyclophosphamide,1,1,0
+GENIE-DFCI-090238,Afatinib Dimaleate,2,0,0
+GENIE-DFCI-090238,Osimertinib,3,0,0
+GENIE-DFCI-090470,Cisplatin,1,1,0
+GENIE-DFCI-090470,Carboplatin,2,1,0
+GENIE-DFCI-090470,Durvalumab,3,0,1
+GENIE-DFCI-090492,Pemetrexed Disodium,1,1,0
+GENIE-DFCI-090529,Pembrolizumab,1,0,1
+GENIE-DFCI-090809,Cisplatin,1,1,0
+GENIE-DFCI-090809,Cisplatin,1,1,0
+GENIE-DFCI-090809,Carboplatin,2,1,0
+GENIE-DFCI-090809,Carboplatin,2,1,0
+GENIE-DFCI-090831,Cisplatin,1,1,0
+GENIE-DFCI-090904,Carboplatin,1,1,0
+GENIE-DFCI-090904,Carboplatin,2,1,1
+GENIE-DFCI-091156,Carboplatin,1,1,0
+GENIE-DFCI-091173,Pembrolizumab,1,0,1
+GENIE-DFCI-091175,Pembrolizumab,1,0,1
+GENIE-DFCI-091176,Imatinib Mesylate,1,0,0
+GENIE-DFCI-091176,Dasatinib,2,1,0
+GENIE-DFCI-091338,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-091338,Osimertinib,2,0,0
+GENIE-DFCI-091338,Pemetrexed Disodium,3,1,1
+GENIE-DFCI-091338,Ipilimumab,4,1,1
+GENIE-DFCI-091338,Osimertinib,5,0,0
+GENIE-DFCI-091338,Osimertinib,6,1,1
+GENIE-DFCI-091338,Investigational Drug,7,0,0
+GENIE-DFCI-091338,Docetaxel,8,1,1
+GENIE-DFCI-091465,Cisplatin,1,1,0
+GENIE-DFCI-091465,Carboplatin,2,1,0
+GENIE-DFCI-091465,Trastuzumab Emtansine,3,0,1
+GENIE-DFCI-091465,Investigational Drug,4,1,1
+GENIE-DFCI-091529,Carboplatin,1,1,0
+GENIE-DFCI-091839,Crizotinib,1,0,0
+GENIE-DFCI-091839,Investigational Drug,2,0,0
+GENIE-DFCI-091864,Carboplatin,1,1,0
+GENIE-DFCI-091864,Alectinib,2,0,0
+GENIE-DFCI-091864,Brigatinib,3,0,0
+GENIE-DFCI-091864,Investigational Drug,4,0,0
+GENIE-DFCI-091864,Carboplatin,5,1,1
+GENIE-DFCI-091884,Pembrolizumab,1,0,1
+GENIE-DFCI-091890,Cisplatin,1,1,0
+GENIE-DFCI-091890,Carboplatin,2,1,0
+GENIE-DFCI-091890,Atezolizumab,3,1,1
+GENIE-DFCI-092217,Carboplatin,1,1,1
+GENIE-DFCI-092217,Investigational Drug,2,0,0
+GENIE-DFCI-092217,Afatinib Dimaleate,3,0,0
+GENIE-DFCI-092267,Carboplatin,1,1,0
+GENIE-DFCI-092626,Vinorelbine Tartrate,1,0,0
+GENIE-DFCI-092626,Pembrolizumab,2,0,1
+GENIE-DFCI-092839,Carboplatin,1,1,0
+GENIE-DFCI-093210,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-093210,Osimertinib,2,0,0
+GENIE-DFCI-093519,Cisplatin,1,1,0
+GENIE-DFCI-093519,Carboplatin,2,1,0
+GENIE-DFCI-094760,Carboplatin,1,1,0
+GENIE-DFCI-095290,Carboplatin,1,1,0
+GENIE-DFCI-095290,Osimertinib,2,0,0
+GENIE-DFCI-095812,Cisplatin,1,1,0
+GENIE-DFCI-095812,Pembrolizumab,2,0,1
+GENIE-DFCI-095916,Carboplatin,1,1,1
+GENIE-DFCI-095916,Crizotinib,2,0,0
+GENIE-DFCI-095916,Investigational Drug,3,0,0
+GENIE-DFCI-096914,Pemetrexed Disodium,1,1,1
+GENIE-DFCI-097418,Cisplatin,1,1,0
+GENIE-DFCI-097418,Cisplatin,1,1,0
+GENIE-DFCI-097693,Cisplatin,1,1,0
+GENIE-DFCI-097693,Carboplatin,2,1,0
+GENIE-DFCI-097821,Cisplatin,1,1,0
+GENIE-DFCI-097821,Alectinib,2,0,0
+GENIE-DFCI-097821,Investigational Drug,3,0,0
+GENIE-DFCI-097821,Pembrolizumab,4,0,1
+GENIE-DFCI-097823,Lanreotide Acetate,1,0,0
+GENIE-DFCI-097823,Oxaliplatin,2,1,0
+GENIE-DFCI-097823,Cisplatin,3,1,0
+GENIE-DFCI-097981,Carboplatin,1,1,0
+GENIE-DFCI-097981,Carboplatin,2,1,0
+GENIE-DFCI-097981,Cisplatin,3,0,0
+GENIE-DFCI-097981,Carboplatin,4,1,0
+GENIE-DFCI-097981,Investigational Drug,5,0,0
+GENIE-DFCI-097981,Pembrolizumab,6,0,1
+GENIE-DFCI-098574,Carboplatin,1,1,0
+GENIE-DFCI-098574,Nivolumab,2,0,1
+GENIE-DFCI-098855,Carboplatin,1,1,0
+GENIE-DFCI-098855,Carboplatin,2,1,0
+GENIE-DFCI-102366,Carboplatin,1,1,0
+GENIE-DFCI-102366,Tamoxifen Citrate,2,0,0
+GENIE-DFCI-102366,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-102366,Anastrozole,4,0,0
+GENIE-DFCI-102366,Carboplatin,5,1,0
+GENIE-DFCI-102366,Carboplatin,5,1,0
+GENIE-DFCI-102366,Atezolizumab,6,0,1
+GENIE-DFCI-102366,Atezolizumab,6,0,1
+GENIE-DFCI-102617,Cisplatin,1,1,0
+GENIE-DFCI-102617,Durvalumab,2,0,1
+GENIE-DFCI-102617,Carboplatin,3,1,0
+GENIE-DFCI-102974,Carboplatin,1,1,0
+GENIE-DFCI-102974,Nivolumab,2,0,1
+GENIE-DFCI-102974,Gemcitabine Hydrochloride,3,0,0
+GENIE-DFCI-102974,Vinorelbine Tartrate,4,0,0
+GENIE-DFCI-102974,Pemetrexed Disodium,5,0,0
+GENIE-DFCI-104854,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-104854,Osimertinib,2,0,0
+GENIE-DFCI-104854,Investigational Drug,3,0,0
+GENIE-DFCI-104854,Carboplatin,4,1,1
+GENIE-DFCI-106618,Carboplatin,1,1,0
+GENIE-DFCI-107582,Cisplatin,1,1,0
+GENIE-DFCI-108005,Carboplatin,1,1,0
+GENIE-DFCI-108005,Atezolizumab,2,0,1
+GENIE-DFCI-108426,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-108426,Osimertinib,2,0,0
+GENIE-DFCI-108457,Cisplatin,1,1,0
+GENIE-DFCI-108464,Carboplatin,1,1,1
+GENIE-DFCI-108866,Crizotinib,1,0,0
+GENIE-DFCI-108870,Cisplatin,1,1,0
+GENIE-DFCI-108870,Pembrolizumab,2,0,1
+GENIE-DFCI-108886,Cisplatin,1,1,0
+GENIE-DFCI-108956,Carboplatin,1,1,0
+GENIE-DFCI-108956,Investigational Drug,2,1,0
+GENIE-DFCI-109344,Other NOS,1,0,0
+GENIE-DFCI-109626,Cisplatin,1,1,0
+GENIE-DFCI-109626,Carboplatin,2,1,1
+GENIE-DFCI-109707,Osimertinib,1,0,0
+GENIE-DFCI-109765,Pembrolizumab,1,0,1
+GENIE-DFCI-109765,Cisplatin,2,1,0
+GENIE-DFCI-109784,Cisplatin,1,1,1
+GENIE-DFCI-109793,Carboplatin,1,1,1
+GENIE-DFCI-109793,Docetaxel,2,1,1
+GENIE-DFCI-109793,Pembrolizumab,3,1,1
+GENIE-DFCI-110148,Cisplatin,1,1,1
+GENIE-DFCI-110148,Investigational Drug,2,0,0
+GENIE-DFCI-110148,Investigational Drug,3,0,0
+GENIE-DFCI-110180,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-110180,Rociletinib,2,0,0
+GENIE-DFCI-110180,Osimertinib,3,0,0
+GENIE-DFCI-110180,Afatinib Dimaleate,4,0,0
+GENIE-DFCI-110180,Carboplatin,5,1,0
+GENIE-DFCI-110180,Carboplatin,6,1,1
+GENIE-DFCI-110180,Avelumab,7,1,1
+GENIE-DFCI-110180,Osimertinib,8,0,0
+GENIE-DFCI-110180,Docetaxel,9,0,0
+GENIE-DFCI-110180,Necitumumab,10,1,1
+GENIE-DFCI-110206,Carboplatin,1,1,0
+GENIE-DFCI-110206,Pembrolizumab,2,0,1
+GENIE-DFCI-110232,Cisplatin,1,1,0
+GENIE-DFCI-110232,Carboplatin,2,1,0
+GENIE-DFCI-110232,Pembrolizumab,3,0,1
+GENIE-DFCI-110232,Investigational Drug,4,0,0
+GENIE-DFCI-110232,Palbociclib,5,1,0
+GENIE-DFCI-110561,Erlotinib Hydrochloride,1,0,0
+GENIE-DFCI-110561,Carboplatin,2,1,0
+GENIE-DFCI-110630,Pembrolizumab,1,0,1
+GENIE-DFCI-110630,Carboplatin,2,1,0
+GENIE-DFCI-110630,Docetaxel,3,1,1
+GENIE-DFCI-110630,Trastuzumab Emtansine,4,0,1
+GENIE-DFCI-110630,Gemcitabine Hydrochloride,5,0,0
+GENIE-DFCI-110683,Carboplatin,1,1,0
+GENIE-DFCI-110683,Nivolumab,2,0,1
+GENIE-DFCI-110683,Docetaxel,3,0,0
+GENIE-DFCI-110683,Afatinib Dimaleate,4,0,0
+GENIE-DFCI-110683,Investigational Drug,5,0,0
+GENIE-DFCI-110862,Pembrolizumab,1,0,1
+GENIE-DFCI-111031,Cisplatin,1,1,0
+GENIE-DFCI-111031,Carboplatin,2,1,0
+GENIE-DFCI-111031,Nivolumab,3,0,1
+GENIE-DFCI-111031,Pembrolizumab,4,0,1
+GENIE-DFCI-111388,Cisplatin,1,1,0
+GENIE-DFCI-111445,Cisplatin,1,1,0
+GENIE-DFCI-111494,Osimertinib,1,0,0
+GENIE-DFCI-111506,Carboplatin,1,1,0
+GENIE-DFCI-111506,Nivolumab,2,0,1
+GENIE-DFCI-112084,Carboplatin,1,1,0
+GENIE-DFCI-112084,Pembrolizumab,2,0,1
+GENIE-DFCI-112311,Cisplatin,1,1,0
+GENIE-DFCI-112762,Cisplatin,1,1,0
+GENIE-DFCI-112762,Cisplatin,2,1,0
+GENIE-DFCI-112762,Nivolumab,3,0,1
+GENIE-DFCI-125743,Cisplatin,1,1,0
+GENIE-DFCI-125743,Carboplatin,2,1,0
+GENIE-DFCI-125743,Erlotinib Hydrochloride,3,0,0
+GENIE-DFCI-125743,Crizotinib,4,0,0
+GENIE-DFCI-125743,Cabozantinib Smalate,5,0,0
+GENIE-DFCI-125743,Nabpaclitaxel,6,0,0
+GENIE-DFCI-138951,Carboplatin,1,1,0
+GENIE-DFCI-138951,Nivolumab,2,0,1
+GENIE-DFCI-141904,Cisplatin,1,1,0
+GENIE-DFCI-141904,Pembrolizumab,2,1,1
+GENIE-DFCI-145016,Carboplatin,1,1,0
+GENIE-MSK-P-0000689,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0000689,Carboplatin,2,1,0
+GENIE-MSK-P-0000689,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0000689,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0000689,Investigational Drug,5,1,0
+GENIE-MSK-P-0000689,Ramucirumab,6,1,1
+GENIE-MSK-P-0000689,Vinblastine Sulfate,7,1,0
+GENIE-MSK-P-0000689,Nivolumab,8,0,1
+GENIE-MSK-P-0000689,Sunitinib Malate,9,0,0
+GENIE-MSK-P-0000978,Anastrozole,1,0,0
+GENIE-MSK-P-0000978,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0000978,Crizotinib,3,0,0
+GENIE-MSK-P-0000978,Nivolumab,4,0,1
+GENIE-MSK-P-0000978,Investigational Drug,5,1,0
+GENIE-MSK-P-0001243,Investigational Drug,1,0,0
+GENIE-MSK-P-0001243,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0001243,Investigational Drug,3,1,0
+GENIE-MSK-P-0001442,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0001442,Osimertinib,2,1,1
+GENIE-MSK-P-0001442,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0001454,Cisplatin,1,1,0
+GENIE-MSK-P-0001454,Cisplatin,1,1,0
+GENIE-MSK-P-0001830,Carboplatin,1,1,1
+GENIE-MSK-P-0001830,Investigational Drug,2,1,0
+GENIE-MSK-P-0001830,Nivolumab,3,0,1
+GENIE-MSK-P-0001830,Vinorelbine Tartrate,4,1,0
+GENIE-MSK-P-0001830,Docetaxel,5,0,0
+GENIE-MSK-P-0001830,Pemetrexed Disodium,6,1,0
+GENIE-MSK-P-0001832,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0001832,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0001832,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0001832,Nivolumab,4,0,1
+GENIE-MSK-P-0001832,Docetaxel,5,0,0
+GENIE-MSK-P-0002091,Investigational Drug,1,0,0
+GENIE-MSK-P-0002091,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0002091,Investigational Drug,3,0,0
+GENIE-MSK-P-0002091,Erlotinib Hydrochloride,4,0,0
+GENIE-MSK-P-0002091,Osimertinib,5,0,0
+GENIE-MSK-P-0002091,Pemetrexed Disodium,6,1,1
+GENIE-MSK-P-0002091,Pemetrexed Disodium,7,1,1
+GENIE-MSK-P-0002091,Cetuximab,8,1,1
+GENIE-MSK-P-0002091,Docetaxel,9,0,0
+GENIE-MSK-P-0002218,Investigational Drug,1,0,0
+GENIE-MSK-P-0002218,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0002218,Bevacizumab,3,0,1
+GENIE-MSK-P-0002218,Bevacizumab,4,0,1
+GENIE-MSK-P-0002408,Crizotinib,1,0,0
+GENIE-MSK-P-0002408,Alectinib,2,0,0
+GENIE-MSK-P-0002408,Brigatinib,3,0,0
+GENIE-MSK-P-0002408,Investigational Drug,4,0,0
+GENIE-MSK-P-0002408,Pemetrexed Disodium,5,0,0
+GENIE-MSK-P-0002506,Investigational Drug,1,0,0
+GENIE-MSK-P-0002506,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0002506,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0002694,Cabozantinib Smalate,1,0,0
+GENIE-MSK-P-0002694,Investigational Drug,2,1,0
+GENIE-MSK-P-0002694,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0002694,Investigational Drug,4,1,0
+GENIE-MSK-P-0002718,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0002718,Ramucirumab,2,1,1
+GENIE-MSK-P-0002725,Carboplatin,1,1,0
+GENIE-MSK-P-0002731,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0002731,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0002731,Nivolumab,3,0,1
+GENIE-MSK-P-0002731,Docetaxel,4,0,0
+GENIE-MSK-P-0002731,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0002731,Nivolumab,6,0,1
+GENIE-MSK-P-0002869,Cisplatin,1,1,0
+GENIE-MSK-P-0002869,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0002869,Osimertinib,3,0,0
+GENIE-MSK-P-0002869,Afatinib Dimaleate,4,0,0
+GENIE-MSK-P-0002871,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0002880,Degarelix,1,0,0
+GENIE-MSK-P-0002912,Carboplatin,1,1,1
+GENIE-MSK-P-0002912,Docetaxel,2,0,0
+GENIE-MSK-P-0002912,Investigational Drug,3,1,0
+GENIE-MSK-P-0002912,Investigational Drug,4,1,0
+GENIE-MSK-P-0002912,Investigational Drug,5,0,0
+GENIE-MSK-P-0002916,Investigational Drug,1,1,0
+GENIE-MSK-P-0002916,Investigational Drug,2,0,0
+GENIE-MSK-P-0002916,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0002916,Vinorelbine Tartrate,4,1,0
+GENIE-MSK-P-0002916,Paclitaxel,5,1,0
+GENIE-MSK-P-0002916,Paclitaxel,6,1,1
+GENIE-MSK-P-0002916,Crizotinib,7,0,0
+GENIE-MSK-P-0002916,Docetaxel,8,1,1
+GENIE-MSK-P-0002916,Paclitaxel,9,1,1
+GENIE-MSK-P-0002917,Bevacizumab,1,1,1
+GENIE-MSK-P-0002917,Nivolumab,2,0,1
+GENIE-MSK-P-0002917,Docetaxel,3,1,1
+GENIE-MSK-P-0002917,Investigational Drug,4,1,0
+GENIE-MSK-P-0002917,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0002917,Vinorelbine Tartrate,6,0,0
+GENIE-MSK-P-0002917,Vinorelbine Tartrate,7,1,1
+GENIE-MSK-P-0002917,Atezolizumab,8,0,1
+GENIE-MSK-P-0002921,Carboplatin,1,1,0
+GENIE-MSK-P-0002921,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0002921,Nivolumab,3,0,1
+GENIE-MSK-P-0002921,Ramucirumab,4,1,1
+GENIE-MSK-P-0002969,Etoposide,1,1,0
+GENIE-MSK-P-0002969,Carboplatin,2,1,0
+GENIE-MSK-P-0002969,Paclitaxel,3,1,1
+GENIE-MSK-P-0002969,Ramucirumab,4,1,1
+GENIE-MSK-P-0002969,Nivolumab,5,0,1
+GENIE-MSK-P-0002996,Cisplatin,1,1,0
+GENIE-MSK-P-0002996,Cisplatin,2,1,0
+GENIE-MSK-P-0002996,Carboplatin,3,1,0
+GENIE-MSK-P-0002996,Nivolumab,4,0,1
+GENIE-MSK-P-0003017,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0003017,Carboplatin,2,1,0
+GENIE-MSK-P-0003017,Investigational Drug,3,1,0
+GENIE-MSK-P-0003017,Investigational Drug,4,1,0
+GENIE-MSK-P-0003017,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0003017,Pemetrexed Disodium,6,0,0
+GENIE-MSK-P-0003017,Nivolumab,7,0,1
+GENIE-MSK-P-0003070,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0003070,Osimertinib,2,0,0
+GENIE-MSK-P-0003119,Carboplatin,1,1,1
+GENIE-MSK-P-0003119,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0003119,Nabpaclitaxel,3,1,1
+GENIE-MSK-P-0003119,Docetaxel,4,1,1
+GENIE-MSK-P-0003119,Vinorelbine Tartrate,5,1,0
+GENIE-MSK-P-0003119,Nivolumab,6,0,1
+GENIE-MSK-P-0003119,Investigational Drug,7,1,0
+GENIE-MSK-P-0003156,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0003156,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0003156,Bevacizumab,3,1,1
+GENIE-MSK-P-0003156,Vinorelbine Tartrate,4,1,0
+GENIE-MSK-P-0003156,Docetaxel,5,1,1
+GENIE-MSK-P-0003213,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0003213,Carboplatin,2,1,1
+GENIE-MSK-P-0003213,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0003213,Docetaxel,4,1,0
+GENIE-MSK-P-0003213,Vinorelbine Tartrate,5,1,0
+GENIE-MSK-P-0003213,Erlotinib Hydrochloride,6,0,0
+GENIE-MSK-P-0003213,Osimertinib,7,0,0
+GENIE-MSK-P-0003243,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0003243,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0003243,Anastrozole,3,0,0
+GENIE-MSK-P-0003243,Erlotinib Hydrochloride,4,0,0
+GENIE-MSK-P-0003243,Pemetrexed Disodium,5,0,0
+GENIE-MSK-P-0003243,Pemetrexed Disodium,6,1,1
+GENIE-MSK-P-0003243,Osimertinib,7,0,0
+GENIE-MSK-P-0003247,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0003247,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0003247,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0003247,Pembrolizumab,4,0,1
+GENIE-MSK-P-0003247,Pembrolizumab,5,0,1
+GENIE-MSK-P-0003250,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0003250,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0003250,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0003250,Pembrolizumab,4,0,1
+GENIE-MSK-P-0003303,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0003314,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0003314,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0003368,Cisplatin,1,1,0
+GENIE-MSK-P-0003368,Investigational Drug,2,1,0
+GENIE-MSK-P-0003446,Cisplatin,1,1,0
+GENIE-MSK-P-0003446,Crizotinib,2,0,0
+GENIE-MSK-P-0003446,Crizotinib,3,0,0
+GENIE-MSK-P-0003446,Alectinib,4,0,0
+GENIE-MSK-P-0003465,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0003465,Paclitaxel,2,0,0
+GENIE-MSK-P-0003465,Vemurafenib,3,0,0
+GENIE-MSK-P-0003465,Dabrafenib,4,1,0
+GENIE-MSK-P-0003527,Cisplatin,1,1,0
+GENIE-MSK-P-0003527,Carboplatin,2,1,0
+GENIE-MSK-P-0003584,Investigational Drug,1,0,0
+GENIE-MSK-P-0003628,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0003628,Vinorelbine Tartrate,2,0,0
+GENIE-MSK-P-0003628,Dabrafenib,3,0,0
+GENIE-MSK-P-0003628,Vemurafenib,4,0,0
+GENIE-MSK-P-0003628,Pembrolizumab,5,0,1
+GENIE-MSK-P-0003628,Vemurafenib,6,0,0
+GENIE-MSK-P-0003640,Cisplatin,1,1,0
+GENIE-MSK-P-0003640,Cisplatin,1,1,0
+GENIE-MSK-P-0003666,Carboplatin,1,1,0
+GENIE-MSK-P-0003712,Carboplatin,1,1,0
+GENIE-MSK-P-0003854,Carboplatin,1,1,0
+GENIE-MSK-P-0003854,Docetaxel,2,0,0
+GENIE-MSK-P-0003854,Docetaxel,3,0,0
+GENIE-MSK-P-0003854,Nabpaclitaxel,4,0,0
+GENIE-MSK-P-0003863,Carboplatin,1,1,0
+GENIE-MSK-P-0003879,Carboplatin,1,1,1
+GENIE-MSK-P-0003879,Investigational Drug,2,0,0
+GENIE-MSK-P-0003967,Etoposide,1,1,0
+GENIE-MSK-P-0003967,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0003967,Investigational Drug,3,0,0
+GENIE-MSK-P-0003967,Atezolizumab,4,0,1
+GENIE-MSK-P-0003967,Afatinib Dimaleate,5,0,0
+GENIE-MSK-P-0004094,Paclitaxel,1,1,0
+GENIE-MSK-P-0004094,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0004094,Investigational Drug,3,0,0
+GENIE-MSK-P-0004103,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0004103,Docetaxel,2,0,0
+GENIE-MSK-P-0004103,Paclitaxel,3,0,0
+GENIE-MSK-P-0004103,Nabpaclitaxel,4,0,0
+GENIE-MSK-P-0004103,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0004103,Investigational Drug,6,1,0
+GENIE-MSK-P-0004103,Pemetrexed Disodium,7,0,0
+GENIE-MSK-P-0004103,Vinorelbine Tartrate,8,0,0
+GENIE-MSK-P-0004103,Trametinib,9,1,0
+GENIE-MSK-P-0004129,Erlotinib Hydrochloride,1,1,1
+GENIE-MSK-P-0004129,Carboplatin,2,1,0
+GENIE-MSK-P-0004129,Afatinib Dimaleate,3,0,0
+GENIE-MSK-P-0004232,Cisplatin,1,1,0
+GENIE-MSK-P-0004232,Bevacizumab,2,1,1
+GENIE-MSK-P-0004232,Bevacizumab,3,1,1
+GENIE-MSK-P-0004232,Bevacizumab,4,1,1
+GENIE-MSK-P-0004232,Bevacizumab,5,1,1
+GENIE-MSK-P-0004232,Paclitaxel,6,0,0
+GENIE-MSK-P-0004232,Gemcitabine Hydrochloride,7,0,0
+GENIE-MSK-P-0004232,Afatinib Dimaleate,8,0,0
+GENIE-MSK-P-0004232,Nivolumab,9,0,1
+GENIE-MSK-P-0004232,Nivolumab,10,0,1
+GENIE-MSK-P-0004232,Docetaxel,11,1,1
+GENIE-MSK-P-0004238,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0004238,Osimertinib,2,0,0
+GENIE-MSK-P-0004271,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0004271,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0004271,Atezolizumab,3,0,1
+GENIE-MSK-P-0004336,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0004336,Crizotinib,2,0,0
+GENIE-MSK-P-0004336,Investigational Drug,3,0,0
+GENIE-MSK-P-0004336,Lorlatinib,4,0,0
+GENIE-MSK-P-0004342,Erlotinib Hydrochloride,1,1,1
+GENIE-MSK-P-0004378,Carboplatin,1,1,0
+GENIE-MSK-P-0004378,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0004378,Pemetrexed Disodium,3,0,0
+GENIE-MSK-P-0004378,Pemetrexed Disodium,4,0,0
+GENIE-MSK-P-0004378,Investigational Drug,5,0,0
+GENIE-MSK-P-0004421,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0004421,Investigational Drug,2,1,0
+GENIE-MSK-P-0004421,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0004421,Paclitaxel,4,0,0
+GENIE-MSK-P-0004421,Investigational Drug,5,0,0
+GENIE-MSK-P-0004421,Megestrol Acetate,6,1,0
+GENIE-MSK-P-0004442,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0004442,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0004442,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0004442,Nivolumab,2,0,1
+GENIE-MSK-P-0004442,Nivolumab,2,0,1
+GENIE-MSK-P-0004442,Nivolumab,2,0,1
+GENIE-MSK-P-0004476,Fluorouracil,1,1,0
+GENIE-MSK-P-0004476,Investigational Drug,2,0,0
+GENIE-MSK-P-0004476,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0004476,Investigational Drug,4,1,0
+GENIE-MSK-P-0004517,Carboplatin,1,1,0
+GENIE-MSK-P-0004517,Nivolumab,2,0,1
+GENIE-MSK-P-0004517,Ramucirumab,3,1,1
+GENIE-MSK-P-0004517,Gemcitabine Hydrochloride,4,1,1
+GENIE-MSK-P-0004517,Investigational Drug,5,0,0
+GENIE-MSK-P-0004517,Paclitaxel,6,1,0
+GENIE-MSK-P-0004517,Afatinib Dimaleate,7,0,0
+GENIE-MSK-P-0004517,Carboplatin,8,1,1
+GENIE-MSK-P-0004591,Carboplatin,1,1,0
+GENIE-MSK-P-0004591,Vinorelbine Tartrate,2,1,0
+GENIE-MSK-P-0004591,Investigational Drug,3,1,0
+GENIE-MSK-P-0004607,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0004613,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0004613,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0004613,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0004613,Docetaxel,4,0,0
+GENIE-MSK-P-0004613,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0004613,Atezolizumab,6,0,1
+GENIE-MSK-P-0004655,Carboplatin,1,1,0
+GENIE-MSK-P-0004655,Investigational Drug,2,0,0
+GENIE-MSK-P-0004655,Crizotinib,3,0,0
+GENIE-MSK-P-0004691,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0004691,Investigational Drug,2,1,0
+GENIE-MSK-P-0004693,Carboplatin,1,1,0
+GENIE-MSK-P-0004693,Nivolumab,2,0,1
+GENIE-MSK-P-0004701,Carboplatin,1,1,0
+GENIE-MSK-P-0004701,Nivolumab,2,0,1
+GENIE-MSK-P-0004718,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0004729,Investigational Drug,1,0,0
+GENIE-MSK-P-0004729,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0004729,Investigational Drug,3,1,0
+GENIE-MSK-P-0004729,Osimertinib,4,0,0
+GENIE-MSK-P-0004729,Erlotinib Hydrochloride,5,0,0
+GENIE-MSK-P-0004729,Osimertinib,6,0,0
+GENIE-MSK-P-0004729,Investigational Drug,7,1,0
+GENIE-MSK-P-0004739,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0004739,Investigational Drug,2,0,0
+GENIE-MSK-P-0004739,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0004739,Osimertinib,4,0,0
+GENIE-MSK-P-0004802,Cyclophosphamide,1,1,0
+GENIE-MSK-P-0004802,Doxorubicin Hydrochloride,2,1,0
+GENIE-MSK-P-0004802,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0004802,Carboplatin,4,1,0
+GENIE-MSK-P-0004802,Pemetrexed Disodium,5,0,0
+GENIE-MSK-P-0004827,Cisplatin,1,1,0
+GENIE-MSK-P-0004827,Investigational Drug,2,0,0
+GENIE-MSK-P-0004827,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0004873,Cisplatin,1,1,0
+GENIE-MSK-P-0004988,Cisplatin,1,1,0
+GENIE-MSK-P-0004988,Carboplatin,2,1,0
+GENIE-MSK-P-0004988,Nabpaclitaxel,3,0,0
+GENIE-MSK-P-0004988,Nivolumab,4,0,1
+GENIE-MSK-P-0004988,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0004990,Carboplatin,1,1,0
+GENIE-MSK-P-0004996,Investigational Drug,1,1,0
+GENIE-MSK-P-0004996,Cisplatin,2,1,0
+GENIE-MSK-P-0004996,Nabpaclitaxel,3,0,0
+GENIE-MSK-P-0004996,Investigational Drug,4,1,0
+GENIE-MSK-P-0004996,Pemetrexed Disodium,5,0,0
+GENIE-MSK-P-0004996,Nivolumab,6,0,1
+GENIE-MSK-P-0004996,Vinorelbine Tartrate,7,0,0
+GENIE-MSK-P-0005026,Anastrozole,1,0,0
+GENIE-MSK-P-0005034,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0005034,Investigational Drug,2,1,0
+GENIE-MSK-P-0005034,Erlotinib Hydrochloride,3,1,1
+GENIE-MSK-P-0005034,Investigational Drug,4,0,0
+GENIE-MSK-P-0005034,Erlotinib Hydrochloride,5,0,0
+GENIE-MSK-P-0005170,Carboplatin,1,1,0
+GENIE-MSK-P-0005170,Carboplatin,2,1,1
+GENIE-MSK-P-0005191,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0005252,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0005252,Nivolumab,2,0,1
+GENIE-MSK-P-0005259,Investigational Drug,1,1,0
+GENIE-MSK-P-0005259,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0005259,Osimertinib,3,0,0
+GENIE-MSK-P-0005321,Cisplatin,1,1,0
+GENIE-MSK-P-0005321,Alectinib,2,0,0
+GENIE-MSK-P-0005456,Sorafenib Tosylate,1,0,0
+GENIE-MSK-P-0005456,Paclitaxel,2,0,0
+GENIE-MSK-P-0005456,Nabpaclitaxel,3,0,0
+GENIE-MSK-P-0005456,Nabpaclitaxel,3,0,0
+GENIE-MSK-P-0005456,Vinorelbine Tartrate,4,0,0
+GENIE-MSK-P-0005456,Vinorelbine Tartrate,4,0,0
+GENIE-MSK-P-0005456,Nivolumab,5,0,1
+GENIE-MSK-P-0005456,Nivolumab,5,0,1
+GENIE-MSK-P-0005464,Investigational Drug,1,0,0
+GENIE-MSK-P-0005464,Carboplatin,2,1,1
+GENIE-MSK-P-0005464,Osimertinib,3,0,0
+GENIE-MSK-P-0005464,Nivolumab,4,0,1
+GENIE-MSK-P-0005464,Cetuximab,5,1,1
+GENIE-MSK-P-0005483,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0005483,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0005483,Investigational Drug,3,1,0
+GENIE-MSK-P-0005483,Investigational Drug,4,0,0
+GENIE-MSK-P-0005483,Investigational Drug,5,0,0
+GENIE-MSK-P-0005483,Nivolumab,6,1,1
+GENIE-MSK-P-0005483,Ramucirumab,7,1,1
+GENIE-MSK-P-0005543,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0005562,Cisplatin,1,1,0
+GENIE-MSK-P-0005562,Carboplatin,2,1,1
+GENIE-MSK-P-0005562,Docetaxel,3,1,1
+GENIE-MSK-P-0005562,Investigational Drug,4,0,0
+GENIE-MSK-P-0005573,Carboplatin,1,1,1
+GENIE-MSK-P-0005573,Investigational Drug,2,0,0
+GENIE-MSK-P-0005644,Oxaliplatin,1,1,0
+GENIE-MSK-P-0005734,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0005734,Paclitaxel,2,0,0
+GENIE-MSK-P-0005763,Investigational Drug,1,1,0
+GENIE-MSK-P-0005786,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0005786,Alectinib,2,0,0
+GENIE-MSK-P-0005813,Methotrexate,1,1,0
+GENIE-MSK-P-0005813,Anastrozole,2,0,0
+GENIE-MSK-P-0005813,Letrozole,3,0,0
+GENIE-MSK-P-0005813,Vinorelbine Tartrate,4,1,0
+GENIE-MSK-P-0005813,Afatinib Dimaleate,5,0,0
+GENIE-MSK-P-0005813,Cetuximab,6,1,1
+GENIE-MSK-P-0005813,Investigational Drug,7,1,0
+GENIE-MSK-P-0005813,Osimertinib,8,0,0
+GENIE-MSK-P-0005813,Investigational Drug,9,0,0
+GENIE-MSK-P-0005845,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0005845,Osimertinib,2,0,0
+GENIE-MSK-P-0005848,Cisplatin,1,1,0
+GENIE-MSK-P-0005848,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0005848,Nivolumab,3,0,1
+GENIE-MSK-P-0005909,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0005909,Carboplatin,2,1,0
+GENIE-MSK-P-0005909,Pembrolizumab,3,0,1
+GENIE-MSK-P-0005927,Carboplatin,1,1,1
+GENIE-MSK-P-0005931,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0005942,Anastrozole,1,0,0
+GENIE-MSK-P-0005959,Cisplatin,1,1,0
+GENIE-MSK-P-0005959,Carboplatin,2,1,0
+GENIE-MSK-P-0006115,Cisplatin,1,1,0
+GENIE-MSK-P-0006115,Osimertinib,2,0,0
+GENIE-MSK-P-0006151,Cisplatin,1,1,0
+GENIE-MSK-P-0006151,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0006151,Osimertinib,3,0,0
+GENIE-MSK-P-0006151,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0006151,Osimertinib,5,0,0
+GENIE-MSK-P-0006191,Cisplatin,1,1,0
+GENIE-MSK-P-0006191,Cisplatin,1,1,0
+GENIE-MSK-P-0006191,Cisplatin,2,1,0
+GENIE-MSK-P-0006221,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0006221,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0006221,Nivolumab,3,0,1
+GENIE-MSK-P-0006221,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0006221,Docetaxel,5,0,0
+GENIE-MSK-P-0006268,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0006268,Docetaxel,2,0,0
+GENIE-MSK-P-0006268,Nivolumab,3,0,1
+GENIE-MSK-P-0006268,Erlotinib Hydrochloride,4,0,0
+GENIE-MSK-P-0006292,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0006292,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0006343,Imatinib Mesylate,1,0,0
+GENIE-MSK-P-0006343,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0006343,Nivolumab,3,0,1
+GENIE-MSK-P-0006343,Docetaxel,4,0,0
+GENIE-MSK-P-0006343,Nabpaclitaxel,5,0,0
+GENIE-MSK-P-0006474,Cisplatin,1,1,0
+GENIE-MSK-P-0006474,Docetaxel,2,1,0
+GENIE-MSK-P-0006511,Paclitaxel,1,1,0
+GENIE-MSK-P-0006511,Nabpaclitaxel,2,1,0
+GENIE-MSK-P-0006511,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0006540,Cisplatin,1,1,0
+GENIE-MSK-P-0006540,Carboplatin,2,1,0
+GENIE-MSK-P-0006540,Investigational Drug,3,1,0
+GENIE-MSK-P-0006540,Docetaxel,4,0,0
+GENIE-MSK-P-0006596,Carboplatin,1,1,1
+GENIE-MSK-P-0006671,Bevacizumab,1,1,1
+GENIE-MSK-P-0006671,Investigational Drug,2,0,0
+GENIE-MSK-P-0006671,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0006671,Osimertinib,4,0,0
+GENIE-MSK-P-0006713,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0006713,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0006713,Pembrolizumab,3,0,1
+GENIE-MSK-P-0006713,Pembrolizumab,3,0,1
+GENIE-MSK-P-0006768,Carboplatin,1,1,0
+GENIE-MSK-P-0006768,Carboplatin,1,1,0
+GENIE-MSK-P-0006768,Nivolumab,2,0,1
+GENIE-MSK-P-0006768,Nivolumab,2,0,1
+GENIE-MSK-P-0006768,Afatinib Dimaleate,3,0,0
+GENIE-MSK-P-0006768,Afatinib Dimaleate,3,0,0
+GENIE-MSK-P-0006768,Docetaxel,4,1,1
+GENIE-MSK-P-0006768,Docetaxel,4,1,1
+GENIE-MSK-P-0006768,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0006768,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0006768,Gemcitabine Hydrochloride,6,1,0
+GENIE-MSK-P-0006768,Gemcitabine Hydrochloride,6,1,0
+GENIE-MSK-P-0006775,Paclitaxel,1,1,0
+GENIE-MSK-P-0006775,Nivolumab,2,0,1
+GENIE-MSK-P-0006775,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0006775,Investigational Drug,4,0,0
+GENIE-MSK-P-0006810,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0006810,Osimertinib,2,0,0
+GENIE-MSK-P-0006844,Cisplatin,1,1,0
+GENIE-MSK-P-0006844,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0006844,Carboplatin,3,1,0
+GENIE-MSK-P-0006855,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0006855,Investigational Drug,2,1,0
+GENIE-MSK-P-0006855,Vinorelbine Tartrate,3,1,0
+GENIE-MSK-P-0006855,Docetaxel,4,1,1
+GENIE-MSK-P-0006896,Cisplatin,1,1,1
+GENIE-MSK-P-0006896,Investigational Drug,2,1,0
+GENIE-MSK-P-0006896,Investigational Drug,3,0,0
+GENIE-MSK-P-0006912,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0006912,Osimertinib,2,0,0
+GENIE-MSK-P-0006950,Docetaxel,1,1,0
+GENIE-MSK-P-0006950,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0006950,Investigational Drug,3,0,0
+GENIE-MSK-P-0006950,Investigational Drug,4,0,0
+GENIE-MSK-P-0006950,Etoposide,5,1,0
+GENIE-MSK-P-0006950,Ramucirumab,6,1,1
+GENIE-MSK-P-0006995,Cisplatin,1,1,0
+GENIE-MSK-P-0006995,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0006995,Carboplatin,3,1,0
+GENIE-MSK-P-0006995,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0006995,Investigational Drug,5,1,0
+GENIE-MSK-P-0006995,Erlotinib Hydrochloride,6,0,0
+GENIE-MSK-P-0006995,Cetuximab,7,0,1
+GENIE-MSK-P-0006995,Afatinib Dimaleate,8,1,1
+GENIE-MSK-P-0006995,Gemcitabine Hydrochloride,9,1,1
+GENIE-MSK-P-0006995,Osimertinib,10,0,0
+GENIE-MSK-P-0006995,Investigational Drug,11,1,0
+GENIE-MSK-P-0007007,Paclitaxel,1,1,0
+GENIE-MSK-P-0007007,Cisplatin,2,0,0
+GENIE-MSK-P-0007007,Carboplatin,3,1,0
+GENIE-MSK-P-0007007,Anastrozole,4,0,0
+GENIE-MSK-P-0007007,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0007007,Cyclophosphamide,6,1,1
+GENIE-MSK-P-0007007,Anastrozole,7,0,0
+GENIE-MSK-P-0007099,Carboplatin,1,1,0
+GENIE-MSK-P-0007099,Carboplatin,2,1,0
+GENIE-MSK-P-0007099,Nivolumab,3,0,1
+GENIE-MSK-P-0007119,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0007119,Nivolumab,2,0,1
+GENIE-MSK-P-0007123,Carboplatin,1,1,0
+GENIE-MSK-P-0007123,Nivolumab,2,0,1
+GENIE-MSK-P-0007236,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0007236,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0007236,Atezolizumab,3,0,1
+GENIE-MSK-P-0007309,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0007322,Cisplatin,1,1,0
+GENIE-MSK-P-0007322,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0007322,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0007322,Osimertinib,4,0,0
+GENIE-MSK-P-0007322,Carboplatin,5,1,0
+GENIE-MSK-P-0007322,Gemcitabine Hydrochloride,6,1,0
+GENIE-MSK-P-0007322,Osimertinib,7,0,0
+GENIE-MSK-P-0007345,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0007418,Cisplatin,1,1,0
+GENIE-MSK-P-0007418,Nivolumab,2,0,1
+GENIE-MSK-P-0007420,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0007420,Nivolumab,2,0,1
+GENIE-MSK-P-0007424,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0007583,Paclitaxel,1,1,0
+GENIE-MSK-P-0007583,Paclitaxel,1,1,0
+GENIE-MSK-P-0007583,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0007583,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0007583,Nivolumab,3,0,1
+GENIE-MSK-P-0007583,Nivolumab,3,0,1
+GENIE-MSK-P-0007583,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0007583,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0007633,Investigational Drug,1,1,0
+GENIE-MSK-P-0007633,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0007633,Ramucirumab,3,1,1
+GENIE-MSK-P-0007665,Bevacizumab,1,0,1
+GENIE-MSK-P-0007681,Investigational Drug,1,0,0
+GENIE-MSK-P-0007681,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0007681,Investigational Drug,3,0,0
+GENIE-MSK-P-0007681,Osimertinib,4,0,0
+GENIE-MSK-P-0007745,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0007745,Osimertinib,2,0,0
+GENIE-MSK-P-0007745,Investigational Drug,3,1,0
+GENIE-MSK-P-0007745,Osimertinib,4,0,0
+GENIE-MSK-P-0007745,Osimertinib,5,1,1
+GENIE-MSK-P-0007745,Osimertinib,6,1,0
+GENIE-MSK-P-0007745,Osimertinib,7,1,0
+GENIE-MSK-P-0007745,Investigational Drug,8,1,0
+GENIE-MSK-P-0007754,Afatinib Dimaleate,1,0,0
+GENIE-MSK-P-0007757,Carboplatin,1,1,1
+GENIE-MSK-P-0007757,Investigational Drug,2,1,0
+GENIE-MSK-P-0007757,Investigational Drug,3,0,0
+GENIE-MSK-P-0007757,Nivolumab,4,0,1
+GENIE-MSK-P-0007779,Investigational Drug,1,0,0
+GENIE-MSK-P-0007779,Cisplatin,2,1,0
+GENIE-MSK-P-0007779,Carboplatin,3,1,0
+GENIE-MSK-P-0007779,Osimertinib,4,0,0
+GENIE-MSK-P-0007832,Carboplatin,1,1,0
+GENIE-MSK-P-0007832,Nivolumab,2,0,1
+GENIE-MSK-P-0007861,Vinorelbine Tartrate,1,1,0
+GENIE-MSK-P-0007861,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0007861,Nivolumab,3,0,1
+GENIE-MSK-P-0007861,Mitomycin,4,0,0
+GENIE-MSK-P-0007861,Megestrol Acetate,5,0,0
+GENIE-MSK-P-0007870,Investigational Drug,1,0,0
+GENIE-MSK-P-0007870,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0007870,Investigational Drug,3,0,0
+GENIE-MSK-P-0007870,Pemetrexed Disodium,4,1,0
+GENIE-MSK-P-0007870,Osimertinib,5,0,0
+GENIE-MSK-P-0007896,Osimertinib,1,0,0
+GENIE-MSK-P-0007916,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0007916,Nivolumab,2,0,1
+GENIE-MSK-P-0008029,Carboplatin,1,1,0
+GENIE-MSK-P-0008131,Investigational Drug,1,0,0
+GENIE-MSK-P-0008131,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0008158,Cisplatin,1,1,0
+GENIE-MSK-P-0008158,Carboplatin,2,1,0
+GENIE-MSK-P-0008158,Investigational Drug,3,1,0
+GENIE-MSK-P-0008160,Investigational Drug,1,0,0
+GENIE-MSK-P-0008160,Afatinib Dimaleate,2,1,1
+GENIE-MSK-P-0008160,Pemetrexed Disodium,3,0,0
+GENIE-MSK-P-0008161,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0008161,Nivolumab,2,0,1
+GENIE-MSK-P-0008261,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0008261,Bevacizumab,2,0,1
+GENIE-MSK-P-0008261,Pembrolizumab,3,0,1
+GENIE-MSK-P-0008295,Cisplatin,1,1,0
+GENIE-MSK-P-0008295,Nivolumab,2,0,1
+GENIE-MSK-P-0008295,Docetaxel,3,0,0
+GENIE-MSK-P-0008295,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0008295,Vinorelbine Tartrate,5,0,0
+GENIE-MSK-P-0008310,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0008310,Investigational Drug,2,0,0
+GENIE-MSK-P-0008310,Investigational Drug,3,1,0
+GENIE-MSK-P-0008332,Cisplatin,1,1,0
+GENIE-MSK-P-0008332,Nivolumab,2,0,1
+GENIE-MSK-P-0008332,Crizotinib,3,0,0
+GENIE-MSK-P-0008332,Alectinib,4,0,0
+GENIE-MSK-P-0008359,Cisplatin,1,1,1
+GENIE-MSK-P-0008359,Bevacizumab,2,1,1
+GENIE-MSK-P-0008359,Bevacizumab,3,1,1
+GENIE-MSK-P-0008359,Bevacizumab,4,1,1
+GENIE-MSK-P-0008359,Bevacizumab,5,1,1
+GENIE-MSK-P-0008359,Bevacizumab,6,1,1
+GENIE-MSK-P-0008359,Nivolumab,7,1,1
+GENIE-MSK-P-0008407,Other hormone,1,0,0
+GENIE-MSK-P-0008419,Vinorelbine Tartrate,1,1,0
+GENIE-MSK-P-0008419,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0008419,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0008419,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0008422,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0008422,Pembrolizumab,2,0,1
+GENIE-MSK-P-0008422,Leuprolide Acetate,3,0,0
+GENIE-MSK-P-0008427,Afatinib Dimaleate,1,0,0
+GENIE-MSK-P-0008427,Osimertinib,2,0,0
+GENIE-MSK-P-0008427,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0008427,Investigational Drug,4,1,0
+GENIE-MSK-P-0008435,Anastrozole,1,0,0
+GENIE-MSK-P-0008435,Letrozole,2,0,0
+GENIE-MSK-P-0008435,Tamoxifen Citrate,3,0,0
+GENIE-MSK-P-0008438,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0008438,Nivolumab,2,0,1
+GENIE-MSK-P-0008438,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0008440,Carboplatin,1,1,1
+GENIE-MSK-P-0008472,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0008472,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0008485,Cisplatin,1,1,0
+GENIE-MSK-P-0008485,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0008562,Cisplatin,1,0,0
+GENIE-MSK-P-0008601,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0008601,Bevacizumab,2,1,1
+GENIE-MSK-P-0008601,Pembrolizumab,3,0,1
+GENIE-MSK-P-0008602,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0008602,Carboplatin,2,1,1
+GENIE-MSK-P-0008602,Docetaxel,3,1,1
+GENIE-MSK-P-0008602,Nivolumab,4,1,1
+GENIE-MSK-P-0008602,Osimertinib,5,0,0
+GENIE-MSK-P-0008602,Gemcitabine Hydrochloride,6,1,0
+GENIE-MSK-P-0008650,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0008668,Osimertinib,1,0,0
+GENIE-MSK-P-0008675,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0008715,Investigational Drug,1,1,0
+GENIE-MSK-P-0008715,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0008715,Atezolizumab,3,0,1
+GENIE-MSK-P-0008744,Investigational Drug,1,0,0
+GENIE-MSK-P-0008744,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0008744,Investigational Drug,3,1,0
+GENIE-MSK-P-0008744,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0008757,Investigational Drug,1,1,0
+GENIE-MSK-P-0008757,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0008764,Crizotinib,1,0,0
+GENIE-MSK-P-0008764,Alectinib,2,0,0
+GENIE-MSK-P-0008764,Alectinib,3,0,0
+GENIE-MSK-P-0008764,Investigational Drug,4,0,0
+GENIE-MSK-P-0008764,Pemetrexed Disodium,5,1,0
+GENIE-MSK-P-0008849,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0008849,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0008849,Afatinib Dimaleate,3,0,0
+GENIE-MSK-P-0008915,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0008935,Tamoxifen Citrate,1,0,0
+GENIE-MSK-P-0008935,Cyclophosphamide,2,1,0
+GENIE-MSK-P-0008935,Cisplatin,3,1,0
+GENIE-MSK-P-0008935,Bevacizumab,4,1,1
+GENIE-MSK-P-0008935,Paclitaxel,5,0,0
+GENIE-MSK-P-0008935,Nivolumab,6,0,1
+GENIE-MSK-P-0008938,Rituximab,1,1,1
+GENIE-MSK-P-0008938,Rituximab,2,1,1
+GENIE-MSK-P-0008938,Investigational Drug,3,0,0
+GENIE-MSK-P-0008938,Pembrolizumab,4,0,1
+GENIE-MSK-P-0008938,Rituximab,5,0,1
+GENIE-MSK-P-0008938,Investigational Drug,6,1,0
+GENIE-MSK-P-0008955,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0008955,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0008955,Investigational Drug,3,0,0
+GENIE-MSK-P-0008978,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0008978,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0008978,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0008978,Osimertinib,4,0,0
+GENIE-MSK-P-0008978,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0008978,Osimertinib,6,1,0
+GENIE-MSK-P-0008978,Investigational Drug,7,0,0
+GENIE-MSK-P-0008978,Nabpaclitaxel,8,0,0
+GENIE-MSK-P-0009020,Carboplatin,1,1,0
+GENIE-MSK-P-0009020,Nivolumab,2,0,1
+GENIE-MSK-P-0009020,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0009102,Cisplatin,1,1,0
+GENIE-MSK-P-0009102,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0009102,Paclitaxel,3,0,0
+GENIE-MSK-P-0009102,Crizotinib,4,0,0
+GENIE-MSK-P-0009102,Alectinib,5,0,0
+GENIE-MSK-P-0009110,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009110,Investigational Drug,2,1,0
+GENIE-MSK-P-0009110,Ramucirumab,3,1,1
+GENIE-MSK-P-0009110,Nivolumab,4,0,1
+GENIE-MSK-P-0009110,Ipilimumab,5,1,1
+GENIE-MSK-P-0009154,Cisplatin,1,1,0
+GENIE-MSK-P-0009161,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009161,Atezolizumab,2,0,1
+GENIE-MSK-P-0009168,Carboplatin,1,1,0
+GENIE-MSK-P-0009168,Nivolumab,2,0,1
+GENIE-MSK-P-0009168,Decitabine,3,0,0
+GENIE-MSK-P-0009259,Carboplatin,1,1,0
+GENIE-MSK-P-0009265,Carboplatin,1,1,0
+GENIE-MSK-P-0009277,Investigational Drug,1,1,0
+GENIE-MSK-P-0009277,Investigational Drug,2,1,0
+GENIE-MSK-P-0009293,Carboplatin,1,1,0
+GENIE-MSK-P-0009293,Carboplatin,1,1,0
+GENIE-MSK-P-0009293,Investigational Drug,2,0,0
+GENIE-MSK-P-0009293,Investigational Drug,2,0,0
+GENIE-MSK-P-0009293,Bevacizumab,3,1,1
+GENIE-MSK-P-0009293,Bevacizumab,3,1,1
+GENIE-MSK-P-0009293,Gemcitabine Hydrochloride,4,1,0
+GENIE-MSK-P-0009293,Gemcitabine Hydrochloride,4,1,0
+GENIE-MSK-P-0009293,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0009293,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0009293,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0009293,Nivolumab,6,0,1
+GENIE-MSK-P-0009293,Nivolumab,6,0,1
+GENIE-MSK-P-0009293,Nivolumab,6,0,1
+GENIE-MSK-P-0009301,Crizotinib,1,0,0
+GENIE-MSK-P-0009301,Alectinib,2,0,0
+GENIE-MSK-P-0009301,Brigatinib,3,0,0
+GENIE-MSK-P-0009301,Investigational Drug,4,0,0
+GENIE-MSK-P-0009301,Lorlatinib,5,0,0
+GENIE-MSK-P-0009307,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0009312,Vinorelbine Tartrate,1,1,0
+GENIE-MSK-P-0009312,Vinorelbine Tartrate,2,1,0
+GENIE-MSK-P-0009312,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0009312,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0009312,Vinblastine Sulfate,5,1,0
+GENIE-MSK-P-0009312,Ramucirumab,6,1,1
+GENIE-MSK-P-0009353,Crizotinib,1,0,0
+GENIE-MSK-P-0009353,Alectinib,2,0,0
+GENIE-MSK-P-0009426,Paclitaxel,1,1,0
+GENIE-MSK-P-0009426,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0009426,Gemcitabine Hydrochloride,3,1,1
+GENIE-MSK-P-0009426,Gemcitabine Hydrochloride,4,1,1
+GENIE-MSK-P-0009426,Paclitaxel,5,0,0
+GENIE-MSK-P-0009426,Vinorelbine Tartrate,6,0,0
+GENIE-MSK-P-0009426,Docetaxel,7,0,0
+GENIE-MSK-P-0009426,Nivolumab,8,0,1
+GENIE-MSK-P-0009431,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009431,Gemcitabine Hydrochloride,2,1,0
+GENIE-MSK-P-0009431,Nivolumab,3,0,1
+GENIE-MSK-P-0009466,Investigational Drug,1,0,0
+GENIE-MSK-P-0009466,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0009466,Carboplatin,3,1,1
+GENIE-MSK-P-0009466,Investigational Drug,4,1,0
+GENIE-MSK-P-0009469,Carboplatin,1,1,0
+GENIE-MSK-P-0009469,Cisplatin,2,1,1
+GENIE-MSK-P-0009469,Carboplatin,3,0,0
+GENIE-MSK-P-0009469,Nivolumab,4,0,1
+GENIE-MSK-P-0009476,Docetaxel,1,0,0
+GENIE-MSK-P-0009476,Cisplatin,2,1,0
+GENIE-MSK-P-0009476,Nivolumab,3,0,1
+GENIE-MSK-P-0009476,Docetaxel,4,0,0
+GENIE-MSK-P-0009476,Ramucirumab,5,1,1
+GENIE-MSK-P-0009476,Pembrolizumab,6,0,1
+GENIE-MSK-P-0009487,Carboplatin,1,1,0
+GENIE-MSK-P-0009514,Capecitabine,1,0,0
+GENIE-MSK-P-0009514,Oxaliplatin,2,1,0
+GENIE-MSK-P-0009535,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0009535,Investigational Drug,2,0,0
+GENIE-MSK-P-0009535,Osimertinib,3,0,0
+GENIE-MSK-P-0009535,Investigational Drug,4,0,0
+GENIE-MSK-P-0009555,Investigational Drug,1,0,0
+GENIE-MSK-P-0009559,Carboplatin,1,1,0
+GENIE-MSK-P-0009591,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0009591,Pembrolizumab,2,0,1
+GENIE-MSK-P-0009608,Investigational Drug,1,0,0
+GENIE-MSK-P-0009608,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0009655,Investigational Drug,1,1,0
+GENIE-MSK-P-0009655,Afatinib Dimaleate,2,0,0
+GENIE-MSK-P-0009655,Osimertinib,3,0,0
+GENIE-MSK-P-0009660,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009660,Nivolumab,2,0,1
+GENIE-MSK-P-0009680,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0009680,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0009680,Investigational Drug,3,1,0
+GENIE-MSK-P-0009680,Vinorelbine Tartrate,4,1,0
+GENIE-MSK-P-0009680,Investigational Drug,5,0,0
+GENIE-MSK-P-0009680,Nivolumab,6,0,1
+GENIE-MSK-P-0009680,Ramucirumab,7,1,1
+GENIE-MSK-P-0009680,Docetaxel,8,0,0
+GENIE-MSK-P-0009680,Pemetrexed Disodium,9,1,0
+GENIE-MSK-P-0009680,Vinblastine Sulfate,10,1,0
+GENIE-MSK-P-0009748,Vinorelbine Tartrate,1,1,1
+GENIE-MSK-P-0009748,Investigational Drug,2,1,0
+GENIE-MSK-P-0009748,Investigational Drug,3,1,0
+GENIE-MSK-P-0009748,Investigational Drug,4,0,0
+GENIE-MSK-P-0009748,Investigational Drug,5,1,0
+GENIE-MSK-P-0009748,Investigational Drug,6,1,0
+GENIE-MSK-P-0009762,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009762,Nivolumab,2,0,1
+GENIE-MSK-P-0009762,Docetaxel,3,1,1
+GENIE-MSK-P-0009762,Nabpaclitaxel,4,0,0
+GENIE-MSK-P-0009762,Vinorelbine Tartrate,5,1,0
+GENIE-MSK-P-0009763,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009763,Investigational Drug,2,1,0
+GENIE-MSK-P-0009763,Ramucirumab,3,1,1
+GENIE-MSK-P-0009764,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009764,Nivolumab,2,0,1
+GENIE-MSK-P-0009789,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0009864,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0009864,Carboplatin,2,1,0
+GENIE-MSK-P-0009869,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009869,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0009920,Capecitabine,1,1,0
+GENIE-MSK-P-0009920,Capecitabine,1,1,0
+GENIE-MSK-P-0009924,Carboplatin,1,1,1
+GENIE-MSK-P-0009924,Nivolumab,2,0,1
+GENIE-MSK-P-0009924,Nivolumab,3,0,1
+GENIE-MSK-P-0009924,Nivolumab,4,0,1
+GENIE-MSK-P-0009924,Nivolumab,5,0,1
+GENIE-MSK-P-0009924,Vinorelbine Tartrate,6,1,0
+GENIE-MSK-P-0009928,Investigational Drug,1,0,0
+GENIE-MSK-P-0009928,Afatinib Dimaleate,2,0,0
+GENIE-MSK-P-0009948,Carboplatin,1,1,0
+GENIE-MSK-P-0009948,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0009948,Osimertinib,3,0,0
+GENIE-MSK-P-0009948,Carboplatin,4,1,1
+GENIE-MSK-P-0009952,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0009952,Gemcitabine Hydrochloride,2,1,0
+GENIE-MSK-P-0009952,Nivolumab,3,0,1
+GENIE-MSK-P-0009952,Docetaxel,4,0,0
+GENIE-MSK-P-0009958,Carboplatin,1,1,0
+GENIE-MSK-P-0009958,Carboplatin,2,1,0
+GENIE-MSK-P-0009958,Investigational Drug,3,0,0
+GENIE-MSK-P-0009984,Vinorelbine Tartrate,1,1,0
+GENIE-MSK-P-0009984,Vinorelbine Tartrate,1,1,0
+GENIE-MSK-P-0009984,Investigational Drug,2,1,0
+GENIE-MSK-P-0009984,Investigational Drug,2,1,0
+GENIE-MSK-P-0009984,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0009984,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0009986,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0009986,Atezolizumab,2,0,1
+GENIE-MSK-P-0009986,Ramucirumab,3,1,1
+GENIE-MSK-P-0009986,Vinorelbine Tartrate,4,1,0
+GENIE-MSK-P-0010013,Carboplatin,1,1,0
+GENIE-MSK-P-0010013,Nivolumab,2,0,1
+GENIE-MSK-P-0010013,Docetaxel,3,0,0
+GENIE-MSK-P-0010030,Carboplatin,1,1,0
+GENIE-MSK-P-0010030,Nivolumab,2,0,1
+GENIE-MSK-P-0010041,Crizotinib,1,0,0
+GENIE-MSK-P-0010041,Bevacizumab,2,1,1
+GENIE-MSK-P-0010041,Alectinib,3,0,0
+GENIE-MSK-P-0010047,Investigational Drug,1,0,0
+GENIE-MSK-P-0010056,Investigational Drug,1,0,0
+GENIE-MSK-P-0010056,Carboplatin,2,1,0
+GENIE-MSK-P-0010063,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0010063,Carboplatin,2,1,0
+GENIE-MSK-P-0010063,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0010063,Nivolumab,4,0,1
+GENIE-MSK-P-0010065,Carboplatin,1,1,0
+GENIE-MSK-P-0010065,Carboplatin,2,1,0
+GENIE-MSK-P-0010065,Nivolumab,3,0,1
+GENIE-MSK-P-0010210,Doxorubicin Hydrochloride,1,1,0
+GENIE-MSK-P-0010210,Paclitaxel,2,0,0
+GENIE-MSK-P-0010210,Anastrozole,3,0,0
+GENIE-MSK-P-0010247,Carboplatin,1,1,0
+GENIE-MSK-P-0010247,Osimertinib,2,0,0
+GENIE-MSK-P-0010261,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0010269,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0010269,Osimertinib,2,0,0
+GENIE-MSK-P-0010273,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0010300,Cisplatin,1,1,0
+GENIE-MSK-P-0010300,Cisplatin,1,1,0
+GENIE-MSK-P-0010300,Carboplatin,2,1,0
+GENIE-MSK-P-0010300,Carboplatin,2,1,0
+GENIE-MSK-P-0010300,Investigational Drug,3,0,0
+GENIE-MSK-P-0010300,Investigational Drug,3,0,0
+GENIE-MSK-P-0010300,Investigational Drug,4,0,0
+GENIE-MSK-P-0010300,Investigational Drug,4,0,0
+GENIE-MSK-P-0010300,Atezolizumab,5,0,1
+GENIE-MSK-P-0010300,Atezolizumab,5,0,1
+GENIE-MSK-P-0010329,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0010332,Carboplatin,1,1,1
+GENIE-MSK-P-0010338,Investigational Drug,1,1,0
+GENIE-MSK-P-0010338,Investigational Drug,2,1,0
+GENIE-MSK-P-0010338,Investigational Drug,3,1,0
+GENIE-MSK-P-0010338,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0010338,Ramucirumab,5,1,1
+GENIE-MSK-P-0010338,Vinorelbine Tartrate,6,1,0
+GENIE-MSK-P-0010355,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0010355,Nivolumab,2,0,1
+GENIE-MSK-P-0010389,Cisplatin,1,0,0
+GENIE-MSK-P-0010389,Paclitaxel,2,1,0
+GENIE-MSK-P-0010389,Nivolumab,3,0,1
+GENIE-MSK-P-0010389,Gemcitabine Hydrochloride,4,1,0
+GENIE-MSK-P-0010397,Carboplatin,1,1,0
+GENIE-MSK-P-0010507,Afatinib Dimaleate,1,0,0
+GENIE-MSK-P-0010507,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0010507,Nivolumab,3,0,1
+GENIE-MSK-P-0010507,Investigational Drug,4,1,0
+GENIE-MSK-P-0010514,Paclitaxel,1,1,0
+GENIE-MSK-P-0010514,Carboplatin,2,1,0
+GENIE-MSK-P-0010514,Temozolomide,3,0,0
+GENIE-MSK-P-0010514,Gemcitabine Hydrochloride,4,1,0
+GENIE-MSK-P-0010514,Pemetrexed Disodium,5,0,0
+GENIE-MSK-P-0010514,Pemetrexed Disodium,6,0,0
+GENIE-MSK-P-0010514,Pemetrexed Disodium,7,0,0
+GENIE-MSK-P-0010514,Pemetrexed Disodium,8,0,0
+GENIE-MSK-P-0010514,Pemetrexed Disodium,9,0,0
+GENIE-MSK-P-0010514,Pemetrexed Disodium,10,0,0
+GENIE-MSK-P-0010514,Investigational Drug,11,1,0
+GENIE-MSK-P-0010514,Lurbinectedin,12,1,1
+GENIE-MSK-P-0010514,Bevacizumab,13,1,1
+GENIE-MSK-P-0010514,Pembrolizumab,14,0,1
+GENIE-MSK-P-0010525,Lenalidomide,1,1,0
+GENIE-MSK-P-0010525,Pembrolizumab,2,1,1
+GENIE-MSK-P-0010525,Daratumumab,3,1,1
+GENIE-MSK-P-0010525,Pomalidomide,4,1,1
+GENIE-MSK-P-0010554,Investigational Drug,1,0,0
+GENIE-MSK-P-0010554,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0010554,Osimertinib,3,0,0
+GENIE-MSK-P-0010558,Investigational Drug,1,1,0
+GENIE-MSK-P-0010558,Etoposide,2,1,0
+GENIE-MSK-P-0010558,Docetaxel,3,0,0
+GENIE-MSK-P-0010558,Docetaxel,4,1,1
+GENIE-MSK-P-0010563,Investigational Drug,1,0,0
+GENIE-MSK-P-0010563,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0010563,Investigational Drug,3,1,0
+GENIE-MSK-P-0010566,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0010566,Osimertinib,2,0,0
+GENIE-MSK-P-0010634,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0010634,Gemcitabine Hydrochloride,2,1,0
+GENIE-MSK-P-0010648,Carboplatin,1,1,0
+GENIE-MSK-P-0010648,Nivolumab,2,0,1
+GENIE-MSK-P-0010648,Docetaxel,3,1,1
+GENIE-MSK-P-0010648,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0010681,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0010765,Other NOS,1,0,0
+GENIE-MSK-P-0010765,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0010765,Osimertinib,3,0,0
+GENIE-MSK-P-0010793,Investigational Drug,1,0,0
+GENIE-MSK-P-0010793,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0010793,Carboplatin,3,1,1
+GENIE-MSK-P-0010793,Osimertinib,4,0,0
+GENIE-MSK-P-0010793,Cetuximab,5,1,1
+GENIE-MSK-P-0010813,Gemcitabine Hydrochloride,1,1,1
+GENIE-MSK-P-0010813,Investigational Drug,2,1,0
+GENIE-MSK-P-0010863,Crizotinib,1,0,0
+GENIE-MSK-P-0010894,Carboplatin,1,1,0
+GENIE-MSK-P-0011017,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0011018,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0011018,Crizotinib,2,0,0
+GENIE-MSK-P-0011018,Alectinib,3,0,0
+GENIE-MSK-P-0011025,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0011025,Investigational Drug,2,0,0
+GENIE-MSK-P-0011025,Investigational Drug,3,0,0
+GENIE-MSK-P-0011031,Paclitaxel,1,1,1
+GENIE-MSK-P-0011043,Gemcitabine Hydrochloride,1,0,0
+GENIE-MSK-P-0011043,Fluorouracil,2,1,0
+GENIE-MSK-P-0011043,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0011049,Cisplatin,1,1,0
+GENIE-MSK-P-0011049,Carboplatin,2,1,1
+GENIE-MSK-P-0011049,Nivolumab,3,0,1
+GENIE-MSK-P-0011049,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0011049,Carboplatin,5,1,0
+GENIE-MSK-P-0011107,Carboplatin,1,1,1
+GENIE-MSK-P-0011107,Carboplatin,1,1,1
+GENIE-MSK-P-0011107,Afatinib Dimaleate,2,0,0
+GENIE-MSK-P-0011107,Afatinib Dimaleate,2,0,0
+GENIE-MSK-P-0011107,Osimertinib,3,0,0
+GENIE-MSK-P-0011107,Osimertinib,3,0,0
+GENIE-MSK-P-0011107,Afatinib Dimaleate,4,0,0
+GENIE-MSK-P-0011107,Afatinib Dimaleate,4,0,0
+GENIE-MSK-P-0011107,Ramucirumab,5,1,1
+GENIE-MSK-P-0011107,Ramucirumab,5,1,1
+GENIE-MSK-P-0011107,Gemcitabine Hydrochloride,6,0,0
+GENIE-MSK-P-0011107,Gemcitabine Hydrochloride,6,0,0
+GENIE-MSK-P-0011132,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0011138,Carboplatin,1,1,0
+GENIE-MSK-P-0011138,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0011138,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0011154,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0011154,Nivolumab,2,0,1
+GENIE-MSK-P-0011154,Nivolumab,3,0,1
+GENIE-MSK-P-0011157,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0011157,Pembrolizumab,2,0,1
+GENIE-MSK-P-0011157,Pembrolizumab,3,0,1
+GENIE-MSK-P-0011180,Carboplatin,1,1,1
+GENIE-MSK-P-0011180,Docetaxel,2,1,1
+GENIE-MSK-P-0011180,Nivolumab,3,0,1
+GENIE-MSK-P-0011180,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0011234,Paclitaxel,1,1,0
+GENIE-MSK-P-0011234,Paclitaxel,1,1,0
+GENIE-MSK-P-0011234,Cisplatin,2,1,0
+GENIE-MSK-P-0011234,Cisplatin,2,1,0
+GENIE-MSK-P-0011243,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0011243,Nivolumab,2,0,1
+GENIE-MSK-P-0011243,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0011268,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0011268,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0011301,Investigational Drug,1,0,0
+GENIE-MSK-P-0011301,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0011301,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0011301,Atezolizumab,4,0,1
+GENIE-MSK-P-0011327,Cyclophosphamide,1,1,0
+GENIE-MSK-P-0011327,Paclitaxel,2,0,0
+GENIE-MSK-P-0011327,Anastrozole,3,0,0
+GENIE-MSK-P-0011389,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0011389,Osimertinib,2,0,0
+GENIE-MSK-P-0011389,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0011389,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0011452,Paclitaxel,1,1,0
+GENIE-MSK-P-0011517,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0011535,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0011535,Nivolumab,2,0,1
+GENIE-MSK-P-0011537,Carboplatin,1,1,0
+GENIE-MSK-P-0011537,Pembrolizumab,2,0,1
+GENIE-MSK-P-0011537,Investigational Drug,3,0,0
+GENIE-MSK-P-0011537,Paclitaxel,4,1,0
+GENIE-MSK-P-0011548,Investigational Drug,1,0,0
+GENIE-MSK-P-0011548,Crizotinib,2,0,0
+GENIE-MSK-P-0011548,Investigational Drug,3,0,0
+GENIE-MSK-P-0012000,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0012008,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0012008,Crizotinib,2,0,0
+GENIE-MSK-P-0012008,Lorlatinib,3,0,0
+GENIE-MSK-P-0012008,Pembrolizumab,4,0,1
+GENIE-MSK-P-0012008,Docetaxel,5,0,0
+GENIE-MSK-P-0012008,Cabozantinib Smalate,6,0,0
+GENIE-MSK-P-0012008,Investigational Drug,7,0,0
+GENIE-MSK-P-0012008,Gemcitabine Hydrochloride,8,1,0
+GENIE-MSK-P-0012008,Gemcitabine Hydrochloride,9,1,0
+GENIE-MSK-P-0012008,Gemcitabine Hydrochloride,10,1,0
+GENIE-MSK-P-0012008,Atezolizumab,11,0,1
+GENIE-MSK-P-0012043,Anastrozole,1,0,0
+GENIE-MSK-P-0012043,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0012043,Bevacizumab,3,0,1
+GENIE-MSK-P-0012049,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0012049,Nivolumab,2,0,1
+GENIE-MSK-P-0012049,Docetaxel,3,1,1
+GENIE-MSK-P-0012056,Carboplatin,1,1,0
+GENIE-MSK-P-0012056,Investigational Drug,2,0,0
+GENIE-MSK-P-0012056,Atezolizumab,3,0,1
+GENIE-MSK-P-0012056,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0012056,Investigational Drug,5,1,0
+GENIE-MSK-P-0012057,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0012057,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0012059,Carboplatin,1,1,0
+GENIE-MSK-P-0012061,Investigational Drug,1,1,0
+GENIE-MSK-P-0012061,Crizotinib,2,0,0
+GENIE-MSK-P-0012063,Cisplatin,1,1,1
+GENIE-MSK-P-0012063,Pembrolizumab,2,0,1
+GENIE-MSK-P-0012083,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0012083,Carboplatin,2,1,0
+GENIE-MSK-P-0012083,Nivolumab,3,0,1
+GENIE-MSK-P-0012083,Gemcitabine Hydrochloride,4,0,0
+GENIE-MSK-P-0012090,Carboplatin,1,1,0
+GENIE-MSK-P-0012090,Carboplatin,2,1,1
+GENIE-MSK-P-0012090,Investigational Drug,3,0,0
+GENIE-MSK-P-0012090,Atezolizumab,4,0,1
+GENIE-MSK-P-0012149,Investigational Drug,1,1,0
+GENIE-MSK-P-0012149,Investigational Drug,2,0,0
+GENIE-MSK-P-0012149,Crizotinib,3,0,0
+GENIE-MSK-P-0012149,Investigational Drug,4,0,0
+GENIE-MSK-P-0012160,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0012160,Erlotinib Hydrochloride,2,1,1
+GENIE-MSK-P-0012160,Carboplatin,3,1,1
+GENIE-MSK-P-0012160,Investigational Drug,4,1,0
+GENIE-MSK-P-0012160,Investigational Drug,5,1,0
+GENIE-MSK-P-0012160,Afatinib Dimaleate,6,0,0
+GENIE-MSK-P-0012160,Cetuximab,7,1,1
+GENIE-MSK-P-0012160,Erlotinib Hydrochloride,8,0,0
+GENIE-MSK-P-0012192,Carboplatin,1,1,0
+GENIE-MSK-P-0012192,Investigational Drug,2,1,0
+GENIE-MSK-P-0012192,Investigational Drug,3,1,0
+GENIE-MSK-P-0012192,Ramucirumab,4,1,1
+GENIE-MSK-P-0012203,Rituximab,1,1,1
+GENIE-MSK-P-0012203,Rituximab,2,0,1
+GENIE-MSK-P-0012203,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0012203,Gemcitabine Hydrochloride,4,1,0
+GENIE-MSK-P-0012261,Cisplatin,1,1,0
+GENIE-MSK-P-0012261,Investigational Drug,2,1,0
+GENIE-MSK-P-0012261,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0012341,Trametinib,1,1,0
+GENIE-MSK-P-0012341,Nivolumab,2,0,1
+GENIE-MSK-P-0012341,Dabrafenib,3,1,0
+GENIE-MSK-P-0012373,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0012373,Nivolumab,2,0,1
+GENIE-MSK-P-0012373,Investigational Drug,3,1,0
+GENIE-MSK-P-0012373,Investigational Drug,4,0,0
+GENIE-MSK-P-0012373,Docetaxel,5,0,0
+GENIE-MSK-P-0012373,Vinorelbine Tartrate,6,1,0
+GENIE-MSK-P-0012373,Investigational Drug,7,1,0
+GENIE-MSK-P-0012392,Investigational Drug,1,0,0
+GENIE-MSK-P-0012392,Cisplatin,2,1,0
+GENIE-MSK-P-0012393,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0012393,Osimertinib,2,0,0
+GENIE-MSK-P-0012393,Atezolizumab,3,0,1
+GENIE-MSK-P-0012393,Osimertinib,4,0,0
+GENIE-MSK-P-0012393,Pemetrexed Disodium,5,1,1
+GENIE-MSK-P-0012404,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0012428,Ipilimumab,1,0,1
+GENIE-MSK-P-0012428,Investigational Drug,2,0,0
+GENIE-MSK-P-0012428,Cisplatin,3,1,0
+GENIE-MSK-P-0012428,Aldesleukin,4,0,0
+GENIE-MSK-P-0012428,Talimogene Laherparepvec,5,0,0
+GENIE-MSK-P-0012428,Pembrolizumab,6,0,1
+GENIE-MSK-P-0012428,Ipilimumab,7,0,1
+GENIE-MSK-P-0012428,Investigational Drug,8,0,0
+GENIE-MSK-P-0012428,Dacarbazine,9,0,0
+GENIE-MSK-P-0012428,Nivolumab,10,1,1
+GENIE-MSK-P-0012436,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0012436,Osimertinib,2,0,0
+GENIE-MSK-P-0012437,Nivolumab,1,1,1
+GENIE-MSK-P-0012443,Cisplatin,1,1,0
+GENIE-MSK-P-0012443,Investigational Drug,2,0,0
+GENIE-MSK-P-0012514,Carboplatin,1,1,0
+GENIE-MSK-P-0012525,Carboplatin,1,1,1
+GENIE-MSK-P-0012525,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0012525,Investigational Drug,3,0,0
+GENIE-MSK-P-0012525,Investigational Drug,4,0,0
+GENIE-MSK-P-0012525,Investigational Drug,5,0,0
+GENIE-MSK-P-0012545,Cisplatin,1,1,0
+GENIE-MSK-P-0012592,Cisplatin,1,1,0
+GENIE-MSK-P-0012592,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0012592,Osimertinib,3,0,0
+GENIE-MSK-P-0012664,Fluorouracil,1,1,0
+GENIE-MSK-P-0012743,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0012743,Nivolumab,2,0,1
+GENIE-MSK-P-0012745,Pemetrexed Disodium,1,0,0
+GENIE-MSK-P-0012745,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0012745,Cetuximab,3,1,1
+GENIE-MSK-P-0012778,Crizotinib,1,0,0
+GENIE-MSK-P-0012778,Alectinib,2,0,0
+GENIE-MSK-P-0012778,Carboplatin,3,1,1
+GENIE-MSK-P-0012778,Investigational Drug,4,0,0
+GENIE-MSK-P-0012788,Cisplatin,1,1,0
+GENIE-MSK-P-0012788,Investigational Drug,2,0,0
+GENIE-MSK-P-0012811,Carboplatin,1,1,0
+GENIE-MSK-P-0012821,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0012833,Docetaxel,1,1,0
+GENIE-MSK-P-0012833,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0012837,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0012837,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0012849,Carboplatin,1,1,0
+GENIE-MSK-P-0012849,Carboplatin,2,1,0
+GENIE-MSK-P-0012849,Nivolumab,3,0,1
+GENIE-MSK-P-0012849,Docetaxel,4,0,0
+GENIE-MSK-P-0012886,Cisplatin,1,1,0
+GENIE-MSK-P-0012886,Atezolizumab,2,0,1
+GENIE-MSK-P-0012890,Carboplatin,1,1,0
+GENIE-MSK-P-0012890,Carboplatin,2,1,0
+GENIE-MSK-P-0012919,Investigational Drug,1,1,0
+GENIE-MSK-P-0012925,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0012925,Carboplatin,2,1,0
+GENIE-MSK-P-0012925,Nivolumab,3,0,1
+GENIE-MSK-P-0012925,Docetaxel,4,1,1
+GENIE-MSK-P-0012925,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0012951,Carboplatin,1,1,0
+GENIE-MSK-P-0012951,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0012951,Nivolumab,3,0,1
+GENIE-MSK-P-0012951,Investigational Drug,4,1,0
+GENIE-MSK-P-0012951,Docetaxel,5,1,1
+GENIE-MSK-P-0013016,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0013016,Osimertinib,2,0,0
+GENIE-MSK-P-0013162,Cisplatin,1,1,0
+GENIE-MSK-P-0013202,Alectinib,1,0,0
+GENIE-MSK-P-0013202,Bevacizumab,2,1,1
+GENIE-MSK-P-0013298,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0013298,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0013315,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0013315,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0013315,Osimertinib,3,0,0
+GENIE-MSK-P-0013315,Pemetrexed Disodium,4,1,0
+GENIE-MSK-P-0013381,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0013387,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0013387,Vinorelbine Tartrate,2,1,0
+GENIE-MSK-P-0013387,Bevacizumab,3,1,1
+GENIE-MSK-P-0013435,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0013435,Osimertinib,2,0,0
+GENIE-MSK-P-0013435,Carboplatin,3,1,1
+GENIE-MSK-P-0013458,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0013458,Atezolizumab,2,0,1
+GENIE-MSK-P-0013458,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0013483,Crizotinib,1,0,0
+GENIE-MSK-P-0013483,Carboplatin,2,1,1
+GENIE-MSK-P-0013483,Nivolumab,3,0,1
+GENIE-MSK-P-0013483,Docetaxel,4,1,1
+GENIE-MSK-P-0013483,Vinorelbine Tartrate,5,0,0
+GENIE-MSK-P-0013483,Investigational Drug,6,0,0
+GENIE-MSK-P-0013484,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0013484,Carboplatin,2,1,1
+GENIE-MSK-P-0013484,Osimertinib,3,0,0
+GENIE-MSK-P-0013484,Carboplatin,4,1,0
+GENIE-MSK-P-0013514,Investigational Drug,1,1,0
+GENIE-MSK-P-0013514,Carboplatin,2,1,0
+GENIE-MSK-P-0013554,Cisplatin,1,1,0
+GENIE-MSK-P-0013883,Carboplatin,1,1,0
+GENIE-MSK-P-0013886,Investigational Drug,1,0,0
+GENIE-MSK-P-0013886,Investigational Drug,2,0,0
+GENIE-MSK-P-0013935,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0013978,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0014008,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0014061,Pembrolizumab,1,0,1
+GENIE-MSK-P-0014065,Pembrolizumab,1,0,1
+GENIE-MSK-P-0014075,Crizotinib,1,0,0
+GENIE-MSK-P-0014075,Cabozantinib Smalate,2,0,0
+GENIE-MSK-P-0014117,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0014117,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0014117,Erlotinib Hydrochloride,3,1,1
+GENIE-MSK-P-0014117,Osimertinib,4,0,0
+GENIE-MSK-P-0014117,Ramucirumab,5,1,1
+GENIE-MSK-P-0014117,Gemcitabine Hydrochloride,6,0,0
+GENIE-MSK-P-0014120,Investigational Drug,1,1,0
+GENIE-MSK-P-0014120,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0014120,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0014120,Osimertinib,4,0,0
+GENIE-MSK-P-0014120,Carboplatin,5,1,0
+GENIE-MSK-P-0014120,Cetuximab,6,1,1
+GENIE-MSK-P-0014128,Cisplatin,1,1,0
+GENIE-MSK-P-0014128,Bevacizumab,2,0,1
+GENIE-MSK-P-0014128,Carboplatin,3,1,1
+GENIE-MSK-P-0014128,Docetaxel,4,0,0
+GENIE-MSK-P-0014128,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0014162,Carboplatin,1,1,0
+GENIE-MSK-P-0014162,Nivolumab,2,1,1
+GENIE-MSK-P-0014166,Paclitaxel,1,1,0
+GENIE-MSK-P-0014172,Pembrolizumab,1,0,1
+GENIE-MSK-P-0014181,Paclitaxel,1,1,0
+GENIE-MSK-P-0014181,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0014297,Carboplatin,1,1,0
+GENIE-MSK-P-0014308,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0014308,Nivolumab,2,0,1
+GENIE-MSK-P-0014366,Carboplatin,1,1,0
+GENIE-MSK-P-0014366,Gemcitabine Hydrochloride,2,1,0
+GENIE-MSK-P-0014385,Crizotinib,1,0,0
+GENIE-MSK-P-0014385,Alectinib,2,0,0
+GENIE-MSK-P-0014385,Lorlatinib,3,0,0
+GENIE-MSK-P-0014458,Investigational Drug,1,1,0
+GENIE-MSK-P-0014473,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0014473,Gemcitabine Hydrochloride,2,1,0
+GENIE-MSK-P-0014473,Investigational Drug,3,0,0
+GENIE-MSK-P-0014502,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0014502,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0014506,Carboplatin,1,1,1
+GENIE-MSK-P-0014506,Crizotinib,2,0,0
+GENIE-MSK-P-0014524,Cisplatin,1,1,0
+GENIE-MSK-P-0014524,Docetaxel,2,1,0
+GENIE-MSK-P-0014524,Crizotinib,3,0,0
+GENIE-MSK-P-0014544,Carboplatin,1,1,0
+GENIE-MSK-P-0014554,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0014733,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0014769,Osimertinib,1,0,0
+GENIE-MSK-P-0014808,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0014808,Investigational Drug,2,0,0
+GENIE-MSK-P-0014808,Investigational Drug,3,0,0
+GENIE-MSK-P-0014808,Docetaxel,4,1,1
+GENIE-MSK-P-0014813,Carboplatin,1,1,0
+GENIE-MSK-P-0014833,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0014833,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0014833,Afatinib Dimaleate,3,0,0
+GENIE-MSK-P-0014833,Investigational Drug,4,1,0
+GENIE-MSK-P-0014833,Bevacizumab,5,1,1
+GENIE-MSK-P-0014833,Vinorelbine Tartrate,6,1,0
+GENIE-MSK-P-0014875,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0014875,Investigational Drug,2,0,0
+GENIE-MSK-P-0014885,Investigational Drug,1,1,0
+GENIE-MSK-P-0014885,Pembrolizumab,2,0,1
+GENIE-MSK-P-0014885,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0014896,Investigational Drug,1,0,0
+GENIE-MSK-P-0014896,Carboplatin,2,1,0
+GENIE-MSK-P-0014932,Carboplatin,1,1,1
+GENIE-MSK-P-0014932,Docetaxel,2,1,1
+GENIE-MSK-P-0014932,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0014932,Gemcitabine Hydrochloride,4,1,0
+GENIE-MSK-P-0014932,Vinorelbine Tartrate,5,0,0
+GENIE-MSK-P-0014968,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0015061,Investigational Drug,1,1,0
+GENIE-MSK-P-0015061,Carboplatin,2,1,0
+GENIE-MSK-P-0015061,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0015061,Osimertinib,4,0,0
+GENIE-MSK-P-0015061,Carboplatin,5,1,0
+GENIE-MSK-P-0015073,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0015075,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0015075,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0015075,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0015075,Osimertinib,4,0,0
+GENIE-MSK-P-0015075,Nivolumab,5,0,1
+GENIE-MSK-P-0015075,Osimertinib,6,1,1
+GENIE-MSK-P-0015075,Osimertinib,7,1,1
+GENIE-MSK-P-0015110,Crizotinib,1,0,0
+GENIE-MSK-P-0015141,Carboplatin,1,1,0
+GENIE-MSK-P-0015177,Pembrolizumab,1,0,1
+GENIE-MSK-P-0015195,Carboplatin,1,1,0
+GENIE-MSK-P-0015213,Carboplatin,1,1,1
+GENIE-MSK-P-0015213,Pembrolizumab,2,0,1
+GENIE-MSK-P-0015259,Pembrolizumab,1,0,1
+GENIE-MSK-P-0015259,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0015285,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0015285,Docetaxel,2,0,0
+GENIE-MSK-P-0015285,Etoposide,3,1,0
+GENIE-MSK-P-0015296,Pembrolizumab,1,0,1
+GENIE-MSK-P-0015332,Cisplatin,1,1,0
+GENIE-MSK-P-0015332,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0015332,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0015332,Osimertinib,4,0,0
+GENIE-MSK-P-0015348,Carboplatin,1,1,0
+GENIE-MSK-P-0015348,Nivolumab,2,0,1
+GENIE-MSK-P-0015348,Docetaxel,3,0,0
+GENIE-MSK-P-0015348,Vinorelbine Tartrate,4,1,0
+GENIE-MSK-P-0015348,Investigational Drug,5,1,0
+GENIE-MSK-P-0015348,Paclitaxel,6,1,0
+GENIE-MSK-P-0015348,Nivolumab,7,1,1
+GENIE-MSK-P-0015359,Cisplatin,1,1,0
+GENIE-MSK-P-0015359,Osimertinib,2,0,0
+GENIE-MSK-P-0015375,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0015375,Doxorubicin Hydrochloride,2,0,0
+GENIE-MSK-P-0015375,Investigational Drug,3,1,0
+GENIE-MSK-P-0015375,Gemcitabine Hydrochloride,4,1,0
+GENIE-MSK-P-0015414,Investigational Drug,1,1,0
+GENIE-MSK-P-0015434,Crizotinib,1,0,0
+GENIE-MSK-P-0015434,Alectinib,2,0,0
+GENIE-MSK-P-0015434,Carboplatin,3,1,0
+GENIE-MSK-P-0015434,Investigational Drug,4,0,0
+GENIE-MSK-P-0015434,Brigatinib,5,0,0
+GENIE-MSK-P-0015436,Investigational Drug,1,0,0
+GENIE-MSK-P-0015436,Investigational Drug,1,0,0
+GENIE-MSK-P-0015436,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0015436,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0015442,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0015442,Vinorelbine Tartrate,2,1,0
+GENIE-MSK-P-0015472,Carboplatin,1,1,0
+GENIE-MSK-P-0015492,Bevacizumab,1,1,1
+GENIE-MSK-P-0015492,Nivolumab,2,0,1
+GENIE-MSK-P-0015492,Ramucirumab,3,1,1
+GENIE-MSK-P-0015492,Investigational Drug,4,0,0
+GENIE-MSK-P-0015492,Pembrolizumab,5,1,1
+GENIE-MSK-P-0015578,Carboplatin,1,1,0
+GENIE-MSK-P-0015590,Carboplatin,1,1,0
+GENIE-MSK-P-0015590,Investigational Drug,2,0,0
+GENIE-MSK-P-0015592,Cisplatin,1,1,0
+GENIE-MSK-P-0015592,Cisplatin,2,1,0
+GENIE-MSK-P-0015593,Pembrolizumab,1,0,1
+GENIE-MSK-P-0015593,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0015593,Investigational Drug,3,0,0
+GENIE-MSK-P-0015600,Pemetrexed Disodium,1,0,0
+GENIE-MSK-P-0015600,Nivolumab,2,1,1
+GENIE-MSK-P-0015600,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0015600,Ramucirumab,4,1,1
+GENIE-MSK-P-0015600,Mitomycin,5,0,0
+GENIE-MSK-P-0015648,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0015648,Nivolumab,2,0,1
+GENIE-MSK-P-0015648,Ramucirumab,3,1,1
+GENIE-MSK-P-0015648,Vinorelbine Tartrate,4,0,0
+GENIE-MSK-P-0015648,Etoposide,5,1,1
+GENIE-MSK-P-0015667,Carboplatin,1,1,0
+GENIE-MSK-P-0015667,Bevacizumab,2,1,1
+GENIE-MSK-P-0015693,Investigational Drug,1,1,0
+GENIE-MSK-P-0015693,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0015759,Fluorouracil,1,1,0
+GENIE-MSK-P-0015908,Carboplatin,1,1,0
+GENIE-MSK-P-0015908,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0015929,Carboplatin,1,1,1
+GENIE-MSK-P-0015929,Pembrolizumab,2,0,1
+GENIE-MSK-P-0015934,Cisplatin,1,1,0
+GENIE-MSK-P-0015978,Cisplatin,1,1,0
+GENIE-MSK-P-0015978,Atezolizumab,2,0,1
+GENIE-MSK-P-0015978,Investigational Drug,3,1,0
+GENIE-MSK-P-0015978,Docetaxel,4,0,0
+GENIE-MSK-P-0015978,Gemcitabine Hydrochloride,5,1,0
+GENIE-MSK-P-0016038,Carboplatin,1,1,1
+GENIE-MSK-P-0016089,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0016089,Bevacizumab,2,1,1
+GENIE-MSK-P-0016108,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0016108,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0016138,Cisplatin,1,1,1
+GENIE-MSK-P-0016138,Gemcitabine Hydrochloride,2,1,0
+GENIE-MSK-P-0016138,Atezolizumab,3,0,1
+GENIE-MSK-P-0016138,Paclitaxel,4,1,1
+GENIE-MSK-P-0016146,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0016146,Nivolumab,2,0,1
+GENIE-MSK-P-0016175,Paclitaxel,1,1,0
+GENIE-MSK-P-0016175,Carboplatin,2,1,0
+GENIE-MSK-P-0016175,Nivolumab,3,0,1
+GENIE-MSK-P-0016221,Cisplatin,1,1,0
+GENIE-MSK-P-0016221,Nivolumab,2,0,1
+GENIE-MSK-P-0016221,Cabozantinib Smalate,3,0,0
+GENIE-MSK-P-0016221,Investigational Drug,4,0,0
+GENIE-MSK-P-0016260,Osimertinib,1,0,0
+GENIE-MSK-P-0016319,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0016385,Bicalutamide,1,1,0
+GENIE-MSK-P-0016385,Paclitaxel,2,1,0
+GENIE-MSK-P-0016429,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0016429,Gemcitabine Hydrochloride,2,0,0
+GENIE-MSK-P-0016521,Carboplatin,1,1,0
+GENIE-MSK-P-0016521,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0016521,Megestrol Acetate,3,0,0
+GENIE-MSK-P-0016575,Carboplatin,1,1,0
+GENIE-MSK-P-0016575,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0016613,Carboplatin,1,1,0
+GENIE-MSK-P-0016613,Carboplatin,1,1,0
+GENIE-MSK-P-0016613,Carboplatin,1,1,0
+GENIE-MSK-P-0016643,Investigational Drug,1,1,0
+GENIE-MSK-P-0016643,Carboplatin,2,1,0
+GENIE-MSK-P-0016643,Vinorelbine Tartrate,3,0,0
+GENIE-MSK-P-0016643,Investigational Drug,4,1,0
+GENIE-MSK-P-0016646,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0016646,Nivolumab,2,0,1
+GENIE-MSK-P-0016646,Docetaxel,3,1,1
+GENIE-MSK-P-0016708,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0016744,Investigational Drug,1,0,0
+GENIE-MSK-P-0016744,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0016903,Degarelix,1,0,0
+GENIE-MSK-P-0016903,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0016903,Leuprolide Acetate,3,0,0
+GENIE-MSK-P-0016903,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0016903,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0016903,Docetaxel,6,0,0
+GENIE-MSK-P-0016910,Pembrolizumab,1,0,1
+GENIE-MSK-P-0016910,Investigational Drug,2,0,0
+GENIE-MSK-P-0016910,Cabozantinib Smalate,3,0,0
+GENIE-MSK-P-0016994,Gemcitabine Hydrochloride,1,0,0
+GENIE-MSK-P-0016994,Nivolumab,2,0,1
+GENIE-MSK-P-0016994,Investigational Drug,3,1,0
+GENIE-MSK-P-0016994,Nabpaclitaxel,4,0,0
+GENIE-MSK-P-0017013,Carboplatin,1,1,0
+GENIE-MSK-P-0017013,Investigational Drug,2,0,0
+GENIE-MSK-P-0017013,Afatinib Dimaleate,3,0,0
+GENIE-MSK-P-0017013,Vinorelbine Tartrate,4,1,0
+GENIE-MSK-P-0017013,Nabpaclitaxel,5,1,0
+GENIE-MSK-P-0017028,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0017028,Nivolumab,2,0,1
+GENIE-MSK-P-0017048,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0017048,Atezolizumab,2,0,1
+GENIE-MSK-P-0017157,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0017157,Investigational Drug,2,0,0
+GENIE-MSK-P-0017158,Cisplatin,1,1,0
+GENIE-MSK-P-0017158,Atezolizumab,2,0,1
+GENIE-MSK-P-0017158,Investigational Drug,3,0,0
+GENIE-MSK-P-0017166,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0017166,Osimertinib,2,0,0
+GENIE-MSK-P-0017196,Investigational Drug,1,1,0
+GENIE-MSK-P-0017196,Investigational Drug,2,1,0
+GENIE-MSK-P-0017196,Investigational Drug,3,1,0
+GENIE-MSK-P-0017253,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0017253,Atezolizumab,2,0,1
+GENIE-MSK-P-0017284,Afatinib Dimaleate,1,0,0
+GENIE-MSK-P-0017284,Gefitinib,2,0,0
+GENIE-MSK-P-0017284,Bevacizumab,3,1,1
+GENIE-MSK-P-0017378,Carboplatin,1,1,0
+GENIE-MSK-P-0017378,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0017386,Investigational Drug,1,1,0
+GENIE-MSK-P-0017386,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0017386,Vinorelbine Tartrate,3,1,0
+GENIE-MSK-P-0017386,Investigational Drug,4,0,0
+GENIE-MSK-P-0017386,Osimertinib,5,0,0
+GENIE-MSK-P-0017432,Pembrolizumab,1,0,1
+GENIE-MSK-P-0017443,Investigational Drug,1,0,0
+GENIE-MSK-P-0017443,Carboplatin,2,1,0
+GENIE-MSK-P-0017443,Nivolumab,3,0,1
+GENIE-MSK-P-0017443,Docetaxel,4,0,0
+GENIE-MSK-P-0017479,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0017479,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0017479,Osimertinib,3,0,0
+GENIE-MSK-P-0017479,Etoposide,4,1,0
+GENIE-MSK-P-0017479,Ipilimumab,5,1,1
+GENIE-MSK-P-0017479,Pemetrexed Disodium,6,1,1
+GENIE-MSK-P-0017523,Carboplatin,1,1,0
+GENIE-MSK-P-0017592,Cisplatin,1,1,1
+GENIE-MSK-P-0017592,Carboplatin,2,1,1
+GENIE-MSK-P-0017592,Crizotinib,3,0,0
+GENIE-MSK-P-0017592,Alectinib,4,0,0
+GENIE-MSK-P-0017596,Investigational Drug,1,1,0
+GENIE-MSK-P-0017606,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0017606,Vinorelbine Tartrate,2,1,0
+GENIE-MSK-P-0017606,Nivolumab,3,0,1
+GENIE-MSK-P-0017654,Investigational Drug,1,1,0
+GENIE-MSK-P-0017654,Investigational Drug,2,1,0
+GENIE-MSK-P-0017654,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0017679,Investigational Drug,1,1,0
+GENIE-MSK-P-0017679,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0017679,Investigational Drug,3,0,0
+GENIE-MSK-P-0017679,Investigational Drug,4,0,0
+GENIE-MSK-P-0017679,Ramucirumab,5,1,1
+GENIE-MSK-P-0017722,Carboplatin,1,1,1
+GENIE-MSK-P-0017722,Nivolumab,2,0,1
+GENIE-MSK-P-0017722,Docetaxel,3,1,1
+GENIE-MSK-P-0017749,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0017749,Nivolumab,2,0,1
+GENIE-MSK-P-0017749,Ramucirumab,3,1,1
+GENIE-MSK-P-0017752,Cisplatin,1,1,0
+GENIE-MSK-P-0017752,Crizotinib,2,0,0
+GENIE-MSK-P-0017752,Investigational Drug,3,0,0
+GENIE-MSK-P-0017752,Lorlatinib,4,0,0
+GENIE-MSK-P-0017752,Carboplatin,5,1,1
+GENIE-MSK-P-0017752,Bevacizumab,6,1,1
+GENIE-MSK-P-0017773,Docetaxel,1,1,0
+GENIE-MSK-P-0017794,Bevacizumab,1,1,1
+GENIE-MSK-P-0017794,Investigational Drug,2,0,0
+GENIE-MSK-P-0017794,Investigational Drug,3,1,0
+GENIE-MSK-P-0017794,Investigational Drug,4,0,0
+GENIE-MSK-P-0017794,Investigational Drug,5,1,0
+GENIE-MSK-P-0017794,Gemcitabine Hydrochloride,6,1,0
+GENIE-MSK-P-0017794,Gemcitabine Hydrochloride,7,1,0
+GENIE-MSK-P-0017805,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0017832,Bevacizumab,1,1,1
+GENIE-MSK-P-0017915,Doxorubicin Hydrochloride,1,1,0
+GENIE-MSK-P-0017915,Paclitaxel,2,0,0
+GENIE-MSK-P-0017915,Anastrozole,3,0,0
+GENIE-MSK-P-0018082,Cisplatin,1,1,0
+GENIE-MSK-P-0018082,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0018082,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0018082,Carboplatin,4,1,0
+GENIE-MSK-P-0018137,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0018137,Atezolizumab,2,0,1
+GENIE-MSK-P-0018137,Ramucirumab,3,1,1
+GENIE-MSK-P-0018179,Investigational Drug,1,1,0
+GENIE-MSK-P-0018179,Investigational Drug,2,0,0
+GENIE-MSK-P-0018179,Crizotinib,3,1,1
+GENIE-MSK-P-0018179,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0018196,Osimertinib,1,0,0
+GENIE-MSK-P-0018222,Docetaxel,1,1,0
+GENIE-MSK-P-0018222,Crizotinib,2,0,0
+GENIE-MSK-P-0018244,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0018244,Paclitaxel,2,0,0
+GENIE-MSK-P-0018244,Investigational Drug,3,1,0
+GENIE-MSK-P-0018322,Investigational Drug,1,0,0
+GENIE-MSK-P-0018347,Pembrolizumab,1,0,1
+GENIE-MSK-P-0018366,Carboplatin,1,1,1
+GENIE-MSK-P-0018366,Pemetrexed Disodium,2,0,0
+GENIE-MSK-P-0018366,Pembrolizumab,3,0,1
+GENIE-MSK-P-0018366,Pembrolizumab,4,0,1
+GENIE-MSK-P-0018452,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0018452,Nivolumab,2,0,1
+GENIE-MSK-P-0018452,Paclitaxel,3,0,0
+GENIE-MSK-P-0018462,Pembrolizumab,1,0,1
+GENIE-MSK-P-0018476,Doxorubicin Hydrochloride,1,1,0
+GENIE-MSK-P-0018476,Paclitaxel,2,0,0
+GENIE-MSK-P-0018476,Anastrozole,3,0,0
+GENIE-MSK-P-0018476,Cyclophosphamide,4,1,0
+GENIE-MSK-P-0018476,Bortezomib,5,1,1
+GENIE-MSK-P-0018476,Bendamustine Hydrochloride,6,1,1
+GENIE-MSK-P-0018511,Pembrolizumab,1,0,1
+GENIE-MSK-P-0018513,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0018513,Investigational Drug,2,0,0
+GENIE-MSK-P-0018513,Investigational Drug,3,0,0
+GENIE-MSK-P-0018517,Cisplatin,1,1,0
+GENIE-MSK-P-0018517,Carboplatin,2,1,0
+GENIE-MSK-P-0018517,Nivolumab,3,0,1
+GENIE-MSK-P-0018523,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0018573,Bevacizumab,1,1,1
+GENIE-MSK-P-0018573,Investigational Drug,2,0,0
+GENIE-MSK-P-0018573,Lorlatinib,3,0,0
+GENIE-MSK-P-0018599,Cisplatin,1,1,1
+GENIE-MSK-P-0018599,Nabpaclitaxel,2,1,0
+GENIE-MSK-P-0018599,Pembrolizumab,3,0,1
+GENIE-MSK-P-0018604,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0018604,Nivolumab,2,0,1
+GENIE-MSK-P-0018604,Ramucirumab,3,1,1
+GENIE-MSK-P-0018604,Etoposide,4,1,0
+GENIE-MSK-P-0018654,Cisplatin,1,1,0
+GENIE-MSK-P-0018654,Bevacizumab,2,1,1
+GENIE-MSK-P-0018752,Pembrolizumab,1,0,1
+GENIE-MSK-P-0018752,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0018752,Gemcitabine Hydrochloride,3,0,0
+GENIE-MSK-P-0018752,Docetaxel,4,0,0
+GENIE-MSK-P-0018814,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0018858,Pembrolizumab,1,0,1
+GENIE-MSK-P-0018858,Carboplatin,2,1,0
+GENIE-MSK-P-0018865,Carboplatin,1,1,0
+GENIE-MSK-P-0018865,Nivolumab,2,1,1
+GENIE-MSK-P-0018865,Nivolumab,3,0,1
+GENIE-MSK-P-0018865,Atezolizumab,4,0,1
+GENIE-MSK-P-0018883,Carboplatin,1,1,0
+GENIE-MSK-P-0018883,Nivolumab,2,0,1
+GENIE-MSK-P-0018979,Cisplatin,1,1,1
+GENIE-MSK-P-0018979,Investigational Drug,2,0,0
+GENIE-MSK-P-0018979,Pembrolizumab,3,0,1
+GENIE-MSK-P-0018979,Docetaxel,4,1,1
+GENIE-MSK-P-0019070,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0019070,Carboplatin,2,1,1
+GENIE-MSK-P-0019083,Carboplatin,1,1,0
+GENIE-MSK-P-0019090,Cisplatin,1,1,0
+GENIE-MSK-P-0019128,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0019172,Carboplatin,1,1,0
+GENIE-MSK-P-0019172,Atezolizumab,2,0,1
+GENIE-MSK-P-0019344,Paclitaxel,1,1,0
+GENIE-MSK-P-0019346,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0019346,Afatinib Dimaleate,2,0,0
+GENIE-MSK-P-0019346,Carboplatin,3,1,1
+GENIE-MSK-P-0019346,Docetaxel,4,1,1
+GENIE-MSK-P-0019346,Vinorelbine Tartrate,5,1,0
+GENIE-MSK-P-0019346,Vinblastine Sulfate,6,1,0
+GENIE-MSK-P-0019346,Investigational Drug,7,0,0
+GENIE-MSK-P-0019370,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0019419,Methotrexate,1,1,0
+GENIE-MSK-P-0019419,Methotrexate,1,1,0
+GENIE-MSK-P-0019419,Tamoxifen Citrate,2,0,0
+GENIE-MSK-P-0019419,Tamoxifen Citrate,2,0,0
+GENIE-MSK-P-0019419,Cisplatin,3,1,0
+GENIE-MSK-P-0019419,Tamoxifen Citrate,4,0,0
+GENIE-MSK-P-0019419,Tamoxifen Citrate,4,0,0
+GENIE-MSK-P-0019419,Pembrolizumab,5,0,1
+GENIE-MSK-P-0019444,Cisplatin,1,1,0
+GENIE-MSK-P-0019444,Investigational Drug,2,0,0
+GENIE-MSK-P-0019485,Cisplatin,1,1,1
+GENIE-MSK-P-0019485,Afatinib Dimaleate,2,0,0
+GENIE-MSK-P-0019485,Osimertinib,3,0,0
+GENIE-MSK-P-0019485,Carboplatin,4,1,1
+GENIE-MSK-P-0019516,Carboplatin,1,1,0
+GENIE-MSK-P-0019516,Crizotinib,2,0,0
+GENIE-MSK-P-0019516,Pembrolizumab,3,0,1
+GENIE-MSK-P-0019516,Investigational Drug,4,0,0
+GENIE-MSK-P-0019559,Epirubicin Hydrochloride,1,1,0
+GENIE-MSK-P-0019559,Paclitaxel,2,0,0
+GENIE-MSK-P-0019559,Anastrozole,3,0,0
+GENIE-MSK-P-0019567,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0019600,Pembrolizumab,1,0,1
+GENIE-MSK-P-0019600,Investigational Drug,2,0,0
+GENIE-MSK-P-0019600,Investigational Drug,3,0,0
+GENIE-MSK-P-0019605,Carboplatin,1,1,0
+GENIE-MSK-P-0019605,Gemcitabine Hydrochloride,2,0,0
+GENIE-MSK-P-0019605,Atezolizumab,3,0,1
+GENIE-MSK-P-0019619,Doxorubicin Hydrochloride,1,1,0
+GENIE-MSK-P-0019687,Cisplatin,1,1,0
+GENIE-MSK-P-0019687,Pembrolizumab,2,0,1
+GENIE-MSK-P-0019687,Docetaxel,3,0,0
+GENIE-MSK-P-0019687,Investigational Drug,4,1,0
+GENIE-MSK-P-0019772,Cisplatin,1,1,0
+GENIE-MSK-P-0019772,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0019772,Ramucirumab,3,1,1
+GENIE-MSK-P-0019772,Nabpaclitaxel,4,1,1
+GENIE-MSK-P-0019772,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0019772,Mitomycin,6,1,0
+GENIE-MSK-P-0019772,Nivolumab,7,0,1
+GENIE-MSK-P-0019772,Osimertinib,8,0,0
+GENIE-MSK-P-0019849,Cisplatin,1,1,0
+GENIE-MSK-P-0019852,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0019852,Investigational Drug,2,1,0
+GENIE-MSK-P-0019852,Carboplatin,3,1,0
+GENIE-MSK-P-0019857,Cisplatin,1,1,0
+GENIE-MSK-P-0019857,Osimertinib,2,0,0
+GENIE-MSK-P-0019951,Cisplatin,1,1,0
+GENIE-MSK-P-0019951,Pembrolizumab,2,0,1
+GENIE-MSK-P-0019966,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0019966,Atezolizumab,2,0,1
+GENIE-MSK-P-0019966,Nivolumab,3,0,1
+GENIE-MSK-P-0019970,Investigational Drug,1,0,0
+GENIE-MSK-P-0019970,Carboplatin,2,1,0
+GENIE-MSK-P-0019977,Pembrolizumab,1,0,1
+GENIE-MSK-P-0019984,Afatinib Dimaleate,1,0,0
+GENIE-MSK-P-0019984,Pembrolizumab,2,0,1
+GENIE-MSK-P-0019984,Afatinib Dimaleate,3,0,0
+GENIE-MSK-P-0019984,Osimertinib,4,0,0
+GENIE-MSK-P-0020011,Pembrolizumab,1,0,1
+GENIE-MSK-P-0020011,Degarelix,2,0,0
+GENIE-MSK-P-0020011,Leuprolide Acetate,3,0,0
+GENIE-MSK-P-0020137,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0020137,Osimertinib,2,0,0
+GENIE-MSK-P-0020137,Nivolumab,3,0,1
+GENIE-MSK-P-0020170,Pembrolizumab,1,0,1
+GENIE-MSK-P-0020170,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0020177,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0020236,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0020236,Osimertinib,2,0,0
+GENIE-MSK-P-0020236,Investigational Drug,3,1,0
+GENIE-MSK-P-0020236,Carboplatin,4,1,1
+GENIE-MSK-P-0020290,Vinorelbine Tartrate,1,1,0
+GENIE-MSK-P-0020290,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0020290,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0020290,Pemetrexed Disodium,4,1,0
+GENIE-MSK-P-0020290,Durvalumab,5,0,1
+GENIE-MSK-P-0020290,Vinorelbine Tartrate,6,1,0
+GENIE-MSK-P-0020408,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0020408,Icotinib,2,1,0
+GENIE-MSK-P-0020408,Erlotinib Hydrochloride,3,1,0
+GENIE-MSK-P-0020408,Cisplatin,4,0,0
+GENIE-MSK-P-0020408,Crizotinib,5,0,0
+GENIE-MSK-P-0020408,Brigatinib,6,0,0
+GENIE-MSK-P-0020408,Alectinib,7,0,0
+GENIE-MSK-P-0020408,Lorlatinib,8,0,0
+GENIE-MSK-P-0020408,Investigational Drug,9,0,0
+GENIE-MSK-P-0020408,Ramucirumab,10,1,1
+GENIE-MSK-P-0020435,Cyclophosphamide,1,1,0
+GENIE-MSK-P-0020435,Paclitaxel,2,0,0
+GENIE-MSK-P-0020435,Anastrozole,3,0,0
+GENIE-MSK-P-0020513,Pembrolizumab,1,0,1
+GENIE-MSK-P-0020513,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0020513,Crizotinib,3,0,0
+GENIE-MSK-P-0020513,Pemetrexed Disodium,4,0,0
+GENIE-MSK-P-0020513,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0020664,Cisplatin,1,1,0
+GENIE-MSK-P-0020690,Cisplatin,1,1,1
+GENIE-MSK-P-0020690,Carboplatin,2,1,1
+GENIE-MSK-P-0020690,Capecitabine,3,1,1
+GENIE-MSK-P-0020690,Cabozantinib Smalate,4,0,0
+GENIE-MSK-P-0020690,Capecitabine,5,1,0
+GENIE-MSK-P-0020690,Alectinib,6,0,0
+GENIE-MSK-P-0020690,Capecitabine,7,1,0
+GENIE-MSK-P-0020690,Pembrolizumab,8,0,1
+GENIE-MSK-P-0020690,Investigational Drug,9,0,0
+GENIE-MSK-P-0020690,Investigational Drug,10,0,0
+GENIE-MSK-P-0020761,Carboplatin,1,1,1
+GENIE-MSK-P-0020761,Bevacizumab,2,0,1
+GENIE-MSK-P-0020761,Pembrolizumab,3,0,1
+GENIE-MSK-P-0020761,Pembrolizumab,4,0,1
+GENIE-MSK-P-0020779,BCG Vaccine,1,0,0
+GENIE-MSK-P-0020874,Carboplatin,1,1,0
+GENIE-MSK-P-0020874,Rituximab,2,0,1
+GENIE-MSK-P-0020874,Carboplatin,3,1,0
+GENIE-MSK-P-0021231,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0021231,Pembrolizumab,2,0,1
+GENIE-MSK-P-0021257,Carboplatin,1,1,0
+GENIE-MSK-P-0021257,Crizotinib,2,0,0
+GENIE-MSK-P-0021257,Pemetrexed Disodium,3,0,0
+GENIE-MSK-P-0021257,Alectinib,4,0,0
+GENIE-MSK-P-0021257,Investigational Drug,5,0,0
+GENIE-MSK-P-0021257,Brigatinib,6,0,0
+GENIE-MSK-P-0021257,Bevacizumab,7,1,1
+GENIE-MSK-P-0021285,Investigational Drug,1,0,0
+GENIE-MSK-P-0021285,Cisplatin,2,1,0
+GENIE-MSK-P-0021285,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0021285,Osimertinib,4,0,0
+GENIE-MSK-P-0021349,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0021387,Cisplatin,1,1,1
+GENIE-MSK-P-0021387,Investigational Drug,2,1,0
+GENIE-MSK-P-0021495,Cisplatin,1,1,0
+GENIE-MSK-P-0021521,Paclitaxel Loaded Polymeric Micelle,1,1,0
+GENIE-MSK-P-0021630,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0021630,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0021630,Osimertinib,3,0,0
+GENIE-MSK-P-0021675,Bevacizumab,1,1,1
+GENIE-MSK-P-0021696,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0021696,Nivolumab,2,0,1
+GENIE-MSK-P-0021735,Cisplatin,1,1,0
+GENIE-MSK-P-0021735,Nivolumab,2,0,1
+GENIE-MSK-P-0021735,Bevacizumab,3,1,1
+GENIE-MSK-P-0021735,Investigational Drug,4,0,0
+GENIE-MSK-P-0021735,Afatinib Dimaleate,5,0,0
+GENIE-MSK-P-0021835,Cisplatin,1,1,0
+GENIE-MSK-P-0021835,Rituximab,2,0,1
+GENIE-MSK-P-0021835,Carboplatin,3,1,0
+GENIE-MSK-P-0021855,Atezolizumab,1,0,1
+GENIE-MSK-P-0021862,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0021862,Nivolumab,2,0,1
+GENIE-MSK-P-0021862,Investigational Drug,3,0,0
+GENIE-MSK-P-0021871,Etoposide,1,1,0
+GENIE-MSK-P-0021879,Carboplatin,1,1,0
+GENIE-MSK-P-0021879,Investigational Drug,2,0,0
+GENIE-MSK-P-0021879,Pemetrexed Disodium,3,0,0
+GENIE-MSK-P-0021879,Investigational Drug,4,0,0
+GENIE-MSK-P-0021884,Carboplatin,1,1,1
+GENIE-MSK-P-0021884,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0021884,Osimertinib,3,0,0
+GENIE-MSK-P-0021884,Ramucirumab,4,1,1
+GENIE-MSK-P-0021884,Gemcitabine Hydrochloride,5,0,0
+GENIE-MSK-P-0021992,Investigational Drug,1,0,0
+GENIE-MSK-P-0021992,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0022103,Letrozole,1,0,0
+GENIE-MSK-P-0022103,Carboplatin,2,1,0
+GENIE-MSK-P-0022103,Pembrolizumab,3,0,1
+GENIE-MSK-P-0022103,Docetaxel,4,0,0
+GENIE-MSK-P-0022174,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0022174,Atezolizumab,2,0,1
+GENIE-MSK-P-0022184,Anastrozole,1,0,0
+GENIE-MSK-P-0022184,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0022184,Crizotinib,3,0,0
+GENIE-MSK-P-0022184,Alectinib,4,0,0
+GENIE-MSK-P-0022184,Brigatinib,5,0,0
+GENIE-MSK-P-0022184,Carboplatin,6,1,1
+GENIE-MSK-P-0022184,Lorlatinib,7,0,0
+GENIE-MSK-P-0022186,Anastrozole,1,0,0
+GENIE-MSK-P-0022198,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0022198,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0022198,Investigational Drug,3,1,0
+GENIE-MSK-P-0022198,Osimertinib,4,0,0
+GENIE-MSK-P-0022198,Crizotinib,5,0,0
+GENIE-MSK-P-0022198,Crizotinib,6,1,0
+GENIE-MSK-P-0022198,Osimertinib,7,0,0
+GENIE-MSK-P-0022289,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0022289,Methotrexate,2,0,0
+GENIE-MSK-P-0022289,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0022290,Carboplatin,1,1,0
+GENIE-MSK-P-0022290,Anastrozole,2,0,0
+GENIE-MSK-P-0022332,Cisplatin,1,1,1
+GENIE-MSK-P-0022332,Carboplatin,2,1,1
+GENIE-MSK-P-0022372,Cisplatin,1,1,1
+GENIE-MSK-P-0022372,Investigational Drug,2,0,0
+GENIE-MSK-P-0022395,Pembrolizumab,1,0,1
+GENIE-MSK-P-0022395,Carboplatin,2,1,1
+GENIE-MSK-P-0022398,Crizotinib,1,0,0
+GENIE-MSK-P-0022398,Alectinib,2,0,0
+GENIE-MSK-P-0022427,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0022427,Afatinib Dimaleate,2,0,0
+GENIE-MSK-P-0022457,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0022457,Docetaxel,2,1,0
+GENIE-MSK-P-0022458,Investigational Drug,1,1,0
+GENIE-MSK-P-0022458,Investigational Drug,2,1,0
+GENIE-MSK-P-0022458,Investigational Drug,3,1,0
+GENIE-MSK-P-0022458,Osimertinib,4,0,0
+GENIE-MSK-P-0022529,Alectinib,1,0,0
+GENIE-MSK-P-0022529,Tamoxifen Citrate,2,0,0
+GENIE-MSK-P-0022654,Carboplatin,1,1,0
+GENIE-MSK-P-0022659,Carboplatin,1,1,0
+GENIE-MSK-P-0022659,Afatinib Dimaleate,2,0,0
+GENIE-MSK-P-0022659,Osimertinib,3,0,0
+GENIE-MSK-P-0022765,Cisplatin,1,1,0
+GENIE-MSK-P-0022765,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0022765,Afatinib Dimaleate,3,0,0
+GENIE-MSK-P-0022777,Investigational Drug,1,0,0
+GENIE-MSK-P-0022777,Cisplatin,2,1,0
+GENIE-MSK-P-0022777,Osimertinib,3,0,0
+GENIE-MSK-P-0022794,Investigational Drug,1,1,0
+GENIE-MSK-P-0022794,Bortezomib,2,1,0
+GENIE-MSK-P-0022794,Cyclophosphamide,3,0,0
+GENIE-MSK-P-0022794,Investigational Drug,4,1,0
+GENIE-MSK-P-0022794,Carboplatin,5,1,0
+GENIE-MSK-P-0022794,Pomalidomide,6,1,0
+GENIE-MSK-P-0022824,Paclitaxel,1,1,0
+GENIE-MSK-P-0022824,Gemcitabine Hydrochloride,2,1,0
+GENIE-MSK-P-0022830,Osimertinib,1,0,0
+GENIE-MSK-P-0022838,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0022838,Durvalumab,2,0,1
+GENIE-MSK-P-0022881,Carboplatin,1,1,0
+GENIE-MSK-P-0022881,Osimertinib,2,0,0
+GENIE-MSK-P-0022881,Investigational Drug,3,0,0
+GENIE-MSK-P-0022930,Carboplatin,1,1,0
+GENIE-MSK-P-0022930,Pembrolizumab,2,0,1
+GENIE-MSK-P-0022949,Pembrolizumab,1,0,1
+GENIE-MSK-P-0023007,Carboplatin,1,1,0
+GENIE-MSK-P-0023007,Cabozantinib Smalate,2,0,0
+GENIE-MSK-P-0023014,Carboplatin,1,1,0
+GENIE-MSK-P-0023014,Atezolizumab,2,0,1
+GENIE-MSK-P-0023102,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0023102,Investigational Drug,2,0,0
+GENIE-MSK-P-0023157,Tamoxifen Citrate,1,0,0
+GENIE-MSK-P-0023157,Investigational Drug,2,0,0
+GENIE-MSK-P-0023157,Erlotinib Hydrochloride,3,0,0
+GENIE-MSK-P-0023157,Osimertinib,4,0,0
+GENIE-MSK-P-0023157,Gefitinib,5,1,0
+GENIE-MSK-P-0023157,Osimertinib,6,0,0
+GENIE-MSK-P-0023157,Pemetrexed Disodium,7,1,1
+GENIE-MSK-P-0023161,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0023167,Investigational Drug,1,0,0
+GENIE-MSK-P-0023205,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0023205,Nivolumab,2,0,1
+GENIE-MSK-P-0023206,Gefitinib,1,0,0
+GENIE-MSK-P-0023219,Paclitaxel,1,1,0
+GENIE-MSK-P-0023221,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0023221,Pembrolizumab,2,0,1
+GENIE-MSK-P-0023221,Osimertinib,3,0,0
+GENIE-MSK-P-0023221,Investigational Drug,4,0,0
+GENIE-MSK-P-0023253,Cisplatin,1,1,0
+GENIE-MSK-P-0023253,Vinorelbine Tartrate,2,1,0
+GENIE-MSK-P-0023253,Bevacizumab,3,1,1
+GENIE-MSK-P-0023253,Pemetrexed Disodium,4,1,0
+GENIE-MSK-P-0023253,Vinorelbine Tartrate,5,1,0
+GENIE-MSK-P-0023253,Carboplatin,6,1,0
+GENIE-MSK-P-0023260,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0023260,Nivolumab,2,0,1
+GENIE-MSK-P-0023277,Etoposide,1,1,0
+GENIE-MSK-P-0023306,Cisplatin,1,1,0
+GENIE-MSK-P-0023306,Osimertinib,2,0,0
+GENIE-MSK-P-0023310,Investigational Drug,1,1,0
+GENIE-MSK-P-0023310,Cisplatin,2,1,0
+GENIE-MSK-P-0023366,Carboplatin,1,1,0
+GENIE-MSK-P-0023408,Paclitaxel,1,1,0
+GENIE-MSK-P-0023408,Nivolumab,2,0,1
+GENIE-MSK-P-0023440,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0023440,Investigational Drug,2,0,0
+GENIE-MSK-P-0023440,Osimertinib,3,0,0
+GENIE-MSK-P-0023440,Cisplatin,4,1,0
+GENIE-MSK-P-0023440,Osimertinib,5,1,0
+GENIE-MSK-P-0023451,Carboplatin,1,1,0
+GENIE-MSK-P-0023451,Pembrolizumab,2,1,1
+GENIE-MSK-P-0023468,Carboplatin,1,1,1
+GENIE-MSK-P-0023468,Bevacizumab,2,1,1
+GENIE-MSK-P-0023468,Nivolumab,3,0,1
+GENIE-MSK-P-0023469,Investigational Drug,1,0,0
+GENIE-MSK-P-0023504,Afatinib Dimaleate,1,0,0
+GENIE-MSK-P-0023504,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0023504,Investigational Drug,3,0,0
+GENIE-MSK-P-0023504,Crizotinib,4,0,0
+GENIE-MSK-P-0023537,Carboplatin,1,1,0
+GENIE-MSK-P-0023569,Carboplatin,1,1,0
+GENIE-MSK-P-0023569,Methotrexate,2,0,0
+GENIE-MSK-P-0023569,Nivolumab,3,0,1
+GENIE-MSK-P-0023569,Docetaxel,4,0,0
+GENIE-MSK-P-0023569,Methotrexate,5,0,0
+GENIE-MSK-P-0023569,Carboplatin,6,1,0
+GENIE-MSK-P-0023569,Methotrexate,7,0,0
+GENIE-MSK-P-0023570,Carboplatin,1,1,0
+GENIE-MSK-P-0023583,Carboplatin,1,1,0
+GENIE-MSK-P-0023596,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0023596,Nivolumab,2,0,1
+GENIE-MSK-P-0023602,Gemcitabine Hydrochloride,1,1,0
+GENIE-MSK-P-0023602,Carboplatin,2,1,0
+GENIE-MSK-P-0023622,Cisplatin,1,1,0
+GENIE-MSK-P-0023622,Carboplatin,2,1,0
+GENIE-MSK-P-0023622,Nivolumab,3,0,1
+GENIE-MSK-P-0023622,Ramucirumab,4,1,1
+GENIE-MSK-P-0023664,Paclitaxel,1,1,0
+GENIE-MSK-P-0023678,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0023678,Osimertinib,2,0,0
+GENIE-MSK-P-0023780,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0023859,Carboplatin,1,1,0
+GENIE-MSK-P-0023860,Pembrolizumab,1,0,1
+GENIE-MSK-P-0023860,Osimertinib,2,0,0
+GENIE-MSK-P-0024025,Osimertinib,1,0,0
+GENIE-MSK-P-0024025,Investigational Drug,2,0,0
+GENIE-MSK-P-0024025,Carboplatin,3,1,1
+GENIE-MSK-P-0024025,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0024037,Investigational Drug,1,0,0
+GENIE-MSK-P-0024037,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0024306,Cisplatin,1,1,1
+GENIE-MSK-P-0024306,Investigational Drug,2,1,0
+GENIE-MSK-P-0024319,Nivolumab,1,1,1
+GENIE-MSK-P-0024319,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0024319,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0024319,Pemetrexed Disodium,4,1,0
+GENIE-MSK-P-0024467,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0024467,Atezolizumab,2,0,1
+GENIE-MSK-P-0024480,Investigational Drug,1,1,0
+GENIE-MSK-P-0024483,Tamoxifen Citrate,1,0,0
+GENIE-MSK-P-0024483,Etoposide,2,1,0
+GENIE-MSK-P-0024487,Cisplatin,1,1,1
+GENIE-MSK-P-0024493,Cisplatin,1,1,0
+GENIE-MSK-P-0024493,Investigational Drug,2,0,0
+GENIE-MSK-P-0024493,Investigational Drug,3,0,0
+GENIE-MSK-P-0024493,Atezolizumab,4,0,1
+GENIE-MSK-P-0024493,Trastuzumab,5,1,1
+GENIE-MSK-P-0024493,Docetaxel,6,1,1
+GENIE-MSK-P-0024493,Afatinib Dimaleate,7,0,0
+GENIE-MSK-P-0024670,Osimertinib,1,0,0
+GENIE-MSK-P-0024677,Osimertinib,1,0,0
+GENIE-MSK-P-0024677,Investigational Drug,2,1,0
+GENIE-MSK-P-0024677,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0024677,Osimertinib,4,0,0
+GENIE-MSK-P-0024677,Docetaxel,5,0,0
+GENIE-MSK-P-0024685,Cisplatin,1,1,0
+GENIE-MSK-P-0024685,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0024685,Osimertinib,3,0,0
+GENIE-MSK-P-0024750,Docetaxel,1,1,0
+GENIE-MSK-P-0024750,Cisplatin,2,0,0
+GENIE-MSK-P-0024750,Cetuximab,3,0,1
+GENIE-MSK-P-0024750,Pembrolizumab,4,0,1
+GENIE-MSK-P-0024750,Methotrexate,5,1,0
+GENIE-MSK-P-0024750,Cisplatin,6,1,0
+GENIE-MSK-P-0024750,Cisplatin,6,1,0
+GENIE-MSK-P-0024758,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0024758,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0024775,Carboplatin,1,1,0
+GENIE-MSK-P-0024775,Carboplatin,1,1,0
+GENIE-MSK-P-0024822,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0024822,Nivolumab,2,0,1
+GENIE-MSK-P-0024822,Investigational Drug,3,0,0
+GENIE-MSK-P-0024822,Gemcitabine Hydrochloride,4,1,0
+GENIE-MSK-P-0024843,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0024843,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0024844,Investigational Drug,1,0,0
+GENIE-MSK-P-0024844,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0024844,Pemetrexed Disodium,3,1,0
+GENIE-MSK-P-0024844,Paclitaxel,4,0,0
+GENIE-MSK-P-0024844,Pembrolizumab,5,0,1
+GENIE-MSK-P-0024907,Carboplatin,1,1,1
+GENIE-MSK-P-0024907,Crizotinib,2,0,0
+GENIE-MSK-P-0024907,Ceritinib,3,0,0
+GENIE-MSK-P-0024907,Alectinib,4,0,0
+GENIE-MSK-P-0024907,Carboplatin,5,1,0
+GENIE-MSK-P-0024907,Lorlatinib,6,0,0
+GENIE-MSK-P-0024907,Investigational Drug,7,0,0
+GENIE-MSK-P-0024932,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0024932,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0024932,Gemcitabine Hydrochloride,3,1,0
+GENIE-MSK-P-0024932,Atezolizumab,4,0,1
+GENIE-MSK-P-0024932,Docetaxel,5,1,1
+GENIE-MSK-P-0024932,Vinorelbine Tartrate,6,0,0
+GENIE-MSK-P-0024950,Carboplatin,1,1,0
+GENIE-MSK-P-0024950,Nivolumab,2,0,1
+GENIE-MSK-P-0024950,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0025016,Pembrolizumab,1,0,1
+GENIE-MSK-P-0025016,Carboplatin,2,1,0
+GENIE-MSK-P-0025016,Investigational Drug,3,1,0
+GENIE-MSK-P-0025018,Vinorelbine Tartrate,1,0,0
+GENIE-MSK-P-0025018,Atezolizumab,2,0,1
+GENIE-MSK-P-0025069,Pembrolizumab,1,0,1
+GENIE-MSK-P-0025103,Nivolumab,1,0,1
+GENIE-MSK-P-0025107,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0025127,Investigational Drug,1,1,0
+GENIE-MSK-P-0025127,Investigational Drug,2,1,0
+GENIE-MSK-P-0025155,Erlotinib Hydrochloride,1,0,0
+GENIE-MSK-P-0025155,Osimertinib,2,0,0
+GENIE-MSK-P-0025155,Osimertinib,3,0,0
+GENIE-MSK-P-0025284,Pembrolizumab,1,0,1
+GENIE-MSK-P-0025284,Osimertinib,2,0,0
+GENIE-MSK-P-0025344,Investigational Drug,1,1,0
+GENIE-MSK-P-0025344,Osimertinib,2,0,0
+GENIE-MSK-P-0025377,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0025465,Pembrolizumab,1,0,1
+GENIE-MSK-P-0025534,Carboplatin,1,1,1
+GENIE-MSK-P-0025534,Investigational Drug,2,1,0
+GENIE-MSK-P-0025534,Trastuzumab Emtansine,3,0,1
+GENIE-MSK-P-0025549,Pembrolizumab,1,0,1
+GENIE-MSK-P-0025601,Afatinib Dimaleate,1,0,0
+GENIE-MSK-P-0025601,Erlotinib Hydrochloride,2,0,0
+GENIE-MSK-P-0025601,Pemetrexed Disodium,3,1,1
+GENIE-MSK-P-0025601,Pemetrexed Disodium,4,1,1
+GENIE-MSK-P-0025642,Pembrolizumab,1,0,1
+GENIE-MSK-P-0025651,Investigational Drug,1,0,0
+GENIE-MSK-P-0025651,Investigational Drug,2,0,0
+GENIE-MSK-P-0025691,Pembrolizumab,1,0,1
+GENIE-MSK-P-0025691,Osimertinib,2,0,0
+GENIE-MSK-P-0025691,Carboplatin,3,1,0
+GENIE-MSK-P-0025691,Osimertinib,4,1,0
+GENIE-MSK-P-0025713,Investigational Drug,1,1,0
+GENIE-MSK-P-0025716,Cisplatin,1,1,0
+GENIE-MSK-P-0025741,Crizotinib,1,0,0
+GENIE-MSK-P-0025741,Pemetrexed Disodium,2,1,1
+GENIE-MSK-P-0025741,Investigational Drug,3,0,0
+GENIE-MSK-P-0025762,Investigational Drug,1,0,0
+GENIE-MSK-P-0025762,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0025762,Pemetrexed Disodium,3,0,0
+GENIE-MSK-P-0025762,Investigational Drug,4,1,0
+GENIE-MSK-P-0025762,Pembrolizumab,5,0,1
+GENIE-MSK-P-0025762,Gemcitabine Hydrochloride,6,0,0
+GENIE-MSK-P-0025836,Pemetrexed Disodium,1,1,1
+GENIE-MSK-P-0025836,Ramucirumab,2,1,1
+GENIE-MSK-P-0025836,Trastuzumab,3,0,1
+GENIE-MSK-P-0025860,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0025866,Atezolizumab,1,0,1
+GENIE-MSK-P-0025956,Cisplatin,1,1,0
+GENIE-MSK-P-0025956,Carboplatin,2,1,0
+GENIE-MSK-P-0025956,Nivolumab,3,0,1
+GENIE-MSK-P-0026029,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0026033,Investigational Drug,1,1,0
+GENIE-MSK-P-0026033,Pemetrexed Disodium,2,1,0
+GENIE-MSK-P-0026050,Pemetrexed Disodium,1,1,0
+GENIE-MSK-P-0026050,Erlotinib Hydrochloride,2,1,0
+GENIE-MSK-P-0026080,Trametinib,1,1,0
+GENIE-UHN-019873,Gefitinib,1,0,0
+GENIE-UHN-019873,Pemetrexed Disodium,2,1,0
+GENIE-UHN-033821,Gefitinib,1,0,0
+GENIE-UHN-033821,Osimertinib,2,0,0
+GENIE-UHN-035679,Gemcitabine Hydrochloride,1,1,0
+GENIE-UHN-035679,Docetaxel,2,0,0
+GENIE-UHN-035679,Docetaxel,3,0,0
+GENIE-UHN-035679,Erlotinib Hydrochloride,4,0,0
+GENIE-UHN-040300,Investigational Drug,1,1,0
+GENIE-UHN-072009,Afatinib Dimaleate,1,0,0
+GENIE-UHN-072009,Cisplatin,2,1,0
+GENIE-UHN-072009,Osimertinib,3,0,0
+GENIE-UHN-072009,Carboplatin,4,1,0
+GENIE-UHN-090667,Cisplatin,1,1,0
+GENIE-UHN-090667,Pemetrexed Disodium,2,0,0
+GENIE-UHN-090667,Erlotinib Hydrochloride,3,0,0
+GENIE-UHN-090667,Nivolumab,4,0,1
+GENIE-UHN-106302,Etoposide,1,1,0
+GENIE-UHN-106302,Investigational Drug,2,0,0
+GENIE-UHN-134467,Cisplatin,1,1,0
+GENIE-UHN-134467,Carboplatin,2,1,0
+GENIE-UHN-134467,Pemetrexed Disodium,3,0,0
+GENIE-UHN-134467,Docetaxel,4,0,0
+GENIE-UHN-134467,Erlotinib Hydrochloride,5,0,0
+GENIE-UHN-145755,Vinorelbine Tartrate,1,1,0
+GENIE-UHN-145755,Docetaxel,2,1,0
+GENIE-UHN-176707,Carboplatin,1,1,0
+GENIE-UHN-198092,Carboplatin,1,1,0
+GENIE-UHN-198092,Gefitinib,2,0,0
+GENIE-UHN-198092,Gefitinib,3,0,0
+GENIE-UHN-198092,Osimertinib,4,0,0
+GENIE-UHN-206026,Gefitinib,1,0,0
+GENIE-UHN-206026,Investigational Drug,2,0,0
+GENIE-UHN-225972,Cisplatin,1,1,0
+GENIE-UHN-225972,Cisplatin,2,1,0
+GENIE-UHN-225972,Gefitinib,3,0,0
+GENIE-UHN-250004,Cisplatin,1,1,0
+GENIE-UHN-315844,Paclitaxel,1,1,0
+GENIE-UHN-373738,Gefitinib,1,0,0
+GENIE-UHN-373738,Osimertinib,2,0,0
+GENIE-UHN-375936,Gemcitabine Hydrochloride,1,1,0
+GENIE-UHN-375936,Gemcitabine Hydrochloride,2,1,0
+GENIE-UHN-375936,Gemcitabine Hydrochloride,3,1,0
+GENIE-UHN-422749,Vinorelbine Tartrate,1,1,0
+GENIE-UHN-422749,Pemetrexed Disodium,2,1,0
+GENIE-UHN-422749,Pemetrexed Disodium,3,0,0
+GENIE-UHN-422749,Nivolumab,4,0,1
+GENIE-UHN-434201,Investigational Drug,1,0,0
+GENIE-UHN-434201,Investigational Drug,2,0,0
+GENIE-UHN-434201,Afatinib Dimaleate,3,0,0
+GENIE-UHN-434201,Erlotinib Hydrochloride,4,0,0
+GENIE-UHN-434201,Afatinib Dimaleate,5,0,0
+GENIE-UHN-434201,Carboplatin,6,1,0
+GENIE-UHN-434201,Pemetrexed Disodium,7,0,0
+GENIE-UHN-434201,Osimertinib,8,0,0
+GENIE-UHN-478117,Pemetrexed Disodium,1,0,0
+GENIE-UHN-478117,Gefitinib,2,0,0
+GENIE-UHN-478244,Cisplatin,1,1,0
+GENIE-UHN-478244,Cisplatin,2,1,0
+GENIE-UHN-478244,Carboplatin,3,1,0
+GENIE-UHN-478244,Docetaxel,4,0,0
+GENIE-UHN-489789,Cisplatin,1,1,0
+GENIE-UHN-489789,Carboplatin,2,1,0
+GENIE-UHN-489789,Pemetrexed Disodium,3,1,0
+GENIE-UHN-489789,Nivolumab,4,0,1
+GENIE-UHN-521284,Cisplatin,1,1,0
+GENIE-UHN-521284,Cisplatin,2,1,0
+GENIE-UHN-562490,Cisplatin,1,1,0
+GENIE-UHN-562490,Gefitinib,2,0,0
+GENIE-UHN-562490,Osimertinib,3,0,0
+GENIE-UHN-562490,Nivolumab,4,0,1
+GENIE-UHN-569698,Cisplatin,1,1,0
+GENIE-UHN-569698,Cisplatin,2,1,0
+GENIE-UHN-569698,Gemcitabine Hydrochloride,3,1,0
+GENIE-UHN-569698,Pemetrexed Disodium,4,0,0
+GENIE-UHN-569698,Erlotinib Hydrochloride,5,0,0
+GENIE-UHN-576328,Carboplatin,1,1,0
+GENIE-UHN-576328,Pemetrexed Disodium,2,0,0
+GENIE-UHN-576328,Docetaxel,3,0,0
+GENIE-UHN-576328,Nivolumab,4,0,1
+GENIE-UHN-579178,Cisplatin,1,1,0
+GENIE-UHN-579178,Afatinib Dimaleate,2,0,0
+GENIE-UHN-579178,Investigational Drug,3,1,0
+GENIE-UHN-579178,Carboplatin,4,1,0
+GENIE-UHN-594564,Carboplatin,1,1,0
+GENIE-UHN-594564,Gemcitabine Hydrochloride,2,0,0
+GENIE-UHN-594564,Erlotinib Hydrochloride,3,0,0
+GENIE-UHN-623532,Cisplatin,1,1,0
+GENIE-UHN-623532,Cisplatin,2,1,0
+GENIE-UHN-623532,Vinorelbine Tartrate,3,0,0
+GENIE-UHN-623532,Nivolumab,4,0,1
+GENIE-UHN-623532,Nivolumab,5,0,1
+GENIE-UHN-623532,Nivolumab,6,0,1
+GENIE-UHN-637182,Erlotinib Hydrochloride,1,0,0
+GENIE-UHN-637182,Investigational Drug,2,0,0
+GENIE-UHN-637182,Cisplatin,3,1,0
+GENIE-UHN-637182,Pemetrexed Disodium,4,0,0
+GENIE-UHN-637182,Gefitinib,5,0,0
+GENIE-UHN-637182,Afatinib Dimaleate,6,0,0
+GENIE-UHN-637182,Nivolumab,7,0,1
+GENIE-UHN-637182,Docetaxel,8,0,0
+GENIE-UHN-637182,Docetaxel,9,0,0
+GENIE-UHN-648207,Gefitinib,1,0,0
+GENIE-UHN-648207,Cisplatin,2,1,0
+GENIE-UHN-648207,Carboplatin,3,1,0
+GENIE-UHN-648207,Nivolumab,4,0,1
+GENIE-UHN-648422,Carboplatin,1,1,0
+GENIE-UHN-648422,Pemetrexed Disodium,2,0,0
+GENIE-UHN-648422,Erlotinib Hydrochloride,3,0,0
+GENIE-UHN-650422,Cisplatin,1,1,0
+GENIE-UHN-666155,Cisplatin,1,1,0
+GENIE-UHN-666155,Pemetrexed Disodium,2,0,0
+GENIE-UHN-666155,Erlotinib Hydrochloride,3,0,0
+GENIE-UHN-689198,Carboplatin,1,1,0
+GENIE-UHN-689198,Gefitinib,2,0,0
+GENIE-UHN-689198,Pemetrexed Disodium,3,0,0
+GENIE-UHN-707921,Vinorelbine Tartrate,1,1,0
+GENIE-UHN-707921,Investigational Drug,2,1,1
+GENIE-UHN-707921,Investigational Drug,3,0,0
+GENIE-UHN-710367,Cisplatin,1,1,0
+GENIE-UHN-715652,Cisplatin,1,1,0
+GENIE-UHN-715652,Vinorelbine Tartrate,2,1,0
+GENIE-UHN-715652,Cisplatin,3,1,0
+GENIE-UHN-715652,Investigational Drug,4,0,0
+GENIE-UHN-715652,Investigational Drug,5,0,0
+GENIE-UHN-729866,Cisplatin,1,1,0
+GENIE-UHN-729866,Carboplatin,2,1,0
+GENIE-UHN-729866,Pemetrexed Disodium,3,0,0
+GENIE-UHN-729866,Carboplatin,4,1,0
+GENIE-UHN-729866,Docetaxel,5,0,0
+GENIE-UHN-729866,Investigational Drug,6,0,0
+GENIE-UHN-749967,Cisplatin,1,1,0
+GENIE-UHN-749967,Pemetrexed Disodium,2,0,0
+GENIE-UHN-749967,Pemetrexed Disodium,3,0,0
+GENIE-UHN-754584,Carboplatin,1,1,0
+GENIE-UHN-772926,Cisplatin,1,1,0
+GENIE-UHN-787866,Cisplatin,1,1,0
+GENIE-UHN-804133,Cisplatin,1,1,0
+GENIE-UHN-804133,Carboplatin,2,1,0
+GENIE-UHN-804133,Pemetrexed Disodium,3,0,0
+GENIE-UHN-804133,Erlotinib Hydrochloride,4,0,0
+GENIE-UHN-804133,Afatinib Dimaleate,5,0,0
+GENIE-UHN-804133,Nivolumab,6,0,1
+GENIE-UHN-804133,Docetaxel,7,0,0
+GENIE-UHN-826551,Cisplatin,1,1,0
+GENIE-UHN-826551,Cisplatin,2,1,0
+GENIE-UHN-826551,Pemetrexed Disodium,3,0,0
+GENIE-UHN-826551,Investigational Drug,4,0,0
+GENIE-UHN-860207,Cisplatin,1,1,0
+GENIE-UHN-860207,Gefitinib,2,0,0
+GENIE-UHN-860207,Investigational Drug,3,0,0
+GENIE-UHN-901347,Cisplatin,1,1,0
+GENIE-UHN-901347,Paclitaxel,2,1,0
+GENIE-UHN-901347,Pemetrexed Disodium,3,0,0
+GENIE-UHN-901347,Nivolumab,4,0,1
+GENIE-UHN-904697,Cisplatin,1,1,0
+GENIE-UHN-942522,Pemetrexed Disodium,1,1,0
+GENIE-UHN-942522,Pemetrexed Disodium,2,0,0
+GENIE-UHN-982281,Gefitinib,1,0,0
+GENIE-UHN-982281,Osimertinib,2,0,0
+GENIE-VICC-100390,Carboplatin,1,1,0
+GENIE-VICC-100390,Pembrolizumab,2,0,1
+GENIE-VICC-100390,Docetaxel,3,1,1
+GENIE-VICC-101364,Carboplatin,1,1,0
+GENIE-VICC-101364,Pemetrexed Disodium,2,0,0
+GENIE-VICC-102966,Pemetrexed Disodium,1,1,0
+GENIE-VICC-102966,Docetaxel,2,1,0
+GENIE-VICC-103574,Carboplatin,1,1,0
+GENIE-VICC-103639,Afatinib Dimaleate,1,0,0
+GENIE-VICC-103639,Osimertinib,2,0,0
+GENIE-VICC-103639,Cisplatin,3,0,0
+GENIE-VICC-103639,Nivolumab,4,0,1
+GENIE-VICC-103639,Erlotinib Hydrochloride,5,0,0
+GENIE-VICC-104558,Carboplatin,1,1,0
+GENIE-VICC-104558,Carboplatin,2,1,0
+GENIE-VICC-104558,Carboplatin,3,1,1
+GENIE-VICC-104558,Carboplatin,3,1,1
+GENIE-VICC-112944,Carboplatin,1,1,0
+GENIE-VICC-112944,Atezolizumab,2,0,1
+GENIE-VICC-113182,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-113182,Carboplatin,2,1,0
+GENIE-VICC-113334,Carboplatin,1,1,0
+GENIE-VICC-113334,Investigational Drug,2,0,0
+GENIE-VICC-114248,Carboplatin,1,1,0
+GENIE-VICC-114248,Nivolumab,2,1,1
+GENIE-VICC-114248,Nivolumab,3,0,1
+GENIE-VICC-125866,Bevacizumab,1,1,1
+GENIE-VICC-125866,Nivolumab,2,0,1
+GENIE-VICC-126797,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-126797,Investigational Drug,2,0,0
+GENIE-VICC-126797,Bevacizumab,3,1,1
+GENIE-VICC-127229,Cisplatin,1,1,0
+GENIE-VICC-127229,Pemetrexed Disodium,2,1,0
+GENIE-VICC-128065,Gemcitabine Hydrochloride,1,1,0
+GENIE-VICC-136420,Rituximab,1,0,1
+GENIE-VICC-136420,Carboplatin,2,1,0
+GENIE-VICC-136420,Nivolumab,3,0,1
+GENIE-VICC-138663,Carboplatin,1,1,0
+GENIE-VICC-138663,Carboplatin,2,1,1
+GENIE-VICC-138866,Investigational Drug,1,1,0
+GENIE-VICC-144494,Carboplatin,1,1,0
+GENIE-VICC-144494,Carboplatin,2,1,0
+GENIE-VICC-144494,Carboplatin,3,1,0
+GENIE-VICC-144494,Pembrolizumab,4,0,1
+GENIE-VICC-144494,Docetaxel,5,1,1
+GENIE-VICC-150400,Cisplatin,1,1,0
+GENIE-VICC-150400,Carboplatin,2,1,0
+GENIE-VICC-150400,Nivolumab,3,0,1
+GENIE-VICC-154267,Carboplatin,1,1,0
+GENIE-VICC-154267,Nivolumab,2,1,1
+GENIE-VICC-154267,Nivolumab,3,1,1
+GENIE-VICC-154267,Docetaxel,4,1,1
+GENIE-VICC-160059,Investigational Drug,1,1,0
+GENIE-VICC-160059,Carboplatin,2,1,0
+GENIE-VICC-160059,Pemetrexed Disodium,3,0,0
+GENIE-VICC-162955,Carboplatin,1,1,0
+GENIE-VICC-162955,Carboplatin,1,1,0
+GENIE-VICC-162955,Carboplatin,2,1,0
+GENIE-VICC-162955,Carboplatin,2,1,0
+GENIE-VICC-162955,Nivolumab,3,0,1
+GENIE-VICC-162955,Nivolumab,3,0,1
+GENIE-VICC-162955,Carboplatin,4,1,0
+GENIE-VICC-162955,Carboplatin,4,1,0
+GENIE-VICC-181550,Other antineoplastic,1,0,0
+GENIE-VICC-187605,Cisplatin,1,1,0
+GENIE-VICC-187605,Nivolumab,2,0,1
+GENIE-VICC-187605,Carboplatin,3,1,1
+GENIE-VICC-187605,Everolimus,4,0,0
+GENIE-VICC-187605,Carboplatin,5,1,1
+GENIE-VICC-188713,Fluorouracil,1,1,0
+GENIE-VICC-188713,Cisplatin,2,1,0
+GENIE-VICC-188713,Investigational Drug,3,0,0
+GENIE-VICC-188713,Paclitaxel,4,1,0
+GENIE-VICC-188713,Alectinib,5,0,0
+GENIE-VICC-188772,Investigational Drug,1,0,0
+GENIE-VICC-188772,Bevacizumab,2,1,1
+GENIE-VICC-188772,Investigational Drug,3,0,0
+GENIE-VICC-192102,Pembrolizumab,1,0,1
+GENIE-VICC-195187,Carboplatin,1,1,0
+GENIE-VICC-195187,Carboplatin,2,1,0
+GENIE-VICC-195187,Nivolumab,3,0,1
+GENIE-VICC-195187,Nivolumab,4,1,1
+GENIE-VICC-199259,Crizotinib,1,0,0
+GENIE-VICC-199259,Ceritinib,2,0,0
+GENIE-VICC-200629,Other antineoplastic,1,0,0
+GENIE-VICC-200629,Carboplatin,2,1,0
+GENIE-VICC-203874,Pemetrexed Disodium,1,1,1
+GENIE-VICC-203874,Nivolumab,2,0,1
+GENIE-VICC-211570,Other antineoplastic,1,0,0
+GENIE-VICC-211570,Erlotinib Hydrochloride,2,0,0
+GENIE-VICC-211570,Afatinib Dimaleate,3,0,0
+GENIE-VICC-211570,Investigational Drug,4,0,0
+GENIE-VICC-213021,Cisplatin,1,1,0
+GENIE-VICC-213021,Carboplatin,2,1,0
+GENIE-VICC-213021,Erlotinib Hydrochloride,3,0,0
+GENIE-VICC-213021,Docetaxel,4,0,0
+GENIE-VICC-213021,Erlotinib Hydrochloride,5,0,0
+GENIE-VICC-213021,Investigational Drug,6,0,0
+GENIE-VICC-213021,Erlotinib Hydrochloride,7,0,0
+GENIE-VICC-213021,Afatinib Dimaleate,8,0,0
+GENIE-VICC-213021,Pemetrexed Disodium,9,0,0
+GENIE-VICC-213021,Erlotinib Hydrochloride,10,0,0
+GENIE-VICC-216020,Carboplatin,1,1,0
+GENIE-VICC-216020,Atezolizumab,2,0,1
+GENIE-VICC-216020,Nivolumab,3,1,1
+GENIE-VICC-216020,Docetaxel,4,0,0
+GENIE-VICC-219157,Carboplatin,1,1,0
+GENIE-VICC-219157,Nivolumab,2,0,1
+GENIE-VICC-221384,Pembrolizumab,1,0,1
+GENIE-VICC-221384,Erlotinib Hydrochloride,2,0,0
+GENIE-VICC-221384,Osimertinib,3,0,0
+GENIE-VICC-226416,Cisplatin,1,1,0
+GENIE-VICC-226416,Nivolumab,2,0,1
+GENIE-VICC-226565,Carboplatin,1,1,0
+GENIE-VICC-226565,Erlotinib Hydrochloride,2,0,0
+GENIE-VICC-227703,Carboplatin,1,1,0
+GENIE-VICC-227703,Carboplatin,2,1,0
+GENIE-VICC-227703,Pemetrexed Disodium,3,0,0
+GENIE-VICC-228632,Carboplatin,1,1,0
+GENIE-VICC-228632,Atezolizumab,2,0,1
+GENIE-VICC-229301,Tamoxifen Citrate,1,0,0
+GENIE-VICC-229301,Tamoxifen Citrate,2,0,0
+GENIE-VICC-229301,Carboplatin,3,1,0
+GENIE-VICC-231311,Carboplatin,1,1,0
+GENIE-VICC-231311,Carboplatin,2,1,0
+GENIE-VICC-231311,Nivolumab,3,0,1
+GENIE-VICC-231311,Docetaxel,4,0,0
+GENIE-VICC-235319,Carboplatin,1,1,0
+GENIE-VICC-235319,Pembrolizumab,2,1,1
+GENIE-VICC-240075,Carboplatin,1,1,0
+GENIE-VICC-240075,Nivolumab,2,1,1
+GENIE-VICC-244772,Cisplatin,1,1,0
+GENIE-VICC-244772,Carboplatin,2,1,0
+GENIE-VICC-244772,Pembrolizumab,3,0,1
+GENIE-VICC-247863,Carboplatin,1,1,0
+GENIE-VICC-247863,Nivolumab,2,0,1
+GENIE-VICC-261569,Carboplatin,1,1,0
+GENIE-VICC-261569,Nivolumab,2,0,1
+GENIE-VICC-263112,Carboplatin,1,1,0
+GENIE-VICC-263112,Nivolumab,2,0,1
+GENIE-VICC-263112,Nivolumab,3,0,1
+GENIE-VICC-263112,Gemcitabine Hydrochloride,4,0,0
+GENIE-VICC-263112,Pembrolizumab,5,0,1
+GENIE-VICC-263112,Docetaxel,6,1,1
+GENIE-VICC-263112,Investigational Drug,7,0,0
+GENIE-VICC-276446,Carboplatin,1,1,0
+GENIE-VICC-276446,Investigational Drug,2,0,0
+GENIE-VICC-276446,Nivolumab,3,0,1
+GENIE-VICC-276446,Docetaxel,4,0,0
+GENIE-VICC-276446,Trastuzumab Emtansine,5,0,1
+GENIE-VICC-284236,Other antineoplastic,1,0,0
+GENIE-VICC-284753,Carboplatin,1,1,0
+GENIE-VICC-284753,Carboplatin,2,1,1
+GENIE-VICC-287735,Carboplatin,1,1,1
+GENIE-VICC-287735,Docetaxel,2,0,0
+GENIE-VICC-287735,Carboplatin,3,1,0
+GENIE-VICC-287735,Erlotinib Hydrochloride,4,0,0
+GENIE-VICC-287735,Carboplatin,5,1,0
+GENIE-VICC-287735,Investigational Drug,6,0,0
+GENIE-VICC-287735,Investigational Drug,7,0,0
+GENIE-VICC-287735,Nivolumab,8,0,1
+GENIE-VICC-289285,Carboplatin,1,1,0
+GENIE-VICC-289285,Pembrolizumab,2,0,1
+GENIE-VICC-289285,Gemcitabine Hydrochloride,3,0,0
+GENIE-VICC-294402,Carboplatin,1,1,0
+GENIE-VICC-295350,Nivolumab,1,0,1
+GENIE-VICC-299760,Cyclophosphamide,1,1,0
+GENIE-VICC-299760,Investigational Drug,2,1,0
+GENIE-VICC-299760,Carboplatin,3,1,0
+GENIE-VICC-314304,Carboplatin,1,1,0
+GENIE-VICC-314304,Nivolumab,2,1,1
+GENIE-VICC-314304,Investigational Drug,3,0,0
+GENIE-VICC-319259,Pemetrexed Disodium,1,1,1
+GENIE-VICC-324996,Carboplatin,1,1,0
+GENIE-VICC-324996,Nivolumab,2,0,1
+GENIE-VICC-328557,Cisplatin,1,1,0
+GENIE-VICC-328557,Carboplatin,2,1,0
+GENIE-VICC-328557,Crizotinib,3,0,0
+GENIE-VICC-328713,Carboplatin,1,1,0
+GENIE-VICC-328713,Pembrolizumab,2,0,1
+GENIE-VICC-328713,Carboplatin,3,1,0
+GENIE-VICC-343380,Carboplatin,1,1,0
+GENIE-VICC-343380,Durvalumab,2,0,1
+GENIE-VICC-344839,Cisplatin,1,1,0
+GENIE-VICC-344839,Nivolumab,2,0,1
+GENIE-VICC-352092,Carboplatin,1,1,0
+GENIE-VICC-352092,Nivolumab,2,0,1
+GENIE-VICC-352092,Nivolumab,3,0,1
+GENIE-VICC-352202,Cisplatin,1,1,0
+GENIE-VICC-352202,Carboplatin,2,1,0
+GENIE-VICC-352202,Erlotinib Hydrochloride,3,0,0
+GENIE-VICC-352202,Investigational Drug,4,0,0
+GENIE-VICC-352202,Osimertinib,5,0,0
+GENIE-VICC-354162,Pembrolizumab,1,0,1
+GENIE-VICC-354162,Pembrolizumab,2,1,1
+GENIE-VICC-354162,Carboplatin,3,1,0
+GENIE-VICC-355641,Carboplatin,1,1,0
+GENIE-VICC-355641,Paclitaxel,2,1,0
+GENIE-VICC-355641,Carboplatin,3,1,0
+GENIE-VICC-356066,Crizotinib,1,0,0
+GENIE-VICC-356066,Investigational Drug,2,0,0
+GENIE-VICC-359980,Carboplatin,1,1,0
+GENIE-VICC-367327,Carboplatin,1,1,1
+GENIE-VICC-367327,Pemetrexed Disodium,2,0,0
+GENIE-VICC-367327,Pembrolizumab,3,0,1
+GENIE-VICC-373109,Carboplatin,1,1,0
+GENIE-VICC-376619,Cisplatin,1,1,0
+GENIE-VICC-376619,Carboplatin,2,1,0
+GENIE-VICC-379769,Carboplatin,1,1,0
+GENIE-VICC-379769,Carboplatin,2,1,0
+GENIE-VICC-379769,Carboplatin,3,1,0
+GENIE-VICC-379769,Nivolumab,4,0,1
+GENIE-VICC-381111,Cisplatin,1,1,0
+GENIE-VICC-381111,Carboplatin,2,1,0
+GENIE-VICC-381111,Nivolumab,3,1,1
+GENIE-VICC-381906,Cisplatin,1,1,0
+GENIE-VICC-390946,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-395682,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-395682,Erlotinib Hydrochloride,2,1,1
+GENIE-VICC-395682,Osimertinib,3,0,0
+GENIE-VICC-395682,Carboplatin,4,1,0
+GENIE-VICC-395682,Osimertinib,5,1,0
+GENIE-VICC-395682,Osimertinib,6,1,0
+GENIE-VICC-395682,Docetaxel,7,1,1
+GENIE-VICC-396405,Carboplatin,1,1,1
+GENIE-VICC-396414,Other antineoplastic,1,1,0
+GENIE-VICC-396414,Carboplatin,2,1,0
+GENIE-VICC-396414,Nabpaclitaxel,3,0,0
+GENIE-VICC-396414,Nabpaclitaxel,4,0,0
+GENIE-VICC-399547,Cisplatin,1,1,0
+GENIE-VICC-399547,Carboplatin,2,1,0
+GENIE-VICC-403992,Carboplatin,1,1,0
+GENIE-VICC-403992,Nivolumab,2,0,1
+GENIE-VICC-410616,Carboplatin,1,1,0
+GENIE-VICC-410616,Nivolumab,2,0,1
+GENIE-VICC-410616,Nivolumab,3,1,1
+GENIE-VICC-410616,Docetaxel,4,0,0
+GENIE-VICC-426210,Carboplatin,1,1,0
+GENIE-VICC-426210,Paclitaxel,2,0,0
+GENIE-VICC-426435,Cisplatin,1,1,0
+GENIE-VICC-426435,Carboplatin,2,1,0
+GENIE-VICC-426435,Nivolumab,3,0,1
+GENIE-VICC-426435,Nivolumab,4,0,1
+GENIE-VICC-440637,Carboplatin,1,1,0
+GENIE-VICC-449717,Carboplatin,1,1,0
+GENIE-VICC-449717,Carboplatin,2,1,0
+GENIE-VICC-449717,Pembrolizumab,3,0,1
+GENIE-VICC-450066,Carboplatin,1,1,0
+GENIE-VICC-450066,Nivolumab,2,0,1
+GENIE-VICC-463357,Carboplatin,1,1,0
+GENIE-VICC-463357,Pemetrexed Disodium,2,0,0
+GENIE-VICC-463357,Nivolumab,3,0,1
+GENIE-VICC-463357,Docetaxel,4,0,0
+GENIE-VICC-469826,Cisplatin,1,1,0
+GENIE-VICC-469826,Nivolumab,2,1,1
+GENIE-VICC-469826,Nivolumab,3,0,1
+GENIE-VICC-469826,Carboplatin,4,1,0
+GENIE-VICC-469826,Docetaxel,5,0,0
+GENIE-VICC-476409,Bevacizumab,1,1,1
+GENIE-VICC-476409,Pemetrexed Disodium,2,0,0
+GENIE-VICC-476409,Investigational Drug,3,1,0
+GENIE-VICC-476409,Docetaxel,4,0,0
+GENIE-VICC-478107,Carboplatin,1,1,0
+GENIE-VICC-478107,Nivolumab,2,1,1
+GENIE-VICC-478107,Docetaxel,3,1,1
+GENIE-VICC-487660,Carboplatin,1,1,0
+GENIE-VICC-487660,Nivolumab,2,0,1
+GENIE-VICC-487660,Docetaxel,3,0,0
+GENIE-VICC-488916,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-488916,Afatinib Dimaleate,2,0,0
+GENIE-VICC-489094,Afatinib Dimaleate,1,0,0
+GENIE-VICC-489094,Osimertinib,2,0,0
+GENIE-VICC-489094,Carboplatin,3,1,0
+GENIE-VICC-491798,Carboplatin,1,1,0
+GENIE-VICC-491798,Pembrolizumab,2,0,1
+GENIE-VICC-496329,Carboplatin,1,1,0
+GENIE-VICC-503396,Carboplatin,1,1,0
+GENIE-VICC-503396,Carboplatin,2,1,0
+GENIE-VICC-503396,Pemetrexed Disodium,3,0,0
+GENIE-VICC-503396,Crizotinib,4,0,0
+GENIE-VICC-509112,Carboplatin,1,1,0
+GENIE-VICC-509112,Cisplatin,2,1,0
+GENIE-VICC-509112,Carboplatin,3,1,1
+GENIE-VICC-510591,Carboplatin,1,1,0
+GENIE-VICC-511299,Carboplatin,1,1,0
+GENIE-VICC-512041,Carboplatin,1,1,0
+GENIE-VICC-512041,Investigational Drug,2,0,0
+GENIE-VICC-512041,Pemetrexed Disodium,3,0,0
+GENIE-VICC-512041,Docetaxel,4,1,1
+GENIE-VICC-512041,Vinorelbine Tartrate,5,0,0
+GENIE-VICC-512041,Investigational Drug,6,0,0
+GENIE-VICC-522726,Investigational Drug,1,0,0
+GENIE-VICC-522726,Carboplatin,2,1,0
+GENIE-VICC-522726,Nivolumab,3,1,1
+GENIE-VICC-522726,Docetaxel,4,1,1
+GENIE-VICC-522726,Crizotinib,5,0,0
+GENIE-VICC-529086,Carboplatin,1,1,0
+GENIE-VICC-529086,Cisplatin,2,1,0
+GENIE-VICC-529086,Cisplatin,3,1,0
+GENIE-VICC-529086,Nivolumab,4,1,1
+GENIE-VICC-535531,Afatinib Dimaleate,1,0,0
+GENIE-VICC-535531,Osimertinib,2,0,0
+GENIE-VICC-535531,Carboplatin,3,1,0
+GENIE-VICC-535531,Afatinib Dimaleate,4,1,0
+GENIE-VICC-535531,Docetaxel,5,1,1
+GENIE-VICC-539512,Carboplatin,1,1,0
+GENIE-VICC-539512,Pemetrexed Disodium,2,0,0
+GENIE-VICC-555881,Carboplatin,1,1,0
+GENIE-VICC-555881,Paclitaxel,2,1,0
+GENIE-VICC-555881,Carboplatin,3,1,0
+GENIE-VICC-574201,Carboplatin,1,1,0
+GENIE-VICC-574201,Carboplatin,2,1,0
+GENIE-VICC-574201,Carboplatin,3,1,0
+GENIE-VICC-574932,Carboplatin,1,1,0
+GENIE-VICC-579602,Other antineoplastic,1,1,0
+GENIE-VICC-588428,Carboplatin,1,1,0
+GENIE-VICC-588847,Crizotinib,1,0,0
+GENIE-VICC-588847,Ceritinib,2,0,0
+GENIE-VICC-588847,Ensartinib,3,0,0
+GENIE-VICC-588847,Carboplatin,4,1,0
+GENIE-VICC-599899,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-599899,Carboplatin,2,1,0
+GENIE-VICC-599899,Investigational Drug,3,0,0
+GENIE-VICC-599899,Osimertinib,4,0,0
+GENIE-VICC-600447,Carboplatin,1,1,0
+GENIE-VICC-600807,Carboplatin,1,1,0
+GENIE-VICC-611118,Carboplatin,1,1,0
+GENIE-VICC-611118,Docetaxel,2,0,0
+GENIE-VICC-617809,Carboplatin,1,1,0
+GENIE-VICC-622042,Carboplatin,1,1,0
+GENIE-VICC-622042,Nivolumab,2,0,1
+GENIE-VICC-622042,Docetaxel,3,1,1
+GENIE-VICC-622042,Vinorelbine Tartrate,4,0,0
+GENIE-VICC-625575,Carboplatin,1,1,0
+GENIE-VICC-625575,Pembrolizumab,2,0,1
+GENIE-VICC-634110,Carboplatin,1,1,0
+GENIE-VICC-634110,Nivolumab,2,0,1
+GENIE-VICC-634110,Pemetrexed Disodium,3,0,0
+GENIE-VICC-634110,Vinorelbine Tartrate,4,0,0
+GENIE-VICC-634110,Investigational Drug,5,0,0
+GENIE-VICC-634969,Pembrolizumab,1,0,1
+GENIE-VICC-634969,Pembrolizumab,2,0,1
+GENIE-VICC-636754,Carboplatin,1,1,0
+GENIE-VICC-642079,Investigational Drug,1,1,0
+GENIE-VICC-644736,Carboplatin,1,1,0
+GENIE-VICC-644736,Nivolumab,2,0,1
+GENIE-VICC-645488,Crizotinib,1,0,0
+GENIE-VICC-645488,Ceritinib,2,0,0
+GENIE-VICC-645488,Alectinib,3,0,0
+GENIE-VICC-647513,Other antineoplastic,1,1,0
+GENIE-VICC-647513,Erlotinib Hydrochloride,2,0,0
+GENIE-VICC-647513,Afatinib Dimaleate,3,0,0
+GENIE-VICC-647513,Pemetrexed Disodium,4,1,1
+GENIE-VICC-647513,Osimertinib,5,0,0
+GENIE-VICC-649058,Pembrolizumab,1,0,1
+GENIE-VICC-649357,Carboplatin,1,1,0
+GENIE-VICC-649357,Nivolumab,2,0,1
+GENIE-VICC-651350,Investigational Drug,1,0,0
+GENIE-VICC-651350,Carboplatin,2,1,0
+GENIE-VICC-651350,Investigational Drug,3,1,0
+GENIE-VICC-651350,Docetaxel,4,1,1
+GENIE-VICC-651350,Vinorelbine Tartrate,5,0,0
+GENIE-VICC-676204,Carboplatin,1,1,0
+GENIE-VICC-676204,Atezolizumab,2,0,1
+GENIE-VICC-690428,Cisplatin,1,1,0
+GENIE-VICC-690428,Investigational Drug,2,1,0
+GENIE-VICC-690428,Carboplatin,3,1,0
+GENIE-VICC-690428,Docetaxel,4,1,1
+GENIE-VICC-690428,Docetaxel,5,1,1
+GENIE-VICC-692944,Carboplatin,1,1,0
+GENIE-VICC-692944,Carboplatin,2,1,0
+GENIE-VICC-692944,Pemetrexed Disodium,3,0,0
+GENIE-VICC-692944,Atezolizumab,4,0,1
+GENIE-VICC-692944,Pembrolizumab,5,1,1
+GENIE-VICC-695497,Crizotinib,1,0,0
+GENIE-VICC-707780,Pembrolizumab,1,0,1
+GENIE-VICC-707780,Carboplatin,2,1,1
+GENIE-VICC-707780,Investigational Drug,3,0,0
+GENIE-VICC-725085,Pembrolizumab,1,0,1
+GENIE-VICC-725506,Carboplatin,1,1,0
+GENIE-VICC-726449,Carboplatin,1,1,0
+GENIE-VICC-729177,Cisplatin,1,1,0
+GENIE-VICC-729177,Atezolizumab,2,0,1
+GENIE-VICC-729177,Docetaxel,3,1,0
+GENIE-VICC-729177,Investigational Drug,4,0,0
+GENIE-VICC-729177,Vinorelbine Tartrate,5,0,0
+GENIE-VICC-739905,Investigational Drug,1,0,0
+GENIE-VICC-739905,Carboplatin,2,1,0
+GENIE-VICC-739905,Investigational Drug,3,1,0
+GENIE-VICC-739905,Pemetrexed Disodium,4,0,0
+GENIE-VICC-740503,Carboplatin,1,1,0
+GENIE-VICC-740503,Carboplatin,2,1,0
+GENIE-VICC-740503,Nivolumab,3,0,1
+GENIE-VICC-740503,Nivolumab,4,0,1
+GENIE-VICC-745747,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-745747,Osimertinib,2,0,0
+GENIE-VICC-745747,Carboplatin,3,1,0
+GENIE-VICC-745747,Afatinib Dimaleate,4,0,0
+GENIE-VICC-745747,Nivolumab,5,0,1
+GENIE-VICC-745747,Paclitaxel,6,0,0
+GENIE-VICC-745747,Investigational Drug,7,0,0
+GENIE-VICC-745747,Erlotinib Hydrochloride,8,0,0
+GENIE-VICC-745747,Gemcitabine Hydrochloride,9,0,0
+GENIE-VICC-746498,Pembrolizumab,1,0,1
+GENIE-VICC-757153,Cyclophosphamide,1,1,0
+GENIE-VICC-757153,Epirubicin Hydrochloride,2,1,0
+GENIE-VICC-757153,Cisplatin,3,1,0
+GENIE-VICC-757153,Epirubicin Hydrochloride,4,1,0
+GENIE-VICC-757153,Carboplatin,5,1,0
+GENIE-VICC-757275,Carboplatin,1,1,0
+GENIE-VICC-757286,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-759601,Pembrolizumab,1,0,1
+GENIE-VICC-770573,Carboplatin,1,1,1
+GENIE-VICC-770573,Carboplatin,2,1,0
+GENIE-VICC-770573,Carboplatin,3,1,1
+GENIE-VICC-770573,Carboplatin,4,1,0
+GENIE-VICC-770573,Nivolumab,5,0,1
+GENIE-VICC-780278,Cisplatin,1,1,0
+GENIE-VICC-780278,Investigational Drug,2,0,0
+GENIE-VICC-794403,Carboplatin,1,1,0
+GENIE-VICC-801162,Carboplatin,1,1,0
+GENIE-VICC-801162,Nivolumab,2,0,1
+GENIE-VICC-823845,Pembrolizumab,1,0,1
+GENIE-VICC-836838,Carboplatin,1,1,0
+GENIE-VICC-836838,Carboplatin,2,1,0
+GENIE-VICC-855326,Carboplatin,1,1,0
+GENIE-VICC-855326,Nivolumab,2,0,1
+GENIE-VICC-861901,Carboplatin,1,1,0
+GENIE-VICC-861901,Nivolumab,2,0,1
+GENIE-VICC-864288,Carboplatin,1,1,0
+GENIE-VICC-864288,Nivolumab,2,0,1
+GENIE-VICC-864288,Pemetrexed Disodium,3,0,0
+GENIE-VICC-864288,Investigational Drug,4,1,0
+GENIE-VICC-864288,Pembrolizumab,5,0,1
+GENIE-VICC-864288,Docetaxel,6,0,0
+GENIE-VICC-864288,Vinorelbine Tartrate,7,0,0
+GENIE-VICC-864704,Carboplatin,1,1,0
+GENIE-VICC-864704,Gemcitabine Hydrochloride,2,1,0
+GENIE-VICC-864704,Dabrafenib,3,0,0
+GENIE-VICC-868975,Carboplatin,1,1,0
+GENIE-VICC-868975,Investigational Drug,2,0,0
+GENIE-VICC-868975,Docetaxel,3,0,0
+GENIE-VICC-874813,Cisplatin,1,1,0
+GENIE-VICC-874813,Other antineoplastic,2,0,0
+GENIE-VICC-874813,Crizotinib,3,0,0
+GENIE-VICC-874813,Brigatinib,4,0,0
+GENIE-VICC-874813,Capecitabine,5,1,0
+GENIE-VICC-885623,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-888050,Hydroxyurea,1,0,0
+GENIE-VICC-888050,Ruxolitinib Phosphate,2,0,0
+GENIE-VICC-889760,Nivolumab,1,0,1
+GENIE-VICC-889760,Nivolumab,1,0,1
+GENIE-VICC-889760,Crizotinib,2,0,0
+GENIE-VICC-889760,Crizotinib,2,0,0
+GENIE-VICC-900311,Carboplatin,1,1,0
+GENIE-VICC-900311,Investigational Drug,2,0,0
+GENIE-VICC-907638,Carboplatin,1,1,0
+GENIE-VICC-907638,Pemetrexed Disodium,2,0,0
+GENIE-VICC-907638,Investigational Drug,3,0,0
+GENIE-VICC-907638,Docetaxel,4,1,1
+GENIE-VICC-907638,Gemcitabine Hydrochloride,5,0,0
+GENIE-VICC-907638,Paclitaxel,6,0,0
+GENIE-VICC-907832,Cisplatin,1,1,0
+GENIE-VICC-907832,Carboplatin,2,1,0
+GENIE-VICC-907832,Irinotecan Hydrochloride,3,0,0
+GENIE-VICC-907832,Nivolumab,4,0,1
+GENIE-VICC-924668,Carboplatin,1,1,1
+GENIE-VICC-924668,Investigational Drug,2,0,0
+GENIE-VICC-924668,Pemetrexed Disodium,3,0,0
+GENIE-VICC-924668,Investigational Drug,4,1,0
+GENIE-VICC-924668,Investigational Drug,5,0,0
+GENIE-VICC-924668,Docetaxel,6,1,1
+GENIE-VICC-924668,Investigational Drug,7,0,0
+GENIE-VICC-926041,Investigational Drug,1,1,0
+GENIE-VICC-926041,Carboplatin,2,1,0
+GENIE-VICC-939402,Cisplatin,1,1,0
+GENIE-VICC-939402,Atezolizumab,2,0,1
+GENIE-VICC-962331,Pembrolizumab,1,0,1
+GENIE-VICC-966949,Cisplatin,1,1,0
+GENIE-VICC-966949,Carboplatin,2,1,0
+GENIE-VICC-966949,Nivolumab,3,0,1
+GENIE-VICC-966949,Gemcitabine Hydrochloride,4,0,0
+GENIE-VICC-968402,Carboplatin,1,1,0
+GENIE-VICC-969019,Carboplatin,1,1,1
+GENIE-VICC-969019,Pembrolizumab,2,0,1
+GENIE-VICC-972961,Carboplatin,1,1,0
+GENIE-VICC-983361,Carboplatin,1,1,0
+GENIE-VICC-983361,Nivolumab,2,0,1
+GENIE-VICC-983361,Carboplatin,3,1,0
+GENIE-VICC-983361,Nivolumab,4,1,1
+GENIE-VICC-983614,Pembrolizumab,1,0,1
+GENIE-VICC-987046,Erlotinib Hydrochloride,1,0,0
+GENIE-VICC-988032,Carboplatin,1,1,1
+GENIE-VICC-988032,Pemetrexed Disodium,2,0,0
+GENIE-VICC-988032,Investigational Drug,3,1,0
+GENIE-VICC-988032,Docetaxel,4,1,1
+GENIE-VICC-988032,Investigational Drug,5,1,0
+GENIE-VICC-988032,Crizotinib,6,0,0
+GENIE-VICC-991438,Carboplatin,1,1,0
+GENIE-VICC-991438,Pembrolizumab,2,0,1
+GENIE-VICC-996908,Carboplatin,1,1,0
+GENIE-VICC-996908,Nivolumab,2,0,1
+GENIE-VICC-996908,Pemetrexed Disodium,3,0,0
+GENIE-VICC-996908,Investigational Drug,4,0,0
+GENIE-VICC-996908,Docetaxel,5,1,1
