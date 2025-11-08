@@ -116,7 +116,14 @@ def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dic
     # Load Deep Learning model for previous treatment
     if HAS_DL_MODEL and CHECKPOINT_DIR_PREVIOUS.exists():
         try:
+            st.info(f"🔍 Debug: PROJECT_ROOT = {PROJECT_ROOT}")
+            st.info(f"🔍 Debug: CHECKPOINT_DIR_PREVIOUS = {CHECKPOINT_DIR_PREVIOUS}")
+            st.info(f"🔍 Debug: CHECKPOINT_DIR_PREVIOUS.exists() = {CHECKPOINT_DIR_PREVIOUS.exists()}")
+            
             config_path = CHECKPOINT_DIR_PREVIOUS / "config.json"
+            st.info(f"🔍 Debug: config_path = {config_path}")
+            st.info(f"🔍 Debug: config_path.exists() = {config_path.exists()}")
+            
             with open(config_path, 'r') as f:
                 dl_config = json.load(f)
             
@@ -130,6 +137,9 @@ def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dic
             )
             
             checkpoint_path = CHECKPOINT_DIR_PREVIOUS / "best_model.pt"
+            st.info(f"🔍 Debug: checkpoint_path = {checkpoint_path}")
+            st.info(f"🔍 Debug: checkpoint_path.exists() = {checkpoint_path.exists()}")
+            
             checkpoint = torch.load(checkpoint_path, map_location='cpu', weights_only=False)
             dl_model.load_state_dict(checkpoint['model_state_dict'])
             dl_model.eval()
