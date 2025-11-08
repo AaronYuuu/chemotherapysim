@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+rdkit-pypi
+torch
+captum
+xgboost
+joblib
+streamlit
+plotly
+requests
