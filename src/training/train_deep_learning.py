@@ -28,7 +28,14 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 # Import model from src.models
-from src.models.deep_learning import ImprovedDrugResponseModel, create_optimizer, create_scheduler
+import sys
+from pathlib import Path
+
+# Add project root to path
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.models import ImprovedDrugResponseModel, create_optimizer, create_scheduler
 
 # ===================================================================
 # CONFIGURATION
@@ -43,10 +50,10 @@ if torch.cuda.is_available():
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-# Paths
-DATA_DIR = Path("artifacts")
-CHECKPOINT_DIR = Path("checkpoints_stratified/previous_treatment")
-LOGS_DIR = Path("logs")
+# Paths (relative to project root)
+DATA_DIR = PROJECT_ROOT / "artifacts"
+CHECKPOINT_DIR = PROJECT_ROOT / "checkpoints_stratified" / "previous_treatment"
+LOGS_DIR = PROJECT_ROOT / "logs"
 CHECKPOINT_DIR.mkdir(parents=True, exist_ok=True)
 LOGS_DIR.mkdir(exist_ok=True)
 

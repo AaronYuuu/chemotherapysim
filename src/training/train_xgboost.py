@@ -17,7 +17,12 @@ import json
 from pathlib import Path
 import pickle
 import warnings
+import sys
 warnings.filterwarnings('ignore')
+
+# Add project root to path
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 
 def load_and_split_data():
     """Load first_treatment data and split patient-level"""
@@ -26,10 +31,10 @@ def load_and_split_data():
     print("=" * 70)
     
     # Load full dataset
-    X_tabular = np.load('artifacts/X_tabular_clean.npy')
-    X_drug_fp = np.load('artifacts/X_drug_fp_clean.npy')
-    y = np.load('artifacts/y_clean.npy')
-    patient_ids = np.load('artifacts/patient_ids_clean.npy', allow_pickle=True)
+    X_tabular = np.load(PROJECT_ROOT / 'artifacts/X_tabular_clean.npy')
+    X_drug_fp = np.load(PROJECT_ROOT / 'artifacts/X_drug_fp_clean.npy')
+    y = np.load(PROJECT_ROOT / 'artifacts/y_clean.npy')
+    patient_ids = np.load(PROJECT_ROOT / 'artifacts/patient_ids_clean.npy', allow_pickle=True)
     
     # Filter for first treatment
     treatment_lines = X_tabular[:, 0]
@@ -387,7 +392,7 @@ def evaluate_model(model, X_train, X_val, X_test, y_train, y_val, y_test, select
 
 def save_model(model, metrics, classification_metrics, selected_features, cv_results, best_params):
     """Save model and metrics"""
-    output_dir = Path('checkpoints_stratified/first_treatment_xgboost')
+    output_dir = PROJECT_ROOT / 'checkpoints_stratified' / 'first_treatment_xgboost'
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Save model

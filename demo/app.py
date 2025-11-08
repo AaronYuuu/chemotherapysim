@@ -38,11 +38,12 @@ warnings.filterwarnings('ignore')
 # Add src directory to path for model import
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent
-sys.path.insert(0, str(PROJECT_ROOT / "src" / "models"))
+sys.path.insert(0, str(PROJECT_ROOT))
+sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 # Import models
 try:
-    from deep_learning import ImprovedDrugResponseModel
+    from models.deep_learning import ImprovedDrugResponseModel
     HAS_DL_MODEL = True
 except ImportError as e:
     st.error(f"❌ Could not import Deep Learning model: {e}")
@@ -74,9 +75,7 @@ except ImportError:
 # CONFIGURATION
 # ===================================================================
 
-# Get project root directory (parent of demo folder)
-PROJECT_ROOT = Path(__file__).parent.parent
-
+# Project paths (already defined above as PROJECT_ROOT)
 # Model paths - stratified by treatment line
 CHECKPOINT_DIR_PREVIOUS = PROJECT_ROOT / "checkpoints_stratified" / "previous_treatment"
 CHECKPOINT_DIR_FIRST_XGB = PROJECT_ROOT / "checkpoints_stratified" / "first_treatment_xgboost"
@@ -312,11 +311,10 @@ def predict_pfs_stratified(
         resistance_prob = (1 - prob_success) * 100
         
         # Calculate confidence - improved for XGBoost
-        # Use a more aggressive scaling that gives higher confidence scores
         # Predictions further from threshold (1.946) get higher confidence
         distance_from_threshold = abs(log_pred - threshold_log)
         # Scale: 0.5 units away = 0.6 confidence, 1.0 units = 0.8, 2.0 units = 0.95
-        confidence = 1.0 - np.exp(-1.5 * distance_from_threshold)
+        confidence = 1.0 - np.exp(-1 * distance_from_threshold)
         confidence = max(0.3, min(confidence, 0.99))  # Floor at 0.3, cap at 0.99
         
         model_used = "XGBoost (First Treatment)"
@@ -655,8 +653,8 @@ def main():
         st.error("❌ No models available. Please train models first.")
         st.info("""
         Run these commands to train:
-        - `python train.py` (for previous treatment, line>=2)
-        - `python train_xgboost.py` (for first treatment, line=1)
+        - `python src/training/train_deep_learning.py` (for previous treatment, line>=2)
+        - `python src/training/train_xgboost.py` (for first treatment, line=1)
         """)
         st.stop()
     
