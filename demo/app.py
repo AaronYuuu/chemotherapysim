@@ -46,15 +46,21 @@ try:
     from models.deep_learning import ImprovedDrugResponseModel
     HAS_DL_MODEL = True
 except ImportError as e:
-    st.error(f"❌ Could not import Deep Learning model: {e}")
+    st.error(f"Could not import Deep Learning model: {e}")
     HAS_DL_MODEL = False
+
+try:
+    from models.gnn_model import PathwayAwareGNN
+    HAS_GNN_MODEL = True
+except ImportError:
+    HAS_GNN_MODEL = False
 
 try:
     import xgboost as xgb
     HAS_XGBOOST = True
 except ImportError:
     HAS_XGBOOST = False
-    st.warning("⚠️ XGBoost not installed. First treatment predictions will be disabled.")
+    st.warning("XGBoost not installed. First treatment predictions will be disabled.")
 
 # Try to import optional dependencies
 try:
@@ -63,7 +69,7 @@ try:
     HAS_RDKIT = True
 except ImportError:
     HAS_RDKIT = False
-    st.warning("⚠️ RDKit not installed. Custom SMILES input will be disabled.")
+    st.warning("RDKit not installed. Custom SMILES input will be disabled.")
 
 try:
     import shap
@@ -79,6 +85,7 @@ except ImportError:
 # Model paths - stratified by treatment line
 CHECKPOINT_DIR_PREVIOUS = PROJECT_ROOT / "checkpoints_stratified" / "previous_treatment"
 CHECKPOINT_DIR_FIRST_XGB = PROJECT_ROOT / "checkpoints_stratified" / "first_treatment_xgboost"
+CHECKPOINT_DIR_GNN = PROJECT_ROOT / "checkpoints_stratified" / "gnn_advanced"
 ARTIFACTS_DIR = PROJECT_ROOT / "artifacts"
 DATA_DIR = PROJECT_ROOT / "data" / "processed"
 
@@ -96,22 +103,17 @@ st.set_page_config(
 # ===================================================================
 
 @st.cache_resource
-def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dict, Dict]:
+def load_stratified_models() -> Dict[str, Optional[object]]:
     """
-    Load both stratified models:
+    Load all available models:
       - Deep Learning for previous treatment (line >= 2)
       - XGBoost for first treatment (line == 1)
+      - GNN Advanced model (experimental)
     
     Returns:
-        dl_model: PyTorch deep learning model (or None if unavailable)
-        xgb_model: XGBoost model (or None if unavailable)
-        dl_config: Deep learning configuration
-        xgb_config: XGBoost configuration
+        Dictionary of models and their configs
     """
-    dl_model = None
-    xgb_model = None
-    dl_config = {}
-    xgb_config = {}
+    models = {}
     
     # Load Deep Learning model for previous treatment
     if HAS_DL_MODEL and CHECKPOINT_DIR_PREVIOUS.exists():
@@ -134,13 +136,14 @@ def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dic
             dl_model.load_state_dict(checkpoint['model_state_dict'])
             dl_model.eval()
             
-            st.success("✅ Deep Learning model loaded (previous treatment)")
+            models['dl_previous'] = {'model': dl_model, 'config': dl_config}
+            st.success("Deep Learning model loaded (previous treatment)")
         except Exception as e:
-            st.warning(f"⚠️ Could not load Deep Learning model: {str(e)}")
+            st.warning(f"Could not load Deep Learning model: {str(e)}")
     elif not HAS_DL_MODEL:
-        st.warning(f"⚠️ Deep Learning model import failed")
+        st.warning("Deep Learning model import failed")
     elif not CHECKPOINT_DIR_PREVIOUS.exists():
-        st.warning(f"⚠️ Deep Learning checkpoint not found at: {CHECKPOINT_DIR_PREVIOUS}")
+        st.warning(f"Deep Learning checkpoint not found at: {CHECKPOINT_DIR_PREVIOUS}")
     
     # Load XGBoost model for first treatment
     if HAS_XGBOOST and CHECKPOINT_DIR_FIRST_XGB.exists():
@@ -152,7 +155,44 @@ def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dic
             
             # Load selected features
             features_path = CHECKPOINT_DIR_FIRST_XGB / "selected_features.npy"
+            xgb_config = {}
             xgb_config['selected_features'] = np.load(features_path)
+            
+            # Load best params
+            params_path = CHECKPOINT_DIR_FIRST_XGB / "best_params.json"
+            if params_path.exists():
+                with open(params_path, 'r') as f:
+                    xgb_config['params'] = json.load(f)
+            
+            models['xgb_first'] = {'model': xgb_model, 'config': xgb_config}
+            st.success("XGBoost model loaded (first treatment)")
+        except Exception as e:
+            st.warning(f"Could not load XGBoost model: {str(e)}")
+    elif not HAS_XGBOOST:
+        st.warning("XGBoost not installed")
+    elif not CHECKPOINT_DIR_FIRST_XGB.exists():
+        st.warning(f"XGBoost checkpoint not found at: {CHECKPOINT_DIR_FIRST_XGB}")
+    
+    # Load GNN Advanced model (experimental)
+    if HAS_GNN_MODEL and CHECKPOINT_DIR_GNN.exists():
+        try:
+            model_path = CHECKPOINT_DIR_GNN / "best_model.pt"
+            gnn_model = PathwayAwareGNN.from_checkpoint(str(model_path), device='cpu')
+            
+            config_path = CHECKPOINT_DIR_GNN / "config.json"
+            gnn_config = {}
+            if config_path.exists():
+                with open(config_path, 'r') as f:
+                    gnn_config = json.load(f)
+            
+            models['gnn_advanced'] = {'model': gnn_model, 'config': gnn_config}
+            st.success("Advanced GNN model loaded (experimental)")
+        except Exception as e:
+            st.info(f"Advanced GNN model not available: {str(e)}")
+    elif not HAS_GNN_MODEL:
+        st.info("GNN model not imported (requires gnn_model.py)")
+    
+    return models
             
             # Load best params
             params_path = CHECKPOINT_DIR_FIRST_XGB / "best_params.json"

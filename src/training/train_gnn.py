@@ -70,10 +70,10 @@ CONFIG = {
     
     # Training
     "batch_size": 32,
-    "num_epochs": 100,
-    "learning_rate": 1e-3,
-    "weight_decay": 1e-3,
-    "warmup_epochs": 10,
+    "num_epochs": 50,
+    "learning_rate": 1e-4,
+    "weight_decay": 1e-4,
+    "warmup_epochs": 5,
     
     # Multi-task learning weights
     "pfs_weight": 1.0,

@@ -47,11 +47,9 @@ class GenomicEncoder(nn.Module):
             # Fallback MLP encoder
             self.encoder = nn.Sequential(
                 nn.Linear(genomic_dim, 512),
-                nn.BatchNorm1d(512),
                 nn.ReLU(),
                 nn.Dropout(dropout),
-                nn.Linear(512, embed_dim),
-                nn.BatchNorm1d(embed_dim)
+                nn.Linear(512, embed_dim)
             )
     
     def forward(
@@ -98,11 +96,9 @@ class DrugEncoder(nn.Module):
         super().__init__()
         self.encoder = nn.Sequential(
             nn.Linear(drug_fp_dim, 1024),
-            nn.BatchNorm1d(1024),
             nn.ReLU(),
             nn.Dropout(dropout),
-            nn.Linear(1024, embed_dim),
-            nn.BatchNorm1d(embed_dim)
+            nn.Linear(1024, embed_dim)
         )
     
     def forward(self, x: torch.Tensor) -> torch.Tensor:
