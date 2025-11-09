@@ -1,0 +1,17 @@
+{
+  "num_pathways": 355,
+  "num_genes": 9487,
+  "num_edges": 4680120,
+  "pathway_ids": [
+    "hsa00010",
+    "hsa00020",
+    "hsa00030",
+    "hsa00040",
+    "hsa00051",
+    "hsa00052",
+    "hsa00053",
+    "hsa00500",
+    "hsa00620",
+    "hsa00630"
+  ]
+}
