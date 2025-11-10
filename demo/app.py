@@ -800,9 +800,9 @@ def main():
         st.markdown("---")
         
         # ===================================================================
-        # PATIENT & TUMOR VARIABLES
+        # PATIENT & tumour VARIABLES
         # ===================================================================
-        st.subheader("Step 2: Patient & Tumor Variables")
+        st.subheader("Step 2: Patient & tumour Variables")
         
         st.info("💡 Leave fields blank to use dataset median values as defaults")
         
@@ -823,10 +823,10 @@ def main():
                 user_inputs['sex_Female'] = 1.0 if sex == "Female" else 0.0
         
         with col2:
-            st.write("**Tumor Characteristics**")
+            st.write("**tumour Characteristics**")
             
-            tumor_type = st.selectbox(
-                "Primary Tumor Type",
+            tumour_type = st.selectbox(
+                "Primary tumour Type",
                 ["Unknown", "Lung", "Breast", "Colorectal", "Prostate", "Pancreatic", "Other"]
             )
             
@@ -846,7 +846,7 @@ def main():
             st.write("**Genomic Features**")
             
             mutation_load = st.number_input(
-                "Tumor Mutation Burden (mutations/Mb)",
+                "tumour Mutation Burden (mutations/Mb)",
                 min_value=0.0,
                 max_value=100.0,
                 value=None,
@@ -1281,7 +1281,7 @@ def main():
             - Patient comorbidities
             - Drug interactions
             - Treatment compliance
-            - Evolving tumor biology
+            - Evolving tumour biology
             - Quality of life factors
         - **Always consult with oncologists for treatment decisions**
         
