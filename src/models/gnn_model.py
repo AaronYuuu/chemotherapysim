@@ -43,14 +43,14 @@ class GenomicEncoder(nn.Module):
             self.conv1 = GATConv(1, 64, heads=4, dropout=dropout)
             self.conv2 = GATConv(64 * 4, 128, heads=4, dropout=dropout)
             self.conv3 = GCNConv(128 * 4, embed_dim)
-        else:
-            # Fallback MLP encoder
-            self.encoder = nn.Sequential(
-                nn.Linear(genomic_dim, 512),
-                nn.ReLU(),
-                nn.Dropout(dropout),
-                nn.Linear(512, embed_dim)
-            )
+        
+        # Always create fallback MLP encoder
+        self.mlp_encoder = nn.Sequential(
+            nn.Linear(genomic_dim, 512),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Linear(512, embed_dim)
+        )
     
     def forward(
         self, 
@@ -60,29 +60,36 @@ class GenomicEncoder(nn.Module):
     ) -> torch.Tensor:
         """
         Args:
-            x: Genomic features [batch_size, genomic_dim] or [num_nodes, 1] for graph
+            x: Genomic features [batch_size, genomic_dim]
             edge_index: Graph edges [2, num_edges] (optional)
-            batch: Batch assignment for graph pooling [num_nodes] (optional)
+            batch: Not used in this implementation
         
         Returns:
             Genomic embeddings [batch_size, embed_dim]
         """
         if self.use_graph and edge_index is not None:
-            # GNN forward pass
-            x = F.elu(self.conv1(x, edge_index))
-            x = F.elu(self.conv2(x, edge_index))
-            x = self.conv3(x, edge_index)
+            # Process each sample in the batch through the graph
+            batch_size = x.shape[0]
+            embeddings = []
             
-            # Pool to batch level if needed
-            if batch is not None:
-                x = global_mean_pool(x, batch)
-            else:
-                x = x.mean(dim=0, keepdim=True)
+            for i in range(batch_size):
+                # Reshape single sample: [genomic_dim] -> [genomic_dim, 1]
+                x_sample = x[i].unsqueeze(1)  # [genomic_dim, 1]
+                
+                # GNN forward pass for this sample
+                x_gnn = F.elu(self.conv1(x_sample, edge_index))
+                x_gnn = F.elu(self.conv2(x_gnn, edge_index))
+                x_gnn = self.conv3(x_gnn, edge_index)
+                
+                # Global pooling: [genomic_dim, embed_dim] -> [1, embed_dim]
+                x_pooled = x_gnn.mean(dim=0, keepdim=True)
+                embeddings.append(x_pooled)
             
-            return x
+            # Stack all embeddings: [batch_size, embed_dim]
+            return torch.cat(embeddings, dim=0)
         else:
             # MLP forward pass
-            return self.encoder(x)
+            return self.mlp_encoder(x)
 
 
 class DrugEncoder(nn.Module):

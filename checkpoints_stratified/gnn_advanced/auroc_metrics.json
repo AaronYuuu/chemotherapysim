@@ -1,0 +1,6 @@
+{
+  "auroc_median": 0.5420370795985596,
+  "median_threshold": 1.2896674871444702,
+  "auroc_25th_percentile": 0.5324188492264132,
+  "auroc_75th_percentile": 0.5168127116340756
+}

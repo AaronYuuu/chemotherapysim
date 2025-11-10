@@ -193,21 +193,7 @@ def load_stratified_models() -> Dict[str, Optional[object]]:
         st.info("GNN model not imported (requires gnn_model.py)")
     
     return models
-            
-            # Load best params
-            params_path = CHECKPOINT_DIR_FIRST_XGB / "best_params.json"
-            with open(params_path, 'r') as f:
-                xgb_config['params'] = json.load(f)
-            
-            st.success("✅ XGBoost model loaded (first treatment)")
-        except Exception as e:
-            st.warning(f"⚠️ Could not load XGBoost model: {str(e)}")
-    elif not HAS_XGBOOST:
-        st.warning(f"⚠️ XGBoost not installed")
-    elif not CHECKPOINT_DIR_FIRST_XGB.exists():
-        st.warning(f"⚠️ XGBoost checkpoint not found at: {CHECKPOINT_DIR_FIRST_XGB}")
-    
-    return dl_model, xgb_model, dl_config, xgb_config
+        
 
 
 @st.cache_data

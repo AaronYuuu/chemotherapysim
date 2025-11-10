@@ -1,0 +1,132 @@
+FEATURE IMPORTANCE REPORT
+================================================================================
+
+ENSEMBLE COMPOSITION:
+  - XGBoost:   46.5% (tree-based, interpretable)
+  - Attention: 31.3% (neural network)
+  - Ridge:     22.2% (linear model)
+
+Total Features: 150 (selected from 244 engineered features)
+
+================================================================================
+TOP 30 FEATURES BY XGBOOST (46.5% of prediction)
+================================================================================
+XGBoost Gain = average improvement when splitting on this feature
+
+Rank                                            Feature         Gain   Importance
+--------------------------------------------------------------------------------
+   1 MUT_BRCA1                                                  5.40          4.60%
+   2 MUT_BLM                                                    4.90          4.18%
+   3 MUT_FANCE                                                  3.93          3.35%
+   4 MUT_FANCD2                                                 2.54          2.17%
+   5 is_combination                                             2.48          2.11%
+   6 MUT_B2M                                                    2.47          2.10%
+   7 MUT_FOXO1                                                  2.36          2.01%
+   8 MUT_CXCR4                                                  2.27          1.93%
+   9 MUT_FRS2                                                   2.09          1.78%
+  10 MUT_FAN1                                                   1.95          1.66%
+  11 MUT_CDKN2B                                                 1.93          1.64%
+  12 MUT_CARD11                                                 1.83          1.56%
+  13 MUT_FOXL2                                                  1.82          1.55%
+  14 MUT_FOXP1                                                  1.82          1.55%
+  15 MUT_BCL6                                                   1.72          1.47%
+  16 MUT_FGFR3                                                  1.66          1.41%
+  17 MUT_APC                                                    1.57          1.33%
+  18 MUT_FANCC                                                  1.52          1.29%
+  19 MUT_FANCA                                                  1.52          1.29%
+  20 MUT_FOXA1                                                  1.49          1.27%
+  21 MUT_FANCF                                                  1.48          1.26%
+  22 n_md_notes                                                 1.43          1.22%
+  23 MUT_FAT1                                                   1.42          1.21%
+  24 MUT_FGFR1                                                  1.36          1.16%
+  25 MUT_FGFR4                                                  1.35          1.15%
+  26 MUT_FGF14                                                  1.34          1.14%
+  27 MUT_FGF6                                                   1.33          1.13%
+  28 MUT_FH                                                     1.30          1.11%
+  29 MUT_FANCL                                                  1.29          1.10%
+  30 MUT_FBXW7                                                  1.27          1.08%
+
+================================================================================
+TOP 30 FEATURES BY RIDGE COEFFICIENTS (22.2% of prediction)
+================================================================================
+Positive coef = increases PFS | Negative coef = decreases PFS
+
+Rank                                            Feature    Coefficient          Effect
+--------------------------------------------------------------------------------
+   1 MUT_FOXL2                                               +0.751030     Increases PFS
+   2 n_regimens                                              -0.515418     Decreases PFS
+   3 MUT_FRS2                                                +0.319549     Increases PFS
+   4 n_path_reports                                          -0.315939     Decreases PFS
+   5 MUT_FANCD2                                              +0.242419     Increases PFS
+   6 n_imaging_reports                                       -0.202448     Decreases PFS
+   7 MUT_FANCG                                               -0.193407     Decreases PFS
+   8 treatment_line                                          +0.169076     Increases PFS
+   9 drugs_in_regimen                                        +0.167349     Increases PFS
+  10 MUT_FOXP1                                               -0.158547     Decreases PFS
+  11 MUT_FGFR3                                               -0.158547     Decreases PFS
+  12 MUT_ERBB3                                               -0.147709     Decreases PFS
+  13 n_pet_scans                                             +0.140480     Increases PFS
+  14 MUT_FLCN                                                -0.131930     Decreases PFS
+  15 MUT_CDKN2B                                              +0.114078     Increases PFS
+  16 MUT_FANCA                                               +0.109761     Increases PFS
+  17 MUT_FOXA1                                               +0.105251     Increases PFS
+  18 MUT_FAN1                                                -0.104274     Decreases PFS
+  19 MUT_FGFR1                                               +0.102587     Increases PFS
+  20 MUT_CXCR4                                               +0.099989     Increases PFS
+  21 MUT_CDK1                                                +0.097275     Increases PFS
+  22 MUT_FGFR4                                               +0.093986     Increases PFS
+  23 MUT_DDB1                                                +0.092121     Increases PFS
+  24 MUT_FOXO1                                               -0.090471     Decreases PFS
+  25 MUT_FANCL                                               +0.086164     Increases PFS
+  26 MUT_FANCI                                               +0.085945     Increases PFS
+  27 MUT_FAM46C                                              +0.083802     Increases PFS
+  28 MUT_FAS                                                 -0.083370     Decreases PFS
+  29 n_ct_scans                                              +0.080383     Increases PFS
+  30 MUT_EZH2                                                -0.079866     Decreases PFS
+
+================================================================================
+ATTENTION MODEL (31.3% of prediction)
+================================================================================
+Architecture: 150 -> 256 -> 256 -> 256 -> 1
+Attention Heads: 8
+Parameters: ~1.9M
+
+Uses all 150 features with:
+  - Multi-head self-attention (8 heads learn different patterns)
+  - Non-linear transformations
+  - Sample-specific attention weights (varies per patient)
+
+Cannot show global importance (attention is patient-specific)
+
+================================================================================
+FEATURE SELECTION SUMMARY
+================================================================================
+Original: 244 features
+Selected: 150 features (38.5% reduction)
+
+Selection methods (ensemble voting):
+  1. Mutual Information (non-linear relevance)
+  2. Recursive Feature Elimination (RFE)
+  3. Stability Selection (bootstrap consistency)
+  4. Permutation Importance
+
+Features kept if selected by >= 3 of 4 methods
+
+================================================================================
+HOW TO INTERPRET
+================================================================================
+
+For any prediction:
+  Final = 0.465*XGBoost + 0.222*Ridge + 0.313*Attention
+
+XGBoost contribution:
+  - Follows tree rules based on top features above
+  - Can trace exact decision path for any prediction
+
+Ridge contribution:
+  - Linear sum: intercept + sum(feature * coefficient)
+  - Positive coefs push PFS up, negative push down
+
+Attention contribution:
+  - Complex non-linear combination
+  - Different features important for different patients
