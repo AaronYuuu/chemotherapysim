@@ -322,7 +322,7 @@ def predict_pfs_stratified(
         # Predictions further from threshold (1.946) get higher confidence
         distance_from_threshold = abs(log_pred - threshold_log)
         # Scale: 0.5 units away = 0.6 confidence, 1.0 units = 0.8, 2.0 units = 0.95
-        confidence = 1.0 - np.exp(-1 * distance_from_threshold)
+        confidence = 1.0 - np.exp(-0.8 * distance_from_threshold)
         confidence = max(0.3, min(confidence, 0.99))  # Floor at 0.3, cap at 0.99
         
         model_used = "XGBoost (First Treatment)"
@@ -721,11 +721,7 @@ def main():
             
         
         with st.expander("📚 Citation"):
-            st.write("""
-            If you use this model, please cite:
-            
-            *[Your Paper Citation Here]*
-            
+            st.write("""            
             Model trained on AACR GENIE data:
             AACR Project GENIE Consortium. (2017). 
             AACR Project GENIE: Powering Precision Medicine 
@@ -739,9 +735,9 @@ def main():
         st.header("Patient & Treatment Input")
         
         # ===================================================================
-        # (A) DRUG SELECTION
+        # DRUG SELECTION
         # ===================================================================
-        st.subheader("(A) Chemotherapy Selection")
+        st.subheader("Step 1: Chemotherapy Selection, choose a single regimen or up to 4")
         
         col1, col2 = st.columns([1, 1])
         
@@ -787,7 +783,7 @@ def main():
         
         with col2:
             st.write("**Custom SMILES (Optional)**")
-            st.caption("If a drug's SMILES is not in our database, enter it here:")
+            st.caption("If a drug's SMILES is not in our database, you will need to enter it here:")
             
             custom_smiles = {}
             for drug in selected_drugs:
@@ -804,9 +800,9 @@ def main():
         st.markdown("---")
         
         # ===================================================================
-        # (B) PATIENT & TUMOR VARIABLES
+        # PATIENT & TUMOR VARIABLES
         # ===================================================================
-        st.subheader("(B) Patient & Tumor Variables")
+        st.subheader("Step 2: Patient & Tumor Variables")
         
         st.info("💡 Leave fields blank to use dataset median values as defaults")
         
@@ -863,6 +859,30 @@ def main():
             kras_mut = st.checkbox("KRAS mutation")
             egfr_mut = st.checkbox("EGFR mutation")
             alk_mut = st.checkbox("ALK fusion")
+            # Additional tracked genes (common in GENIE NSCLC panels)
+            st.caption("Additional tracked genes (optional)")
+            braf_mut = st.checkbox("BRAF mutation")
+            met_mut = st.checkbox("MET alteration (amplification / exon 14 skipping)")
+            ros1_fus = st.checkbox("ROS1 fusion")
+            ret_fus = st.checkbox("RET fusion")
+            erbb2_mut = st.checkbox("ERBB2 (HER2) alteration")
+            pik3ca_mut = st.checkbox("PIK3CA mutation")
+            pten_mut = st.checkbox("PTEN loss / mutation")
+            ntrk_fus = st.checkbox("NTRK fusion")
+            brca2_mut = st.checkbox("BRCA2 mutation")
+            smad4_mut = st.checkbox("SMAD4 mutation")
+
+            # Map to input features (1.0 if present, 0.0 if absent)
+            user_inputs['MUT_BRAF']   = 1.0 if braf_mut else 0.0
+            user_inputs['MUT_MET']    = 1.0 if met_mut else 0.0
+            user_inputs['MUT_ROS1']   = 1.0 if ros1_fus else 0.0
+            user_inputs['MUT_RET']    = 1.0 if ret_fus else 0.0
+            user_inputs['MUT_ERBB2']  = 1.0 if erbb2_mut else 0.0
+            user_inputs['MUT_PIK3CA'] = 1.0 if pik3ca_mut else 0.0
+            user_inputs['MUT_PTEN']   = 1.0 if pten_mut else 0.0
+            user_inputs['MUT_NTRK']   = 1.0 if ntrk_fus else 0.0
+            user_inputs['MUT_BRCA2']  = 1.0 if brca2_mut else 0.0
+            user_inputs['MUT_SMAD4']  = 1.0 if smad4_mut else 0.0
             
             # Explicitly set mutation values (1.0 if checked, 0.0 if not)
             user_inputs['MUT_TP53'] = 1.0 if tp53_mut else 0.0
@@ -900,10 +920,10 @@ def main():
             )
             
         # ===================================================================
-        # (C) PREDICTION
+        # PREDICTION
         # ===================================================================
         st.markdown("---")
-        st.subheader("(C) Generate Prediction")
+        st.subheader("Step 3: Generate Prediction")
         
         col1, col2, col3 = st.columns([1, 1, 1])
         
