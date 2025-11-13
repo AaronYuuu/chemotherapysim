@@ -272,6 +272,7 @@ def train_ensemble(X_train, y_train, X_val, y_val, X_test, y_test, pfs_status_te
     
     # Optimize weights
     weights = ensemble.optimize_weights(X_val, y_val)
+    print(f"Optimized ensemble weights: {weights}")
     
     # Test set evaluation
     print("\n" + "=" * 60)
