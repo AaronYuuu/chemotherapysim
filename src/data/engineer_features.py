@@ -207,12 +207,12 @@ def engineer_all_features(genomic, drug, clinical):
     # Combine all features
     print("  Combining all features...")
     feature_list = [
-        # Original features (dimensionality reduced)
-        genomic[:, :100],  # Top 100 genomic features
-        drug[:, :100],     # Top 100 drug features (can use PCA)
+        # Original features - ALL features, let advanced_feature_selection.py do proper selection
+        genomic,           # All genomic features
+        drug,              # All drug features
         clinical,          # All clinical features (8)
         
-        # Engineered features
+        # Engineered features (domain knowledge + interactions)
         tmb,                                          # 1 feature
         pathway_scores,                               # 20 features
         *list(interactions.values()),                 # 6 features
@@ -224,10 +224,10 @@ def engineer_all_features(genomic, drug, clinical):
     
     X_engineered = np.concatenate(feature_list, axis=1)
     
-    # Feature names
+    # Feature names - now includes ALL original features
     feature_names = (
-        [f'genomic_{i}' for i in range(100)] +
-        [f'drug_{i}' for i in range(100)] +
+        [f'genomic_{i}' for i in range(genomic.shape[1])] +
+        [f'drug_{i}' for i in range(drug.shape[1])] +
         [f'clinical_{i}' for i in range(clinical.shape[1])] +
         ['tmb'] +
         [f'pathway_{i}' for i in range(20)] +

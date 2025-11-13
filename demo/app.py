@@ -50,12 +50,6 @@ except ImportError as e:
     HAS_DL_MODEL = False
 
 try:
-    from models.gnn_model import PathwayAwareGNN
-    HAS_GNN_MODEL = True
-except ImportError:
-    HAS_GNN_MODEL = False
-
-try:
     import xgboost as xgb
     HAS_XGBOOST = True
 except ImportError:
@@ -173,25 +167,6 @@ def load_stratified_models() -> Dict[str, Optional[object]]:
     elif not CHECKPOINT_DIR_FIRST_XGB.exists():
         st.warning(f"XGBoost checkpoint not found at: {CHECKPOINT_DIR_FIRST_XGB}")
     
-    # Load GNN Advanced model (experimental)
-    if HAS_GNN_MODEL and CHECKPOINT_DIR_GNN.exists():
-        try:
-            model_path = CHECKPOINT_DIR_GNN / "best_model.pt"
-            gnn_model = PathwayAwareGNN.from_checkpoint(str(model_path), device='cpu')
-            
-            config_path = CHECKPOINT_DIR_GNN / "config.json"
-            gnn_config = {}
-            if config_path.exists():
-                with open(config_path, 'r') as f:
-                    gnn_config = json.load(f)
-            
-            models['gnn_advanced'] = {'model': gnn_model, 'config': gnn_config}
-            st.success("Advanced GNN model loaded (experimental)")
-        except Exception as e:
-            st.info(f"Advanced GNN model not available: {str(e)}")
-    elif not HAS_GNN_MODEL:
-        st.info("GNN model not imported (requires gnn_model.py)")
-    
     return models
         
 
@@ -236,7 +211,7 @@ def load_drug_library() -> Tuple[Dict, Dict, np.ndarray]:
                     with open(drug_map_path, 'r') as f:
                         drug_map = json.load(f)
             except Exception as e:
-                st.warning(f"⚠️ Could not load pre-computed fingerprints: {str(e)}")
+                st.warning(f"Could not load pre-computed drug fingerprints: {str(e)}")
                 fp_library = None
                 drug_map = {}
         
@@ -834,7 +809,7 @@ def main():
         # ===================================================================
         st.subheader("(B) Patient & Tumor Variables")
         
-        st.info("💡 Leave fields blank to use dataset median values as defaults")
+        st.info("Leave fields blank to use dataset median values as defaults")
         
         user_inputs = {}
         
@@ -884,7 +859,7 @@ def main():
             )
             
             st.caption("**Key Mutations** (check if present)")
-            st.caption("💡 *Note: EGFR/ALK mutations increase PFS for targeted therapies, but effects vary for chemotherapy*")
+            st.caption("*Note: EGFR/ALK mutations increase PFS for targeted therapies, but effects vary for chemotherapy*")
             tp53_mut = st.checkbox("TP53 mutation")
             kras_mut = st.checkbox("KRAS mutation")
             egfr_mut = st.checkbox("EGFR mutation")
@@ -938,7 +913,7 @@ def main():
         
         if predict_button:
             if not selected_drugs:
-                st.error("❌ Please select at least one drug")
+                st.error("Please select at least one drug")
             else:
                 with st.spinner("Running model inference..."):
                     # Automatically set drug-related features based on selection
@@ -1125,7 +1100,7 @@ def main():
                 st.plotly_chart(fig, use_container_width=True)
     
     with tab2:
-        st.header("📈 Feature Importance Analysis")
+        st.header("Feature Importance Analysis")
         
         if 'last_prediction' not in st.session_state:
             st.info("👈 Make a prediction first to see feature importance")

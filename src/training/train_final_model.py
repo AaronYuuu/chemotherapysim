@@ -149,7 +149,7 @@ def main():
     
     attention_model = train_attention_model(
         X_train, y_train, X_val, y_val,
-        input_dim=150,
+        input_dim=X_train.shape[1],
         hidden_dim=params['hidden_dim'],
         num_heads=params['num_heads'],
         num_layers=params['num_layers'],
@@ -219,7 +219,7 @@ def main():
     print(f"  **AUROC: {test_auroc:.4f}**")
     
     if test_auroc >= 0.70:
-        print(f"\n🎉 SUCCESS! Test AUROC >= 0.70 achieved!")
+        print(f"\nSUCCESS! Test AUROC >= 0.70 achieved!")
         print(f"   Exceeds target by: {test_auroc - 0.70:.4f}")
     else:
         print(f"\n  Gap to 0.70: {0.70 - test_auroc:.4f}")
@@ -242,7 +242,7 @@ def main():
         'models': ensemble.models,
         'weights': ensemble.weights,
         'hyperparameters': params,
-        'feature_dim': 150,
+        'feature_dim': input_dim,
         'test_auroc': test_auroc,
         'test_c_index': test_c_index
     }
