@@ -90,7 +90,7 @@ def main():
         print(f"  Val: {len(X_val)} samples")
         
         # Train ensemble
-        ensemble = train_fold(X_train, y_train, X_val, y_val, input_dim=150, fold_num=fold_idx)
+        ensemble = train_fold(X_train, y_train, X_val, y_val, input_dim=X_train.shape[1], fold_num=fold_idx)
         
         # Evaluate
         val_pred = ensemble.predict(X_val)
