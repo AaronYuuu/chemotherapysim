@@ -18,7 +18,7 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 from training.train_ensemble import EnsemblePredictor
 from models.deepsurv_model import ConcordanceIndex
-from models.attention_model import train_attention_model, predict_attention
+from models.attention_model import train_attention_model
 
 
 def train_fold(X_train, y_train, X_val, y_val, input_dim=150, fold_num=1):

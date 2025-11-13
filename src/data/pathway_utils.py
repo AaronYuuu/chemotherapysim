@@ -13,9 +13,7 @@ import pandas as pd
 import torch
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Set
-import pickle
 import time
-from collections import defaultdict
 
 try:
     from torch_geometric.data import Data
@@ -329,17 +327,14 @@ if __name__ == "__main__":
     
     builder = PathwayGraphBuilder()
     
-    # Option 1: Download from KEGG (requires internet)
+    # Option 1: Use existing KEGG graph (RECOMMENDED - already downloaded)
+    print("\nLoading existing KEGG pathway graph...")
+    edge_index, gene_to_idx, idx_to_gene = builder.load_graph('kegg_human_pathway_graph.pt')
+    
+    # Re-download from KEGG (only if  need to update)
     # pathway_dict = builder.download_kegg_pathways('hsa')
     # edge_index, gene_to_idx, idx_to_gene = builder.build_pathway_graph_from_dict(pathway_dict)
     # builder.save_graph('kegg_human_pathway_graph.pt')
-    
-    # Option 2: Create simple test graph
-    edge_index = builder.create_simple_graph(num_genes=100, density=0.05)
-    builder.save_graph('test_pathway_graph.pt')
-    
-    print("\nTesting graph loading...")
-    builder2 = PathwayGraphBuilder()
-    edge_index, gene_to_idx, idx_to_gene = builder2.load_graph('test_pathway_graph.pt')
+   
     
     print("\nDone!")

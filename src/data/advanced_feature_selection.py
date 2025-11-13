@@ -9,15 +9,12 @@ Uses multiple techniques:
 """
 
 import numpy as np
-import pandas as pd
 from sklearn.feature_selection import (
     mutual_info_regression,
-    SelectKBest,
     f_regression
 )
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.inspection import permutation_importance
-from sklearn.model_selection import cross_val_score
 import pickle
 
 

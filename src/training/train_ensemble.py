@@ -12,8 +12,6 @@ Uses stacking with optimized weights.
 
 import numpy as np
 import torch
-import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, roc_auc_score
@@ -334,10 +332,17 @@ def train_ensemble(X_train, y_train, X_val, y_val, X_test, y_test, pfs_status_te
                     feature_names,
                     device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
                 )
+                
+                # Display top 10 most important features
+                print("\nTop 10 Most Important Features (Attention Model):")
+                for i, (feat, score) in enumerate(importance[:10], 1):
+                    print(f"  {i:2d}. {feat:40s} {score:.4f}")
             else:
                 print("  Feature names not found in metadata")
         except Exception as e:
             print(f"  Could not analyze feature importance: {e}")
+            print("  Ensure 'artifacts/feature_engineering_metadata.pkl' exists with 'feature_names' key.")
+            print("  Run engineer_features.py to generate metadata")
     
     return ensemble, test_pred
 

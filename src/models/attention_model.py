@@ -8,9 +8,8 @@ import torch
 import torch.nn as nn
 import numpy as np
 from torch.utils.data import Dataset, DataLoader
-from sklearn.metrics import mean_absolute_error, roc_auc_score
+from sklearn.metrics import mean_absolute_error
 from scipy.stats import spearmanr
-import pickle
 
 
 class FeatureAttention(nn.Module):
