@@ -26,7 +26,7 @@ from pathlib import Path
 # Add src to path
 sys.path.append(str(Path(__file__).parent.parent))
 
-from models.deepsurv_model import DeepSurv, ConcordanceIndex
+from models.deepsurv_model import ConcordanceIndex
 from models.attention_model import train_attention_model, predict_attention, get_feature_importance
 
 
@@ -272,6 +272,7 @@ def train_ensemble(X_train, y_train, X_val, y_val, X_test, y_test, pfs_status_te
     
     # Optimize weights
     weights = ensemble.optimize_weights(X_val, y_val)
+    print(f"Optimized ensemble weights: {weights}")
     
     # Test set evaluation
     print("\n" + "=" * 60)

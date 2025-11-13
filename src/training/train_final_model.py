@@ -28,8 +28,15 @@ def main():
     
     # Load best hyperparameters
     print("\nLoading best hyperparameters...")
-    with open('artifacts/best_hyperparameters.pkl', 'rb') as f:
-        best_config = pickle.load(f)
+    try:
+        with open('artifacts/best_hyperparameters.pkl', 'rb') as f:
+            best_config = pickle.load(f)
+    except FileNotFoundError:
+        print("ERROR: 'artifacts/best_hyperparameters.pkl' not found. Please run 'hyperparameter_tuning.py' first to generate this file.")
+        return
+    except (pickle.UnpicklingError, EOFError):
+        print("ERROR: Failed to load 'artifacts/best_hyperparameters.pkl' (file may be corrupted). Please re-run 'hyperparameter_tuning.py' to regenerate this file.")
+        return
     
     print(f"  Best AUROC from tuning: {best_config['auroc']:.4f}")
     print(f"  Trial number: {best_config['trial_number']}")
