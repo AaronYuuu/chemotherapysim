@@ -486,7 +486,8 @@ def get_feature_importance_shap(
     drug_fingerprint: np.ndarray,
     feature_names: List[str],
     top_k: int = 15,
-    is_xgboost: bool = False
+    is_xgboost: bool = False,
+    xgb_config: Dict = None
 ) -> Tuple[pd.DataFrame, Optional[object]]:
     """
     Calculate feature importance using SHAP values.
@@ -499,24 +500,88 @@ def get_feature_importance_shap(
     if not HAS_SHAP:
         return get_feature_importance_mock(feature_names, genomic_features, top_k), None
     
+    def parse_shap_value(val):
+        """Parse SHAP value that might be in string scientific notation format."""
+        try:
+            # If it's already a number, convert directly
+            return float(val)
+        except (ValueError, TypeError):
+            # Handle string scientific notation like '[1.673709E0]'
+            try:
+                # Remove brackets if present
+                val_str = str(val).strip('[]')
+                
+                # Check if it contains 'E' or 'e' for scientific notation
+                if 'E' in val_str.upper():
+                    # Split by 'E' or 'e'
+                    parts = val_str.upper().split('E')
+                    if len(parts) == 2:
+                        mantissa = float(parts[0])
+                        exponent = int(parts[1])
+                        return mantissa * (10 ** exponent)
+                
+                # If no 'E', just try to parse as float
+                return float(val_str)
+            except Exception:
+                # Last resort: return 0
+                return 0.0
+    
     try:
         if is_xgboost:
             # For XGBoost, use TreeExplainer (faster and more accurate)
             explainer = shap.TreeExplainer(model)
-            # Combine genomic and drug features
-            X_combined = np.concatenate([genomic_features, drug_fingerprint]).reshape(1, -1)
-            shap_values = explainer.shap_values(X_combined)[0]
             
-            # Match with feature names
+            # Combine genomic and drug features
+            X_combined = np.concatenate([genomic_features, drug_fingerprint])
+            
+            # Select features used by XGBoost
+            if xgb_config is not None and 'selected_features' in xgb_config:
+                selected_features = xgb_config['selected_features']
+                X_selected = X_combined[selected_features].reshape(1, -1)
+            else:
+                X_selected = X_combined.reshape(1, -1)
+            
+            # Calculate SHAP values - ensure float64
+            X_selected = X_selected.astype(np.float64)
+            shap_values = explainer.shap_values(X_selected)
+            
+            # Handle different SHAP output formats
+            if isinstance(shap_values, list):
+                shap_values = shap_values[0]
+            if len(shap_values.shape) > 1:
+                shap_values = shap_values[0]
+            
+            # Parse each value individually to handle string formats
+            shap_values_parsed = []
+            for val in shap_values:
+                parsed_val = parse_shap_value(val)
+                shap_values_parsed.append(parsed_val)
+            
+            shap_values = np.array(shap_values_parsed, dtype=np.float64)
+            
+            # Match with feature names (only for selected features)
             importances = []
             for idx, shap_val in enumerate(shap_values):
-                if abs(shap_val) > 1e-6 and idx < len(feature_names):
+                if abs(shap_val) > 1e-6:
+                    # Get original feature index
+                    if xgb_config is not None and 'selected_features' in xgb_config:
+                        orig_idx = selected_features[idx]
+                        if orig_idx < len(feature_names):
+                            feature_name = feature_names[orig_idx]
+                            feature_value = X_combined[orig_idx]
+                        else:
+                            feature_name = f"Feature_{orig_idx}"
+                            feature_value = X_combined[orig_idx] if orig_idx < len(X_combined) else 0.0
+                    else:
+                        feature_name = feature_names[idx] if idx < len(feature_names) else f"Feature_{idx}"
+                        feature_value = X_selected[0, idx]
+                    
                     importances.append({
-                        'Feature': feature_names[idx],
-                        'SHAP Value': shap_val,
-                        'Impact': abs(shap_val),
+                        'Feature': feature_name,
+                        'SHAP Value': float(shap_val),
+                        'Impact': abs(float(shap_val)),
                         'Direction': 'Increases PFS' if shap_val > 0 else 'Decreases PFS',
-                        'Feature Value': X_combined[0, idx]
+                        'Feature Value': float(feature_value)
                     })
         else:
             # Deep Learning model - use KernelExplainer
@@ -648,9 +713,57 @@ def main():
     """, unsafe_allow_html=True)
     
     # Header
-    st.markdown('<p class="main-header">🧬 Precision Oncology Chemotherapy Sensitivity Predictor</p>', unsafe_allow_html=True)
-    st.markdown('<p class="sub-header">Predict PFS and resistance likelihood using multi-modal deep learning</p>', unsafe_allow_html=True)
-    
+    st.markdown(
+        '<p class="main-header">🧬 Precision Oncology Chemotherapy Sensitivity Predictor</p>',
+        unsafe_allow_html=True
+    )
+    st.markdown(
+        '<p class="sub-header">Predict Progression-Free Survival (PFS) and resistance likelihood using multi-modal deep learning</p>',
+        unsafe_allow_html=True
+    )
+    st.markdown(
+        """
+        <p>
+        This interactive demo lets you simulate a patient’s chemotherapy course using real-world AACR GENIE NSCLC data.
+        You can:
+        </p>
+        <ul>
+            <li>
+                Configure <b>chemotherapy regimens</b> by selecting one or more drugs (up to 4) and, where needed, 
+                supplying custom SMILES structures.
+            </li>
+            <li>
+                Enter key <b>clinical variables</b> such as age, stage, histology, treatment line, and prior therapies, 
+                or leave them blank to use cohort medians.
+            </li>
+            <li>
+                Specify important <b>genomic alterations</b> (e.g., TP53, KRAS, EGFR, ALK and other actionable genes) to see 
+                how they may influence predicted outcomes.
+            </li>
+            <li>
+                Obtain a personalized prediction of <b>progression-free survival (PFS)</b> in months and the
+                <b>probability of resistance</b> by 6 months, using:
+                <ul>
+                    <li>XGBoost for <b>first-line</b> treatment (line = 1)</li>
+                    <li>Deep learning for <b>later-line</b> treatment (line ≥ 2)</li>
+                </ul>
+            </li>
+            <li>
+                Explore <b>feature importance</b> to understand which clinical and genomic factors contributed most to the
+                prediction, using SHAP values when available.
+            </li>
+            <li>
+                Compare your simulated patient’s PFS to the <b>training cohort distribution</b> to see whether the predicted
+                outcome is better or worse than typical.
+            </li>
+        </ul>
+        <p>
+        This is a research tool intended for exploration and hypothesis generation only, not for clinical decision-making.
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
     # Load resources
     with st.spinner("Loading stratified models and data..."):
         dl_model, xgb_model, dl_config, xgb_config = load_stratified_models()
@@ -659,11 +772,14 @@ def main():
     
     if dl_model is None and xgb_model is None:
         st.error("❌ No models available. Please train models first.")
-        st.info("""
-        Run these commands to train:
-        - `python src/training/train_deep_learning.py` (for previous treatment, line>=2)
-        - `python src/training/train_xgboost.py` (for first treatment, line=1)
-        """)
+        st.info(
+            """
+            Run these commands to train:
+            - `python src/training/train_deep_learning.py` (for previous treatment, line>=2)
+            - `python src/training/train_xgboost.py` (for first treatment, line=1)
+            """
+        )
+        st.stop()
         st.stop()
     
     # Sidebar - About section
@@ -733,7 +849,6 @@ def main():
     
     with tab1:
         st.header("Patient & Treatment Input")
-        
         # ===================================================================
         # DRUG SELECTION
         # ===================================================================
@@ -1157,7 +1272,8 @@ def main():
                             drug_fingerprint,
                             feature_names,
                             top_k=15,
-                            is_xgboost=is_xgboost
+                            is_xgboost=is_xgboost,
+                            xgb_config=xgb_config if is_xgboost else None
                         )
                 else:
                     importance_df = get_feature_importance_mock(feature_names, genomic_features, top_k=15)
