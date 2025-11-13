@@ -16,7 +16,6 @@ from typing import Dict, List, Tuple, Optional, Set
 import time
 
 try:
-    from torch_geometric.data import Data
     HAS_PYGEOMETRIC = True
 except ImportError:
     HAS_PYGEOMETRIC = False
