@@ -98,7 +98,7 @@ def objective(trial, X_train, y_train, X_val, y_val):
         # Attention model with tuned hyperparameters
         attention_model = train_attention_model(
             X_train, y_train, X_val, y_val,
-            input_dim=150,
+            input_dim=X_train.shape[1],
             hidden_dim=hidden_dim,
             num_heads=num_heads,
             num_layers=num_layers,
