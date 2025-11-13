@@ -333,10 +333,29 @@ def train_ensemble(X_train, y_train, X_val, y_val, X_test, y_test, pfs_status_te
                     device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
                 )
                 
-                # Display top 10 most important features
-                print("\nTop 10 Most Important Features (Attention Model):")
-                for i, (feat, score) in enumerate(importance[:10], 1):
-                    print(f"  {i:2d}. {feat:40s} {score:.4f}")
+                # Save attention feature importance for clinical transparency
+                if importance is not None:
+                    # Sort by importance and get top features
+                    top_indices = np.argsort(importance)[-30:][::-1]
+                    
+                    # Save to file for user reference
+                    with open('artifacts/attention_feature_importance.txt', 'w') as f:
+                        f.write("ATTENTION MODEL FEATURE IMPORTANCE\n")
+                        f.write("="*80 + "\n\n")
+                        f.write("Top 30 Most Important Features for Clinical Decision Support\n")
+                        f.write("(Based on attention weights from the neural network model)\n\n")
+                        f.write(f"{'Rank':>4} {'Feature':>50} {'Importance':>15}\n")
+                        f.write("-"*80 + "\n")
+                        
+                        for rank, idx in enumerate(top_indices, 1):
+                            if idx < len(feature_names):
+                                f.write(f"{rank:4d} {feature_names[idx]:50s} {importance[idx]:15.6f}\n")
+                    
+                    print("\n✓ Attention feature importance saved to: artifacts/attention_feature_importance.txt")
+                    print("  Top 3 features:")
+                    for i, idx in enumerate(top_indices[:3], 1):
+                        if idx < len(feature_names):
+                            print(f"    {i}. {feature_names[idx]}: {importance[idx]:.6f}")
             else:
                 print("  Feature names not found in metadata")
         except Exception as e:
