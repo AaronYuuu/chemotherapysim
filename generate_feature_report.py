@@ -87,7 +87,29 @@ with open('feature_importance_report.txt', 'w') as f:
     f.write('  - Multi-head self-attention (8 heads learn different patterns)\n')
     f.write('  - Non-linear transformations\n')
     f.write('  - Sample-specific attention weights (varies per patient)\n\n')
-    f.write('Cannot show global importance (attention is patient-specific)\n')
+    
+    # Try to include attention feature importance if available
+    import os
+    attention_file = 'artifacts/attention_feature_importance.txt'
+    if os.path.exists(attention_file):
+        f.write('Top features by attention weights (averaged across test samples):\n\n')
+        with open(attention_file, 'r') as att_f:
+            lines = att_f.readlines()
+            # Skip header lines and write top 15 features
+            in_data = False
+            count = 0
+            for line in lines:
+                if line.startswith('-'):
+                    in_data = True
+                    continue
+                if in_data and count < 15:
+                    f.write(line)
+                    count += 1
+        f.write('\n')
+        f.write('Note: Full attention importance available in artifacts/attention_feature_importance.txt\n')
+    else:
+        f.write('Note: Attention weights are patient-specific and vary by case.\n')
+        f.write('Run model training to generate attention feature importance report.\n')
 
     f.write('\n' + '='*80 + '\n')
     f.write('FEATURE SELECTION SUMMARY\n')
