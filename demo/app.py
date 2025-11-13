@@ -172,7 +172,68 @@ def load_stratified_models() -> Dict[str, Optional[object]]:
         st.warning(f"XGBoost checkpoint not found at: {CHECKPOINT_DIR_FIRST_XGB}")
     
     return models
+
+
+@st.cache_resource
+def load_ensemble_model() -> Optional[Dict]:
+    """
+    Load optimized ensemble model (XGBoost + Ridge + Attention).
+    Returns None if not available - app continues without it.
+    """
+    ensemble_path = ARTIFACTS_DIR / "models" / "final_optimized_ensemble.pkl"
+    selected_features_path = ARTIFACTS_DIR / "X_selected.npy"
+    feature_selection_metadata_path = ARTIFACTS_DIR / "feature_selection_metadata.pkl"
+    
+    if not ensemble_path.exists():
+        st.info("ℹ️ Optimized ensemble model not found. Using production models only.")
+        return None
+    
+    try:
+        # Import ensemble predictor
+        sys.path.insert(0, str(PROJECT_ROOT / "src"))
+        from training.train_ensemble import EnsemblePredictor
         
+        # Load ensemble
+        import pickle
+        with open(ensemble_path, 'rb') as f:
+            ensemble_data = pickle.load(f)
+        
+        ensemble = EnsemblePredictor()
+        ensemble.models = ensemble_data.get('models', {})
+        ensemble.weights = ensemble_data.get('weights', {})
+        
+        # Load feature selection metadata
+        feature_metadata = None
+        if feature_selection_metadata_path.exists():
+            with open(feature_selection_metadata_path, 'rb') as f:
+                feature_metadata = pickle.load(f)
+        
+        # Get input dimension
+        input_dim = ensemble_data.get('feature_dim', 150)
+        
+        st.success(f"✅ Optimized ensemble model loaded (Val AUROC 0.7298, {input_dim} features)")
+        
+        return {
+            'ensemble': ensemble,
+            'input_dim': input_dim,
+            'feature_metadata': feature_metadata,
+            'performance': {
+                'val_auroc': 0.7298,
+                'test_auroc': ensemble_data.get('test_auroc', 0.6917),
+                'test_c_index': ensemble_data.get('test_c_index', 0.6743),
+                'interpretability': 0.687,  # 68.7% from XGBoost + Ridge
+                'weights': ensemble.weights
+            }
+        }
+        
+    except ImportError as e:
+        st.warning(f"⚠️ Ensemble dependencies not available: {e}")
+        return None
+    except Exception as e:
+        st.warning(f"⚠️ Could not load ensemble model: {e}")
+        import traceback
+        st.error(traceback.format_exc())
+        return None
 
 
 @st.cache_data
@@ -357,6 +418,79 @@ def predict_pfs_stratified(
         model_used = "Deep Learning (Previous Treatment)"
     
     return pfs_months, resistance_prob, log_pred, confidence, model_used
+
+
+def predict_pfs_ensemble(
+    ensemble_dict: Dict,
+    genomic_features: np.ndarray,
+    drug_fingerprint: np.ndarray,
+    feature_names: List[str]
+) -> Tuple[float, float, float, float, str]:
+    """
+    Make prediction using optimized ensemble model.
+    
+    Args:
+        ensemble_dict: Loaded ensemble model dictionary
+        genomic_features: Genomic feature vector (1318 dims)
+        drug_fingerprint: Drug fingerprint vector (8192 dims)
+        feature_names: List of all feature names
+    
+    Returns:
+        pfs_months: Predicted PFS in months
+        resistance_prob: Resistance probability at 6 months (%)
+        log_pred: Raw log-space prediction
+        confidence: Confidence score (0-1)
+        model_used: "Optimized Ensemble"
+    """
+    try:
+        ensemble = ensemble_dict['ensemble']
+        input_dim = ensemble_dict['input_dim']
+        feature_metadata = ensemble_dict.get('feature_metadata')
+        
+        # Combine all features
+        X_combined = np.concatenate([genomic_features, drug_fingerprint])
+        
+        # Map to ensemble's selected features
+        if feature_metadata is not None and 'selected_indices' in feature_metadata:
+            # Use the exact selected features from training
+            selected_indices = feature_metadata['selected_indices']
+            X_selected = X_combined[selected_indices].reshape(1, -1)
+        else:
+            # Fallback: use first N features
+            st.warning(f"⚠️ Feature selection metadata not found. Using first {input_dim} features.")
+            X_selected = X_combined[:input_dim].reshape(1, -1)
+        
+        # Ensure correct dimensions
+        if X_selected.shape[1] != input_dim:
+            raise ValueError(f"Feature dimension mismatch: expected {input_dim}, got {X_selected.shape[1]}")
+        
+        # Get ensemble prediction
+        log_pred = ensemble.predict(X_selected)[0]
+        
+        # Convert to months
+        pfs_months = np.exp(log_pred) - 1
+        
+        # Calculate resistance probability
+        threshold_log = np.log1p(6.0)
+        prob_success = 1 / (1 + np.exp(-2 * (log_pred - threshold_log)))
+        resistance_prob = (1 - prob_success) * 100
+        
+        # Calculate confidence
+        distance_from_threshold = abs(log_pred - threshold_log)
+        confidence = 1.0 - np.exp(-1.5 * distance_from_threshold)
+        confidence = max(0.3, min(confidence, 0.99))
+        
+        # Get model composition
+        weights = ensemble_dict['performance']['weights']
+        weight_str = ", ".join([f"{k}: {v:.1%}" for k, v in weights.items()])
+        model_used = f"Optimized Ensemble ({weight_str})"
+        
+        return pfs_months, resistance_prob, log_pred, confidence, model_used
+        
+    except Exception as e:
+        # If ensemble fails, raise exception to fall back to production model
+        raise ValueError(f"Ensemble prediction failed: {e}")
+
 
 # ===================================================================
 # DRUG FINGERPRINT GENERATION
@@ -770,8 +904,9 @@ def main():
     )
 
     # Load resources
-    with st.spinner("Loading stratified models and data..."):
+    with st.spinner("Loading models and data..."):
         models = load_stratified_models()
+        ensemble_dict = load_ensemble_model()  # Load ensemble model
         drug_smiles, drug_classes, fp_library, drug_map = load_drug_library()
         feature_names, metadata = load_feature_info()
     
@@ -781,42 +916,109 @@ def main():
     xgb_model = models.get('xgb_first', {}).get('model', None)
     xgb_config = models.get('xgb_first', {}).get('config', {})
     
-    if dl_model is None and xgb_model is None:
+    # Check if any model is available
+    if dl_model is None and xgb_model is None and ensemble_dict is None:
         st.error("❌ No models available. Please train models first.")
         st.info(
             """
             Run these commands to train:
             - `python src/training/train_deep_learning.py` (for previous treatment, line>=2)
             - `python src/training/train_xgboost.py` (for first treatment, line=1)
+            - `python src/training/train_final_model.py` (for ensemble model)
             """
         )
         st.stop()
-        st.stop()
     
-    # Sidebar - About section
+    # Sidebar - Model Selection and Info
     with st.sidebar:
-        st.header("ℹ️ Stratified Models")
+        st.header("🎯 Model Selection")
         
-        with st.expander("📊 Model Performance", expanded=True):
-            st.markdown("**First Treatment (line=1): XGBoost**")
-            xgb_metrics = load_classification_metrics(treatment_line=1)
-            if xgb_metrics:
-                primary_metric = xgb_metrics.get("6 months (PRIMARY - clinical benefit)", {})
-                auroc = primary_metric.get('auroc', 0.0)
-                st.metric("AUROC", f"{auroc:.3f}", help="XGBoost on 822 samples")
-            else:
-                st.caption("Metrics not available")
+        # Build list of available models
+        available_models = []
+        if ensemble_dict is not None:
+            available_models.append("Optimized Ensemble (Experimental)")
+        available_models.append("Stratified Models (Production)")
+        
+        model_choice = st.radio(
+            "Choose Prediction Model:",
+            options=available_models,
+            index=1 if len(available_models) > 1 else 0,  # Default to stratified
+            help="Ensemble: 150 features, 2M params, 68.7% interpretable. Stratified: Line-specific models."
+        )
+        
+        # Store model choice in session state
+        st.session_state['model_choice'] = model_choice
+        
+        st.markdown("---")
+        
+        # Show info for selected model
+        if model_choice == "Optimized Ensemble (Experimental)" and ensemble_dict:
+            st.header("🧪 Ensemble Model")
             
-            st.markdown("---")
+            with st.expander("📊 Performance Metrics", expanded=True):
+                perf = ensemble_dict['performance']
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.metric("Val AUROC", f"{perf['val_auroc']:.4f}")
+                    st.metric("Test AUROC", f"{perf['test_auroc']:.4f}")
+                with col2:
+                    st.metric("C-index", f"{perf['test_c_index']:.4f}")
+                    st.metric("Interpretability", f"{perf['interpretability']:.1%}")
+                
+                st.caption("**Model Weights:**")
+                for model_name, weight in perf['weights'].items():
+                    st.caption(f"• {model_name}: {weight:.1%}")
             
-            st.markdown("**Previous Treatment (line≥2): Deep Learning**")
-            dl_metrics = load_classification_metrics(treatment_line=2)
-            if dl_metrics:
-                primary_metric = dl_metrics.get("6 months (PRIMARY - clinical benefit)", {})
-                auroc = primary_metric.get('auroc', 0.0)
-                st.metric("AUROC", f"{auroc:.3f}", help="Deep Learning on 2,112 samples")
-            else:
-                st.caption("Metrics not available")
+            with st.expander("🔬 Architecture"):
+                st.write(f"""
+                **Optimized Ensemble:**
+                - Features: {ensemble_dict['input_dim']} selected (from 9,510)
+                - Components: XGBoost, Ridge, Attention
+                - Parameters: 2M (91% reduction vs Deep Learning)
+                - Interpretability: 68.7% (XGBoost + Ridge)
+                - Training: 5-fold CV, Optuna optimization
+                """)
+        
+        else:
+            st.header("ℹ️ Stratified Models")
+            
+            with st.expander("📊 Model Performance", expanded=True):
+                st.markdown("**First Treatment (line=1): XGBoost**")
+                xgb_metrics = load_classification_metrics(treatment_line=1)
+                if xgb_metrics:
+                    primary_metric = xgb_metrics.get("6 months (PRIMARY - clinical benefit)", {})
+                    auroc = primary_metric.get('auroc', 0.0)
+                    st.metric("AUROC", f"{auroc:.3f}", help="XGBoost on 822 samples")
+                else:
+                    st.caption("Metrics not available")
+                
+                st.markdown("---")
+                
+                st.markdown("**Previous Treatment (line≥2): Deep Learning**")
+                dl_metrics = load_classification_metrics(treatment_line=2)
+                if dl_metrics:
+                    primary_metric = dl_metrics.get("6 months (PRIMARY - clinical benefit)", {})
+                    auroc = primary_metric.get('auroc', 0.0)
+                    st.metric("AUROC", f"{auroc:.3f}", help="Deep Learning on 2,112 samples")
+                else:
+                    st.caption("Metrics not available")
+            
+            with st.expander("🤖 Model Architecture"):
+                st.write("""
+                **First Treatment: XGBoost**
+                - 500 selected features (from 9,510)
+                - 5-fold cross-validation
+                - Max depth: 4 (shallow trees)
+                - Conservative regularization
+                
+                **Previous Treatment: Deep Learning**
+                - Genomic Encoder (3 layers)
+                - Drug Fingerprint Encoder (4 layers)
+                - Bidirectional Cross-Attention
+                - 23M total parameters
+                """)
+        
+        st.markdown("---")
         
         with st.expander("🔬 Training Data"):
             st.write("""
@@ -829,21 +1031,6 @@ def main():
             **Stratification:**
             - First treatment (line=1): 822 samples
             - Previous treatment (line≥2): 2,112 samples
-            """)
-        
-        with st.expander("🤖 Model Architecture"):
-            st.write("""
-            **First Treatment: XGBoost**
-            - 500 selected features (from 9,510)
-            - 5-fold cross-validation
-            - Max depth: 4 (shallow trees)
-            - Conservative regularization
-            
-            **Previous Treatment: Deep Learning**
-            - Genomic Encoder (3 layers)
-            - Drug Fingerprint Encoder (4 layers)
-            - Bidirectional Cross-Attention
-            - 23M total parameters
             """)
             
         
@@ -1081,15 +1268,42 @@ def main():
                         metadata
                     )
                     
-                    # Predict using appropriate stratified model
-                    pfs_months, resistance_prob, log_pred, confidence, model_used = predict_pfs_stratified(
-                        dl_model,
-                        xgb_model,
-                        genomic_features,
-                        drug_fp,
-                        treatment_line,
-                        xgb_config
-                    )
+                    # Choose prediction function based on user's model selection
+                    model_choice = st.session_state.get('model_choice', 'Stratified Models (Production)')
+                    
+                    try:
+                        if model_choice == "Optimized Ensemble (Experimental)" and ensemble_dict is not None:
+                            # Use ensemble model
+                            pfs_months, resistance_prob, log_pred, confidence, model_used = predict_pfs_ensemble(
+                                ensemble_dict,
+                                genomic_features,
+                                drug_fp,
+                                feature_names
+                            )
+                        else:
+                            # Use stratified models (default/fallback)
+                            pfs_months, resistance_prob, log_pred, confidence, model_used = predict_pfs_stratified(
+                                dl_model,
+                                xgb_model,
+                                genomic_features,
+                                drug_fp,
+                                treatment_line,
+                                xgb_config
+                            )
+                    except Exception as e:
+                        st.error(f"❌ Prediction failed: {str(e)}")
+                        if model_choice == "Optimized Ensemble (Experimental)":
+                            st.warning("⚠️ Falling back to stratified models...")
+                            pfs_months, resistance_prob, log_pred, confidence, model_used = predict_pfs_stratified(
+                                dl_model,
+                                xgb_model,
+                                genomic_features,
+                                drug_fp,
+                                treatment_line,
+                                xgb_config
+                            )
+                        else:
+                            st.stop()
                     
                     # Store in session state for other tabs
                     st.session_state['last_prediction'] = {
@@ -1101,7 +1315,8 @@ def main():
                         'drug_fingerprint': drug_fp,
                         'selected_drugs': selected_drugs,
                         'treatment_line': treatment_line,
-                        'model_used': model_used
+                        'model_used': model_used,
+                        'model_choice': model_choice
                     }
                 
                 # Display results
@@ -1109,6 +1324,7 @@ def main():
                 
                 # Debug: Show input summary
                 with st.expander("🔍 Input Summary (Click to verify)", expanded=False):
+                    st.write(f"**Model Choice:** {model_choice}")
                     st.write(f"**Treatment Line:** {treatment_line}")
                     st.write(f"**Drugs:** {', '.join(selected_drugs)}")
                     st.write(f"**Mutations:**")
@@ -1132,7 +1348,16 @@ def main():
                             st.info("MUT_EGFR not found in feature list")
                 
                 # Model-specific insights
-                if treatment_line == 1:
+                if model_choice == "Optimized Ensemble (Experimental)":
+                    st.info("""
+                    **Optimized Ensemble Model**: 
+                    - Combines XGBoost (46.5%), Ridge (22.2%), and Attention (31.3%)
+                    - Uses 150 carefully selected features (from 9,510)
+                    - 2M parameters with ~69% interpretability
+                    - Validation AUROC: 0.7298, Test AUROC: 0.6917
+                    - Trained on all treatment lines for robust generalization
+                    """)
+                elif treatment_line == 1:
                     st.info("""
                     **First Treatment Model (XGBoost)**: 
                     - Trained on 822 first-line treatment records
@@ -1255,75 +1480,164 @@ def main():
             drug_fingerprint = pred_data['drug_fingerprint']
             treatment_line = pred_data.get('treatment_line', 1)
             model_used = pred_data.get('model_used', 'Unknown')
+            model_choice = pred_data.get('model_choice', 'Stratified Models (Production)')
             
             st.info(f"**Model Used:** {model_used}")
             
-            # Determine which model and whether it's XGBoost
-            is_xgboost = (treatment_line == 1)
-            active_model = xgb_model if is_xgboost else dl_model
-            
-            if active_model is None:
-                st.error("Model not available for feature importance analysis")
-            else:
-                st.subheader("Top Contributing Features")
+            # Handle ensemble model separately
+            if model_choice == "Optimized Ensemble (Experimental)":
+                st.subheader("Ensemble Model Components")
                 
-                # Choose analysis method
-                analysis_method = st.radio(
-                    "Analysis Method:",
-                    options=["SHAP (Accurate)", "Quick Estimate"],
-                    horizontal=True,
-                    help="SHAP provides accurate feature attributions. Quick estimate is instant."
-                )
-                
-                if analysis_method == "SHAP (Accurate)" and HAS_SHAP:
-                    with st.spinner("Calculating SHAP values (this may take 30-60 seconds)..."):
-                        importance_df, shap_explanation = get_feature_importance_shap(
-                            active_model,
-                            genomic_features,
-                            drug_fingerprint,
-                            feature_names,
-                            top_k=15,
-                            is_xgboost=is_xgboost,
-                            xgb_config=xgb_config if is_xgboost else None
+                if ensemble_dict:
+                    # Display ensemble weights
+                    st.markdown("**Model Weights:**")
+                    perf = ensemble_dict['performance']
+                    col1, col2, col3 = st.columns(3)
+                    with col1:
+                        st.metric("XGBoost", f"{perf['weights']['xgb']:.1%}")
+                    with col2:
+                        st.metric("Ridge", f"{perf['weights']['ridge']:.1%}")
+                    with col3:
+                        st.metric("Attention", f"{perf['weights']['attention']:.1%}")
+                    
+                    st.markdown("---")
+                    st.subheader("Top Contributing Features")
+                    
+                    # For ensemble, use XGBoost component for SHAP analysis
+                    ensemble_obj = ensemble_dict['ensemble']
+                    if hasattr(ensemble_obj, 'xgb_model') and ensemble_obj.xgb_model is not None:
+                        
+                        # Choose analysis method
+                        analysis_method = st.radio(
+                            "Analysis Method:",
+                            options=["SHAP (Accurate)", "Quick Estimate"],
+                            horizontal=True,
+                            help="SHAP provides accurate feature attributions from XGBoost component (46.5% of ensemble). Quick estimate is instant."
                         )
+                        
+                        if analysis_method == "SHAP (Accurate)" and HAS_SHAP:
+                            with st.spinner("Calculating SHAP values from XGBoost component (this may take 30-60 seconds)..."):
+                                # Use ensemble's selected features (150)
+                                importance_df, shap_explanation = get_feature_importance_shap(
+                                    ensemble_obj.xgb_model,
+                                    genomic_features,
+                                    drug_fingerprint,
+                                    feature_names,
+                                    top_k=15,
+                                    is_xgboost=True,
+                                    xgb_config=None  # Ensemble uses different feature space
+                                )
+                        else:
+                            importance_df = get_feature_importance_mock(feature_names, genomic_features, top_k=15)
+                            shap_explanation = None
+                        
+                        if not importance_df.empty:
+                            # Display results
+                            if 'SHAP Value' in importance_df.columns:
+                                fig = px.bar(
+                                    importance_df,
+                                    x='SHAP Value',
+                                    y='Feature',
+                                    orientation='h',
+                                    color='SHAP Value',
+                                    title=f"Top 15 Features by SHAP Value (XGBoost Component, 46.5% weight)",
+                                    labels={'SHAP Value': 'SHAP Value (log-PFS)', 'Feature': ''},
+                                    color_continuous_scale='RdBu_r',
+                                    color_continuous_midpoint=0
+                                )
+                                fig.update_layout(height=600)
+                                st.plotly_chart(fig, use_container_width=True)
+                                
+                                st.caption("Note: SHAP values shown are from the XGBoost component only. The ensemble combines these with Ridge regression (22.2%) and Attention mechanism (31.3%) for final predictions.")
+                            else:
+                                fig = px.bar(
+                                    importance_df,
+                                    x='Impact',
+                                    y='Feature',
+                                    orientation='h',
+                                    color='Direction',
+                                    title="Top 15 Features by Estimated Impact",
+                                    labels={'Impact': 'Impact on Prediction', 'Feature': ''},
+                                    color_discrete_map={
+                                        'Increases PFS': '#2ca02c',
+                                        'Decreases PFS': '#d62728'
+                                    }
+                                )
+                                fig.update_layout(height=600)
+                                st.plotly_chart(fig, use_container_width=True)
+                                st.warning("⚠️ Using quick estimate. For accurate feature importance, select 'SHAP (Accurate)' above.")
+                    else:
+                        st.error("XGBoost component not available in ensemble model")
                 else:
-                    importance_df = get_feature_importance_mock(feature_names, genomic_features, top_k=15)
-                    shap_explanation = None
+                    st.error("Ensemble model data not loaded")
+            
+            else:
+                # Stratified models (original logic)
+                is_xgboost = (treatment_line == 1)
+                active_model = xgb_model if is_xgboost else dl_model
                 
-            if not importance_df.empty:
-                # Bar plot
-                if 'SHAP Value' in importance_df.columns:
-                    # SHAP-based plot
-                    fig = px.bar(
-                        importance_df,
-                        x='SHAP Value',
-                        y='Feature',
-                        orientation='h',
-                        color='SHAP Value',
-                        title=f"Top 15 Features by SHAP Value ({model_used})",
-                        labels={'SHAP Value': 'SHAP Value (log-PFS)', 'Feature': ''},
-                        color_continuous_scale='RdBu_r',
-                        color_continuous_midpoint=0
-                    )
-                    fig.update_layout(height=600)
-                    st.plotly_chart(fig, use_container_width=True)
+                if active_model is None:
+                    st.error("Model not available for feature importance analysis")
                 else:
-                    # Mock importance plot (when SHAP not available)
-                    fig = px.bar(
-                        importance_df,
-                        x='Impact',
-                        y='Feature',
-                        orientation='h',
-                        color='Direction',
-                        title="Top 15 Features by Estimated Impact",
-                        labels={'Impact': 'Impact on Prediction', 'Feature': ''},
-                        color_discrete_map={
-                            'Increases PFS': '#2ca02c',
-                            'Decreases PFS': '#d62728'
-                        }
+                    st.subheader("Top Contributing Features")
+                    
+                    # Choose analysis method
+                    analysis_method = st.radio(
+                        "Analysis Method:",
+                        options=["SHAP (Accurate)", "Quick Estimate"],
+                        horizontal=True,
+                        help="SHAP provides accurate feature attributions. Quick estimate is instant."
                     )
-                    fig.update_layout(height=600)
-                    st.plotly_chart(fig, use_container_width=True)
+                    
+                    if analysis_method == "SHAP (Accurate)" and HAS_SHAP:
+                        with st.spinner("Calculating SHAP values (this may take 30-60 seconds)..."):
+                            importance_df, shap_explanation = get_feature_importance_shap(
+                                active_model,
+                                genomic_features,
+                                drug_fingerprint,
+                                feature_names,
+                                top_k=15,
+                                is_xgboost=is_xgboost,
+                                xgb_config=xgb_config if is_xgboost else None
+                            )
+                    else:
+                        importance_df = get_feature_importance_mock(feature_names, genomic_features, top_k=15)
+                        shap_explanation = None
+                    
+                if not importance_df.empty:
+                    # Bar plot
+                    if 'SHAP Value' in importance_df.columns:
+                        # SHAP-based plot
+                        fig = px.bar(
+                            importance_df,
+                            x='SHAP Value',
+                            y='Feature',
+                            orientation='h',
+                            color='SHAP Value',
+                            title=f"Top 15 Features by SHAP Value ({model_used})",
+                            labels={'SHAP Value': 'SHAP Value (log-PFS)', 'Feature': ''},
+                            color_continuous_scale='RdBu_r',
+                            color_continuous_midpoint=0
+                        )
+                        fig.update_layout(height=600)
+                        st.plotly_chart(fig, use_container_width=True)
+                    else:
+                        # Mock importance plot (when SHAP not available)
+                        fig = px.bar(
+                            importance_df,
+                            x='Impact',
+                            y='Feature',
+                            orientation='h',
+                            color='Direction',
+                            title="Top 15 Features by Estimated Impact",
+                            labels={'Impact': 'Impact on Prediction', 'Feature': ''},
+                            color_discrete_map={
+                                'Increases PFS': '#2ca02c',
+                                'Decreases PFS': '#d62728'
+                            }
+                        )
+                        fig.update_layout(height=600)
+                        st.plotly_chart(fig, use_container_width=True)
                 
                 # SHAP waterfall plot
                 if shap_explanation is not None and HAS_SHAP:
@@ -1380,23 +1694,44 @@ def main():
             - 30-60%: Moderate risk (monitor closely)
             - >60%: High risk (consider combination therapy or alternatives)
         
-        ### Stratified Model Approach
+        ### Model Selection Guide
         
-        This system uses **two specialized models** based on treatment history:
+        This system offers **two prediction approaches**:
         
-        #### First Treatment (line = 1): XGBoost
+        #### Optimized Ensemble (Experimental)
+        - **Architecture:** Weighted combination of XGBoost (46.5%), Ridge (22.2%), and Attention (31.3%)
+        - **Performance:** Val AUROC = 0.7298, Test AUROC = 0.6917, Test C-index = 0.6743
+        - **Features:** 150 carefully selected features from 9,510 total
+        - **Interpretability:** ~69% (due to XGBoost + Ridge components)
+        - **Training:** All treatment lines combined for robust generalization
+        - **Use When:** You want the highest validation performance and can tolerate experimental status
+        - **Strengths:** 
+            - Best validation performance
+            - Balances interpretability and complexity
+            - Trained on larger combined dataset
+        - **Limitations:**
+            - Newer model (less clinical validation)
+            - Slightly lower test performance than validation
+            - Requires more computational resources
+        
+        #### Stratified Models (Production)
+        Uses **two specialized models** based on treatment history:
+        
+        **First Treatment (line = 1): XGBoost**
         - **Dataset:** 822 first-line treatment records
         - **Performance:** AUROC = 0.703
         - **Features:** 500 selected (from 9,510 total)
         - **Why XGBoost?** Small dataset requires simpler model with aggressive feature selection
         - **Strengths:** Robust to noise, interpretable feature importance
         
-        #### Previous Treatment (line ≥ 2): Deep Learning
+        **Previous Treatment (line ≥ 2): Deep Learning**
         - **Dataset:** 2,112 later-line treatment records
         - **Performance:** AUROC ≈ 0.70-0.75 (expected)
         - **Features:** All 9,510 features with 23M parameters
         - **Why Deep Learning?** Sufficient data for complex drug-genomic interactions
         - **Strengths:** Cross-attention captures non-linear relationships
+        
+        **Use When:** You want proven, treatment-line-specific models with clinical grounding
         
         ### Important Limitations
         
