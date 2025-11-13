@@ -26,7 +26,7 @@ from pathlib import Path
 # Add src to path
 sys.path.append(str(Path(__file__).parent.parent))
 
-from models.deepsurv_model import DeepSurv, ConcordanceIndex
+from models.deepsurv_model import ConcordanceIndex
 from models.attention_model import train_attention_model, predict_attention, get_feature_importance
 
 
