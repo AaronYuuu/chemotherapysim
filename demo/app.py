@@ -46,7 +46,7 @@ try:
     from models.deep_learning import ImprovedDrugResponseModel
     HAS_DL_MODEL = True
 except ImportError as e:
-    st.error(f"❌ Could not import Deep Learning model: {e}")
+    st.error(f"Could not import Deep Learning model: {e}")
     HAS_DL_MODEL = False
 
 try:
@@ -54,7 +54,7 @@ try:
     HAS_XGBOOST = True
 except ImportError:
     HAS_XGBOOST = False
-    st.warning("⚠️ XGBoost not installed. First treatment predictions will be disabled.")
+    st.warning("XGBoost not installed. First treatment predictions will be disabled.")
 
 # Try to import optional dependencies
 try:
@@ -63,7 +63,7 @@ try:
     HAS_RDKIT = True
 except ImportError:
     HAS_RDKIT = False
-    st.warning("⚠️ RDKit not installed. Custom SMILES input will be disabled.")
+    st.warning("RDKit not installed. Custom SMILES input will be disabled.")
 
 try:
     import shap
@@ -79,6 +79,7 @@ except ImportError:
 # Model paths - stratified by treatment line
 CHECKPOINT_DIR_PREVIOUS = PROJECT_ROOT / "checkpoints_stratified" / "previous_treatment"
 CHECKPOINT_DIR_FIRST_XGB = PROJECT_ROOT / "checkpoints_stratified" / "first_treatment_xgboost"
+CHECKPOINT_DIR_GNN = PROJECT_ROOT / "checkpoints_stratified" / "gnn_advanced"
 ARTIFACTS_DIR = PROJECT_ROOT / "artifacts"
 DATA_DIR = PROJECT_ROOT / "data" / "processed"
 
@@ -96,22 +97,21 @@ st.set_page_config(
 # ===================================================================
 
 @st.cache_resource
-def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dict, Dict]:
+def load_stratified_models() -> Dict[str, Optional[object]]:
     """
-    Load both stratified models:
-      - Deep Learning for previous treatment (line >= 2)
-      - XGBoost for first treatment (line == 1)
+    Load all available stratified models for treatment line prediction.
+    
+    Models loaded (when available):
+      - Deep Learning model for previous treatment (line >= 2)
+      - XGBoost model for first treatment (line == 1)
     
     Returns:
-        dl_model: PyTorch deep learning model (or None if unavailable)
-        xgb_model: XGBoost model (or None if unavailable)
-        dl_config: Deep learning configuration
-        xgb_config: XGBoost configuration
+        Dict[str, Optional[object]]: Dictionary containing loaded models with keys:
+            - 'dl_previous': Dict with 'model' (ImprovedDrugResponseModel) and 'config' (dict)
+            - 'xgb_first': Dict with 'model' (XGBoost model) and 'config' (dict)
+            Empty dict if no models could be loaded.
     """
-    dl_model = None
-    xgb_model = None
-    dl_config = {}
-    xgb_config = {}
+    models = {}
     
     # Load Deep Learning model for previous treatment
     if HAS_DL_MODEL and CHECKPOINT_DIR_PREVIOUS.exists():
@@ -134,13 +134,14 @@ def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dic
             dl_model.load_state_dict(checkpoint['model_state_dict'])
             dl_model.eval()
             
-            st.success("✅ Deep Learning model loaded (previous treatment)")
+            models['dl_previous'] = {'model': dl_model, 'config': dl_config}
+            st.success("Deep Learning model loaded (previous treatment)")
         except Exception as e:
-            st.warning(f"⚠️ Could not load Deep Learning model: {str(e)}")
+            st.warning(f"Could not load Deep Learning model: {str(e)}")
     elif not HAS_DL_MODEL:
-        st.warning(f"⚠️ Deep Learning model import failed")
+        st.warning("Deep Learning model import failed")
     elif not CHECKPOINT_DIR_PREVIOUS.exists():
-        st.warning(f"⚠️ Deep Learning checkpoint not found at: {CHECKPOINT_DIR_PREVIOUS}")
+        st.warning(f"Deep Learning checkpoint not found at: {CHECKPOINT_DIR_PREVIOUS}")
     
     # Load XGBoost model for first treatment
     if HAS_XGBOOST and CHECKPOINT_DIR_FIRST_XGB.exists():
@@ -152,22 +153,26 @@ def load_stratified_models() -> Tuple[Optional[nn.Module], Optional[object], Dic
             
             # Load selected features
             features_path = CHECKPOINT_DIR_FIRST_XGB / "selected_features.npy"
+            xgb_config = {}
             xgb_config['selected_features'] = np.load(features_path)
             
             # Load best params
             params_path = CHECKPOINT_DIR_FIRST_XGB / "best_params.json"
-            with open(params_path, 'r') as f:
-                xgb_config['params'] = json.load(f)
+            if params_path.exists():
+                with open(params_path, 'r') as f:
+                    xgb_config['params'] = json.load(f)
             
-            st.success("✅ XGBoost model loaded (first treatment)")
+            models['xgb_first'] = {'model': xgb_model, 'config': xgb_config}
+            st.success("XGBoost model loaded (first treatment)")
         except Exception as e:
-            st.warning(f"⚠️ Could not load XGBoost model: {str(e)}")
+            st.warning(f"Could not load XGBoost model: {str(e)}")
     elif not HAS_XGBOOST:
-        st.warning(f"⚠️ XGBoost not installed")
+        st.warning("XGBoost not installed")
     elif not CHECKPOINT_DIR_FIRST_XGB.exists():
-        st.warning(f"⚠️ XGBoost checkpoint not found at: {CHECKPOINT_DIR_FIRST_XGB}")
+        st.warning(f"XGBoost checkpoint not found at: {CHECKPOINT_DIR_FIRST_XGB}")
     
-    return dl_model, xgb_model, dl_config, xgb_config
+    return models
+        
 
 
 @st.cache_data
@@ -210,7 +215,7 @@ def load_drug_library() -> Tuple[Dict, Dict, np.ndarray]:
                     with open(drug_map_path, 'r') as f:
                         drug_map = json.load(f)
             except Exception as e:
-                st.warning(f"⚠️ Could not load pre-computed fingerprints: {str(e)}")
+                st.warning(f"Could not load pre-computed drug fingerprints: {str(e)}")
                 fp_library = None
                 drug_map = {}
         
@@ -766,9 +771,15 @@ def main():
 
     # Load resources
     with st.spinner("Loading stratified models and data..."):
-        dl_model, xgb_model, dl_config, xgb_config = load_stratified_models()
+        models = load_stratified_models()
         drug_smiles, drug_classes, fp_library, drug_map = load_drug_library()
         feature_names, metadata = load_feature_info()
+    
+    # Extract models and configs from the dictionary
+    dl_model = models.get('dl_previous', {}).get('model', None)
+    dl_config = models.get('dl_previous', {}).get('config', {})
+    xgb_model = models.get('xgb_first', {}).get('model', None)
+    xgb_config = models.get('xgb_first', {}).get('config', {})
     
     if dl_model is None and xgb_model is None:
         st.error("❌ No models available. Please train models first.")
@@ -919,7 +930,7 @@ def main():
         # ===================================================================
         st.subheader("Step 2: Patient & tumour Variables")
         
-        st.info("💡 Leave fields blank to use dataset median values as defaults")
+        st.info("Leave fields blank to use dataset median values as defaults")
         
         user_inputs = {}
         
@@ -969,7 +980,7 @@ def main():
             )
             
             st.caption("**Key Mutations** (check if present)")
-            st.caption("💡 *Note: EGFR/ALK mutations increase PFS for targeted therapies, but effects vary for chemotherapy*")
+            st.caption("*Note: EGFR/ALK mutations increase PFS for targeted therapies, but effects vary for chemotherapy*")
             tp53_mut = st.checkbox("TP53 mutation")
             kras_mut = st.checkbox("KRAS mutation")
             egfr_mut = st.checkbox("EGFR mutation")
@@ -1047,7 +1058,7 @@ def main():
         
         if predict_button:
             if not selected_drugs:
-                st.error("❌ Please select at least one drug")
+                st.error("Please select at least one drug")
             else:
                 with st.spinner("Running model inference..."):
                     # Automatically set drug-related features based on selection
@@ -1234,7 +1245,7 @@ def main():
                 st.plotly_chart(fig, use_container_width=True)
     
     with tab2:
-        st.header("📈 Feature Importance Analysis")
+        st.header("Feature Importance Analysis")
         
         if 'last_prediction' not in st.session_state:
             st.info("👈 Make a prediction first to see feature importance")

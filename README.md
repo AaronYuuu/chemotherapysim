@@ -269,6 +269,30 @@ The model predicts:
 - Understand whether mutations increase or decrease expected survival
 - Identify genomic vulnerabilities that could be targeted
 
+#### **Clinical Transparency: Feature Importance Reports**
+
+For clinical decision support and transparency, the system provides comprehensive feature importance analysis:
+
+1. **Interactive SHAP Analysis (Web App):**
+   - Real-time feature importance for each prediction
+   - Visual explanations showing which genomic/clinical factors drive the prediction
+   - Available in the "Feature Importance Analysis" section after generating predictions
+
+2. **Static Feature Importance Reports:**
+   - **`feature_importance_report.txt`:** Comprehensive report showing top features for XGBoost and Ridge models
+   - **`artifacts/attention_feature_importance.txt`:** Attention model feature importance (generated during training)
+   - These reports help clinicians understand which variables (mutations, clinical factors) most affect predictions across the ensemble
+
+3. **Ensemble Model Weights:**
+   - XGBoost: 46.5% (tree-based, interpretable)
+   - Attention: 31.3% (neural network, captures complex interactions)
+   - Ridge: 22.2% (linear model, direct coefficient interpretation)
+
+To generate updated feature importance reports after training:
+```bash
+python generate_feature_report.py
+```
+
 ### Educational Value
 
 This interactive demonstration helps users learn:
