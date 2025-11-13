@@ -249,7 +249,7 @@ def main():
         'models': ensemble.models,
         'weights': ensemble.weights,
         'hyperparameters': params,
-        'feature_dim': input_dim,
+        'feature_dim': X_train.shape[1],
         'test_auroc': test_auroc,
         'test_c_index': test_c_index
     }
