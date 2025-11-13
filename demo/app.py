@@ -99,13 +99,17 @@ st.set_page_config(
 @st.cache_resource
 def load_stratified_models() -> Dict[str, Optional[object]]:
     """
-    Load all available models:
-      - Deep Learning for previous treatment (line >= 2)
-      - XGBoost for first treatment (line == 1)
-      - GNN Advanced model (experimental)
+    Load all available stratified models for treatment line prediction.
+    
+    Models loaded (when available):
+      - Deep Learning model for previous treatment (line >= 2)
+      - XGBoost model for first treatment (line == 1)
     
     Returns:
-        Dictionary of models and their configs
+        Dict[str, Optional[object]]: Dictionary containing loaded models with keys:
+            - 'dl_previous': Dict with 'model' (ImprovedDrugResponseModel) and 'config' (dict)
+            - 'xgb_first': Dict with 'model' (XGBoost model) and 'config' (dict)
+            Empty dict if no models could be loaded.
     """
     models = {}
     
@@ -654,9 +658,15 @@ def main():
     
     # Load resources
     with st.spinner("Loading stratified models and data..."):
-        dl_model, xgb_model, dl_config, xgb_config = load_stratified_models()
+        models = load_stratified_models()
         drug_smiles, drug_classes, fp_library, drug_map = load_drug_library()
         feature_names, metadata = load_feature_info()
+    
+    # Extract models and configs from the dictionary
+    dl_model = models.get('dl_previous', {}).get('model', None)
+    dl_config = models.get('dl_previous', {}).get('config', {})
+    xgb_model = models.get('xgb_first', {}).get('model', None)
+    xgb_config = models.get('xgb_first', {}).get('config', {})
     
     if dl_model is None and xgb_model is None:
         st.error("❌ No models available. Please train models first.")
