@@ -957,17 +957,18 @@ def main():
             
             with st.expander("📊 Performance Metrics", expanded=True):
                 perf = ensemble_dict['performance']
-                col1, col2 = st.columns(2)
-                with col1:
-                    st.metric("Val AUROC", f"{perf['val_auroc']:.4f}")
-                    st.metric("Test AUROC", f"{perf['test_auroc']:.4f}")
-                with col2:
-                    st.metric("C-index", f"{perf['test_c_index']:.4f}")
-                    st.metric("Interpretability", f"{perf['interpretability']:.1%}")
+                st.metric("AUROC", f"{perf['test_auroc']:.3f}", help="Optimized Ensemble on combined dataset")
                 
                 st.caption("**Model Weights:**")
+                # Display weights with proper capitalization
+                weight_display = {
+                    'xgboost': 'XGBoost',
+                    'ridge': 'Ridge', 
+                    'attention': 'Attention'
+                }
                 for model_name, weight in perf['weights'].items():
-                    st.caption(f"• {model_name}: {weight:.1%}")
+                    display_name = weight_display.get(model_name, model_name.capitalize())
+                    st.caption(f"• {display_name}: {weight:.1%}")
             
             with st.expander("🔬 Architecture"):
                 st.write(f"""
@@ -1492,13 +1493,14 @@ def main():
                     # Display ensemble weights
                     st.markdown("**Model Weights:**")
                     perf = ensemble_dict['performance']
+                    weights = perf['weights']
                     col1, col2, col3 = st.columns(3)
                     with col1:
-                        st.metric("XGBoost", f"{perf['weights']['xgb']:.1%}")
+                        st.metric("XGBoost", f"{weights.get('xgboost', 0.0):.1%}")
                     with col2:
-                        st.metric("Ridge", f"{perf['weights']['ridge']:.1%}")
+                        st.metric("Ridge", f"{weights.get('ridge', 0.0):.1%}")
                     with col3:
-                        st.metric("Attention", f"{perf['weights']['attention']:.1%}")
+                        st.metric("Attention", f"{weights.get('attention', 0.0):.1%}")
                     
                     st.markdown("---")
                     st.subheader("Top Contributing Features")
